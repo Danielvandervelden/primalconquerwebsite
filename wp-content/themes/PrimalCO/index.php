@@ -31,9 +31,9 @@
                 </article>
 
                 <?php   } // end while ?>
-                <?php      } // end if
+                <?php      } // end if 
        
-
+                        echo paginate_links();
       ?>
         </main>
 

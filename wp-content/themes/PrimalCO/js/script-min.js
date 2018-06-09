@@ -14,11 +14,30 @@ var charArray = [];
 var charInfo = $('.right-div-tabcontainer .char-info');
 var charInfoArray = [];
 var counter = 0;
+var navBar = document.getElementById("navbar");
+let sticky = navBar.getBoundingClientRect().top;
+let body = $('body');
+let logo = $('.primalco-logo');
 
 for (var i = -1, l = menuTabs.length; ++i !== l; menuTabsArray[i] = menuTabs[i]);
 for (var i = -1, l = divTabs.length; ++i !== l; divTabsArray[i] = divTabs[i]);
 for (var i = -1, l = characters.length; ++i !== l; charArray[i] = characters[i]);
 for (var i = -1, l = charInfo.length; ++i !== l; charInfoArray[i] = charInfo[i]);
+
+window.onscroll = throttle(stickyMenu, 20); // Sticky menu scroll eventlistener with throttle.
+
+function stickyMenu() {
+   sticky = navBar.getBoundingClientRect().top;
+	if (window.pageYOffset > 50) {
+
+    $(navBar).addClass("sticky from-top");
+    $(logo).addClass("sticky-fix");
+
+ } else if(window.pageYOffset < 50){
+     $(navBar).removeClass("sticky from-top");
+     $(logo).removeClass("sticky-fix");
+ }
+}
 
 function fixNotice() {
     
@@ -87,5 +106,26 @@ charArray.forEach(function (char) {
     })
 });
 
+function throttle(fn, threshhold, scope) {
+  threshhold || (threshhold = 250);
+  var last,
+      deferTimer;
+  return function () {
+    var context = scope || this;
 
+    var now = +new Date,
+        args = arguments;
+    if (last && now < last + threshhold) {
+      // hold on to it
+      clearTimeout(deferTimer);
+      deferTimer = setTimeout(function () {
+        last = now;
+        fn.apply(context, args);
+      }, threshhold);
+    } else {
+      last = now;
+      fn.apply(context, args);
+    }
+  };
+}
 

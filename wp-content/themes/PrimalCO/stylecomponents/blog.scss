@@ -5,14 +5,11 @@
 */
 
 .post-container {
-    border: 1px solid rgba(0, 0, 0, .7);
-    box-shadow: 1px 1px 3px #000;
+    border-bottom: 1px solid rgba(0, 0, 0, .7);
     height: auto;
     padding: 20px;
-    background-color: rgba(0, 0, 0, .1);
     border-radius: 3px;
     display: flex;
-    margin: 20px 0;
 
     .link-picture-wrapper {
         display: block;
@@ -20,10 +17,6 @@
         margin: 0;
         flex: 0 1 30%;
         align-self: center;
-    }
-
-    .blog-post-inner-wrapper {
-        padding: 20px;
     }
 
     .featured-image {
@@ -52,15 +45,6 @@
 
     h2 {
         position: relative;
-
-        &:after {
-            content: '';
-            height: 1px;
-            width: 95%;
-            position: absolute;
-            bottom: -2px;
-            left: 0;
-            background-color: rgba(0, 0, 0, .7);
-        }
+        width: 200px;
     }
 }

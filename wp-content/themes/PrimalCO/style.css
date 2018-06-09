@@ -323,7 +323,7 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.4rem; }
+  font-size: 1.4rem !important; }
 
 a {
   cursor: pointer; }
@@ -382,6 +382,20 @@ h3 {
   padding: 30px;
   position: relative; }
 
+.sticky {
+  position: fixed !important;
+  width: 100%;
+  top: 0;
+  z-index: 9999; }
+
+.sticky-fix {
+  margin-top: 50px; }
+
+.page-numbers {
+  text-align: center;
+  display: inline-block;
+  color: brown; }
+
 /*
 |------------------------------------------------------------
 | All the styles for the header 
@@ -389,7 +403,8 @@ h3 {
 */
 header {
   max-height: 400px;
-  height: 100%; }
+  height: 100%;
+  margin-bottom: 50px; }
 
 .header-container {
   position: relative;
@@ -502,22 +517,17 @@ header {
 |------------------------------------------------------------
 */
 .post-container {
-  border: 1px solid rgba(0, 0, 0, 0.7);
-  box-shadow: 1px 1px 3px #000;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.7);
   height: auto;
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.1);
   border-radius: 3px;
-  display: flex;
-  margin: 20px 0; }
+  display: flex; }
   .post-container .link-picture-wrapper {
     display: block;
     padding: 0;
     margin: 0;
     flex: 0 1 30%;
     align-self: center; }
-  .post-container .blog-post-inner-wrapper {
-    padding: 20px; }
   .post-container .featured-image {
     height: 200px;
     width: 200px;
@@ -535,15 +545,8 @@ header {
   .post-container .link-picture-wrapper + .blog-post-inner-wrapper {
     padding-top: 0; }
   .post-container h2 {
-    position: relative; }
-    .post-container h2:after {
-      content: '';
-      height: 1px;
-      width: 95%;
-      position: absolute;
-      bottom: -2px;
-      left: 0;
-      background-color: rgba(0, 0, 0, 0.7); }
+    position: relative;
+    width: 200px; }
 
 /*
 |------------------------------------------------------------

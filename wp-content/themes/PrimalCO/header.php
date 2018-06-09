@@ -42,8 +42,8 @@ if($logged_in) {
     <div class="website-container">
         <header>
             <div class="header-container">
-            <div class="navbar from-top">
-                <nav class="navbar sticky navbar-expand-lg navbar-light bg-light menu-nav">
+            <div id="navbar" class="navbar">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light menu-nav">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
