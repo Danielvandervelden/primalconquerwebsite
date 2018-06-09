@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<meta name="robots" content="noindex, nofollow" />
+		<title>Fix URLs</title>
+		<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+	</head>
+<body>
+	<img src="orangevalley.gif" id="logo">
+	<h1>FixURLs</h1>
+	<div>
+		<?php
+		if(!empty($form['response']))
+			echo $form['response'];
+		?>
+		<p>Although our <strong>awesome</strong> script probably guessed all the values right already, we would like you to confirm this. </p>
+		<form method="post" accept-charset="utf-8">
+			<fieldset>
+				<legend>SEO</legend>
+				<p>
+					<a href="http://bit.ly/3erEYp">SEO</a>-stuffies:
+					<label>
+						<input type="radio" name="development" value="0" <?php checked(!$form['development']); ?>> Production
+					</label>
+					<label>
+						<input type="radio" name="development" value="1" <?php checked((bool)$form['development']); ?>> Development (nofollow everything)
+					</label>
+				</p>
+			</fieldset>
+			
+			<fieldset>
+				<legend>Modules</legend>
+				<p>
+					<label>
+						<input type="checkbox" name="module[multisite]" value="1" class="checkbox" <?php checked(!empty($form['module']['multisite'])); ?>>
+						Multisite
+					</label>
+				</p>
+
+				<p>
+					<label>
+						<input type="checkbox" name="module[buddypress]" value="1" class="checkbox" <?php checked(!empty($form['module']['buddypress'])); ?>>
+						BuddyPress
+					</label>
+				</p>
+				
+				<p>
+					<label>
+						<input type="checkbox" name="module[https]" value="1" class="checkbox" <?php checked(!empty($form['module']['https'])); ?>>
+						HTTPS
+					</label>
+				</p>
+			</fieldset>
+
+			<fieldset>
+				<legend>Content information</legend>
+				
+				<?php
+				$skip = array();
+				
+				foreach($form['search'] as $key => $search)
+				{
+					// -- Try skipping included domains
+					if(!$search || in_array($search, $skip))
+						continue;
+					
+					$skip[] = $search;
+					
+					echo '<div class = "replacement">' . 
+							'<p>' .
+								'<label for="search">Current domain (e.g. "dev.example.org")</label>' .
+								'<input type="text" name="search[]" value="' . $search . '" id="search" class="text">' .
+							'</p>' . 
+							'<p>' .
+								'<label for="replace">New domain (e.g. "dev.example.org")</label>' .
+								'<input type="text" name="replace[]" value="' . (!empty($form['replace'][$key]) ? $form['replace'][$key] : '') . '" id="replace" class="text">' . 
+							'</p>' .
+						 '</div>';
+				
+				}
+				?>
+			</fieldset>
+
+			<fieldset>
+				<legend>Security</legend>
+				<p>
+					<label for="password">Please confirm your database password (same as in wp-config.php) for security reasons</label>
+					<input type="password" name="password" value="" id="password" class="text">
+				</p>
+			</fieldset>
+
+			<fieldset id="submit">
+				<p>
+					<label>
+						<input type="checkbox" name="awesome" value="1" class="checkbox" checked> I confirm this script did an awesome job in guessing the config values
+					</label>
+				</p>
+
+				<p><input type="submit" value="Save &rarr;" name="submit"></p>  
+			</fieldset>
+		</form>
+	</div>
+</body>
+</html>

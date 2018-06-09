@@ -1,0 +1,164 @@
+/*
+|------------------------------------------------------------
+| All the styles for the header 
+|------------------------------------------------------------
+*/
+
+$nav_bar_height: 80px;
+$color_1: orange;
+$nav_link_hover_color: blue;
+
+header {
+    max-height: 400px;
+    height: 100%;
+}
+
+.header-container {
+    position: relative;
+    height: 100%;
+    min-height: 400px;
+    max-height: 400px;
+    overflow: hidden;
+    background-image: url('assets/images/background1.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top center;
+
+    .navbar {
+        background-color: rgba(255, 255, 255, .6);
+        height: 50px;
+    }
+
+    .primalco-logo {
+        position: relative;
+        height: 100%;
+        width: 100%;
+
+        img {
+            max-height: 200px;
+            width: auto;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 50px;
+            display: block;
+            height: 100%;
+        }
+    }
+
+    .header-background-images {
+        max-height: 500px;
+
+        img {
+            width: 100%;
+            min-height: 400px;
+        }
+    }
+
+    .menu-nav {
+        position: absolute;
+        padding: 10px 20px;
+        background-color: transparent !important;
+        right: 10px;
+        width: 100%;
+
+        .navbar-toggler {
+            background-color: rgba(255, 255, 255, .6);
+            outline: 0;
+        }
+    }
+
+    .navbar-nav {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        text-align: center;
+
+        li {
+            font-size: 1.4rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 5px #000;
+            cursor: pointer;
+            transition: all .3s;
+            width: 25%;
+
+            &:hover {
+                text-shadow: 1px 1px 5px #FFF;
+
+                a {
+                    color: rgba(133, 68, 50, 5) !important;
+                }
+
+            }
+
+
+            a {
+                color: #FFF !important;
+                transition: all .3s;
+            }
+
+            div {
+                a {
+                    color: #000 !important;
+                    text-shadow: none;
+                }
+            }
+
+            &.dropdown:hover {
+
+                >.dropdown-menu {
+                    display: block;
+                    top: 85%;
+                    left: 105px;
+                    background-color: rgba(255, 255, 255, .6);
+                }
+            }
+        }
+    }
+
+    .header-buttons-container {
+        max-width: 1180px;
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        bottom: 50px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .btn-header-div {
+        width: 200px;
+        height: 40px;
+
+        .btn {
+            height: 40px;
+        }
+    }
+
+}
+
+@media (max-width: 991px) {
+    .header-container {
+        min-height: 400px;
+
+        .menu-nav {
+            text-align: center;
+
+            button {
+                margin: 0 auto;
+            }
+
+            .navbar-nav {
+                max-width: 200px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .btn-header-div {
+        display: none;
+    }
+}

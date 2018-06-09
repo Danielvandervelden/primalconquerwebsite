@@ -1,0 +1,37 @@
+/*
+|------------------------------------------------------------
+| Single blog post styles
+|------------------------------------------------------------
+*/
+
+.main-content-container.single {
+    position: relative;
+
+    .absolute-top {
+        position: absolute;
+        top: 8px;
+        left: 30px;
+    }
+
+    .post-container {
+        display: block;
+
+        .featured-image-single {
+            max-width: 100%;
+            margin: 0 auto;
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        .single-post-content {
+            font-size: 1.4rem;
+        }
+    }
+}

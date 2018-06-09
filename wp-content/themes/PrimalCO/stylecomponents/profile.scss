@@ -1,0 +1,109 @@
+/*
+|------------------------------------------------------------
+| All styles for profile page
+|------------------------------------------------------------
+*/
+
+.main-content-container.profile {
+    position: relative;
+
+    .active {
+        background-color: lighten($firstcolor, 20%) !important;
+
+    }
+
+    .active-tab {
+        display: block !important;
+    }
+
+    .tab {
+        display: none;
+    }
+
+    .tab-container {
+        height: 100%;
+        margin: 20px 0 20px 0;
+        .selection-menu {
+            overflow: hidden;
+            ul {
+                overflow: hidden;
+                height: 50px;
+                text-align: center;
+                padding: 0;
+                li {
+                    display: block;
+                    float: left;
+                    width: 33%;
+                    line-height: 50px;
+                    background-color: $firstcolor;
+                    color: white;
+
+                    &:hover {
+                        background-color: lighten($firstcolor, 10%);
+
+                    }
+                }
+            }
+        }
+    }
+
+    .char-info {
+        display: none;
+    }
+
+    .display {
+        display: block !important;
+    }
+
+    .tab.characters.active-tab {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .left-div-tabcontainer {
+            flex: 0 1 25%;
+
+            ul {
+                list-style: none;
+                padding: 0;
+                text-align: center;
+                font-size: 1.7rem;
+
+                li {
+                    height: 40px;
+                    line-height: 40px;
+                    cursor: pointer;
+                    background-color: $firstcolor;
+                    color: #FFF;
+
+                    &:hover {
+                        background-color: lighten($firstcolor, 10%);
+                    }
+                }
+            }
+        }
+        .right-div-tabcontainer {
+            flex: 0 1 70%;
+            margin: 10px 20px;
+        }
+
+    }
+
+}
+
+ .message {
+     text-align: center;
+     font-weight: bold;
+     position: absolute;
+     top: 10px;
+     left: 50%;
+     transform: translateX(-50%);
+
+     &.success {
+         color: green;
+     }
+
+     &.error {
+         color: red;
+     }
+ }

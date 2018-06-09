@@ -1,0 +1,37 @@
+/*
+ Theme Name:   PrimalCO
+ Author:       Daniel van der Velden
+ Version:      1.1
+ Tags:         Conquer Online 1.0, PrimalCO, CO 1.0, ClassicCO
+*/
+
+
+
+/*
+|------------------------------------------------------------
+| Importing all the style files (sorry, we're going desktop first since that's priority)
+|------------------------------------------------------------
+*/
+
+@import 'normalize.scss';         // normalizing everything on the entire website so it looks good cross browser
+@import 'variables.scss';         // all variables
+
+
+@import './base.scss';              // importing all base styles
+@import 'header.scss';              // all styles for the header
+@import './blog.scss';              // all styles for blog posts & page
+@import './homepage.scss';          // all styles for homepage
+@import './footer.scss';            // all styles for footer
+@import './register-account.scss';  // all styles for registering account page
+@import './downloads.scss';         // all styles for downloads page
+@import './changelog.scss';         // all styles for changelog
+@import './sidebar.scss';           // all styles for sidebar
+@import './profile.scss';           // all styles for profile overview
+@import './single.scss';           // all styles for single blogpost
+@import './animations.scss'; // all styles for single blogpost
+
+
+
+
+
+

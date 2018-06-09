@@ -1,0 +1,19 @@
+/*
+|------------------------------------------------------------
+| Styles for footer
+|------------------------------------------------------------
+*/
+
+footer {
+    min-height: 50px;
+    background-color: #000;
+    width: 100%;
+    color: grey;
+    position: absolute;
+    bottom: 0;
+
+    p {
+        line-height: 40px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,66 @@
+/*
+|------------------------------------------------------------
+| All blog query styles
+|------------------------------------------------------------
+*/
+
+.post-container {
+    border: 1px solid rgba(0, 0, 0, .7);
+    box-shadow: 1px 1px 3px #000;
+    height: auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, .1);
+    border-radius: 3px;
+    display: flex;
+    margin: 20px 0;
+
+    .link-picture-wrapper {
+        display: block;
+        padding: 0;
+        margin: 0;
+        flex: 0 1 30%;
+        align-self: center;
+    }
+
+    .blog-post-inner-wrapper {
+        padding: 20px;
+    }
+
+    .featured-image {
+        height: 200px;
+        width: 200px;
+        background-size: cover;
+        background-position: center center;
+        border-radius: 5px;
+        box-shadow: 1px 1px 3px #000;
+        transition: all .3s;
+
+        &:hover {
+            opacity: .7;
+        }
+    }
+
+    a +.blog-post-inner-wrapper {
+        flex: 0 1 70%;
+        padding-left: 10px;
+        padding-top: 25px;
+    }
+
+    .link-picture-wrapper +.blog-post-inner-wrapper {
+        padding-top: 0;
+    }
+
+    h2 {
+        position: relative;
+
+        &:after {
+            content: '';
+            height: 1px;
+            width: 95%;
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            background-color: rgba(0, 0, 0, .7);
+        }
+    }
+}

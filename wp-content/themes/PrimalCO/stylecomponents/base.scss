@@ -1,0 +1,100 @@
+/*
+|------------------------------------------------------------
+| All base styles such as headers, padding, fontsizes, etc.
+|------------------------------------------------------------
+*/
+
+html {
+    font-size: 10px; // base font-size to 10px so we can use the rem size like 1.4rem = 14px
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+}
+
+a {
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: $firstcolor;
+    transition: all .3s;
+
+    a {
+        color: $firstcolor;
+        transition: all .3s;
+    }
+
+    &:hover {
+        a {
+            color: lighten($firstcolor, 20%);
+            text-decoration: none;
+        }
+    }
+}
+
+h2 {
+    font-size: 3rem;
+    color: $firstcolor;
+    transition: all .3s;
+
+    a {
+        color: $firstcolor;
+        transition: all .3s;
+    }
+
+     &:hover {
+         a {
+             color: lighten($firstcolor, 20%);
+             text-decoration: none;
+         }
+     }
+
+}
+
+h3 {
+    font-size: 2.5rem;
+    color: $firstcolor;
+    transition: all .3s;
+
+    a {
+        color: $firstcolor;
+        transition: all .3s;
+    }
+
+     &:hover {
+         a {
+             color: lighten($firstcolor, 20%);
+             text-decoration: none;
+         }
+     }
+
+}
+
+.link-right {
+    float: right;
+}
+
+.title-center {
+    display: block;
+    margin: 0 auto;
+}
+
+.h-center-div {
+    width: 100%;
+    margin: 30px auto;
+    display: block;
+}
+
+.website-container {
+    position: relative;
+    padding-bottom: 50px; // reserve space for absolute positioned footer.
+    width: 100%;
+}
+
+.content-wrapper {
+    padding: 30px;
+    position: relative;
+}
