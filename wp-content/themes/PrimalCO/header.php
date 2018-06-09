@@ -42,7 +42,7 @@ if($logged_in) {
     <div class="website-container">
         <header>
             <div class="header-container">
-            <div class="navbar">
+            <div class="navbar from-top">
                 <nav class="navbar sticky navbar-expand-lg navbar-light bg-light menu-nav">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -72,18 +72,18 @@ if($logged_in) {
                 </nav>
             </div>
 
-            <div class="primalco-logo">
+            <div class="primalco-logo full-opacity">
                     <img src="<?php echo get_theme_file_uri('./assets/images/Logo.png') ?>" alt="Primal Conquer Logo">
                 </div>
 
             <div class="header-buttons-container">
-                <div class="btn-header-div">
+                <div class="btn-header-div from-left">
                     <form action="<?php echo site_url('/downloads') ?>">
                     <button type="submit" class="btn-block btn btn-dark">Download our Client</button>
                     </form>
                 </div>
                 
-                <div class="btn-header-div">
+                <div class="btn-header-div from-right">
                     <form action="<?php echo site_url('/account') ?>">
                     <button type="submit" class="btn-block btn btn-dark">Register an Account</button>
                     </form>
@@ -92,4 +92,4 @@ if($logged_in) {
             </div>
             <!-- header container -->
         </header>
-        <div class="content-wrapper">
+        <div class="content-wrapper full-opacity">
