@@ -11,6 +11,10 @@ html {
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.4rem !important;
+    background-image: url('assets/images/background1.jpg');
+    background-size: cover;
+    background-position: top center;
+    background-color: rgba(5, 21, 44, 1);
 }
 
 a {

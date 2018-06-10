@@ -32,7 +32,7 @@
                 <input name="password" class="form-control" type="password" placeholder="Enter your password">
             </div>
 
-            <button name="login" class="btn btn-dark" type="submit">Login</button>
+            <button name="login" class="btn btn-dark" type="submit">Login</button><a href="<?php site_url('/forgot') ?>">Forgot password</a>
         </form>
 
     </div>

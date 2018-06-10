@@ -323,7 +323,11 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.4rem !important; }
+  font-size: 1.4rem !important;
+  background-image: url("assets/images/background1.jpg");
+  background-size: cover;
+  background-position: top center;
+  background-color: #05152c; }
 
 a {
   cursor: pointer; }
@@ -411,11 +415,7 @@ header {
   height: 100%;
   min-height: 400px;
   max-height: 400px;
-  overflow: hidden;
-  background-image: url("assets/images/background1.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: top center; }
+  overflow: hidden; }
   .header-container .navbar {
     height: 50px;
     padding: 0;
