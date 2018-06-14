@@ -26,6 +26,16 @@ for (var i = -1, l = charInfo.length; ++i !== l; charInfoArray[i] = charInfo[i])
 
 window.onscroll = throttle(stickyMenu, 20); // Sticky menu scroll eventlistener with throttle.
 
+if (top.location.pathname !== '/')
+{
+    $(document).ready(scrollToElement());
+
+ function scrollToElement() {
+     $("html, body").animate({ scrollTop: "830px" });
+ }
+}
+
+
 function stickyMenu() {
    sticky = navBar.getBoundingClientRect().top;
 	if (window.pageYOffset > 50) {
