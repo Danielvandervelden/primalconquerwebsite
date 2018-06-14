@@ -6,15 +6,29 @@
 
 .main-content-container {
     display: flex;
-    max-width: 1180px;
-    padding: 10px 20px;
     margin: 0 auto;
-    background-color: rgba(255, 255, 255, .7);
     border-radius: 3px;
+    flex-direction: column;
     
 
     main {
-        flex: 0 1 70%;
-        padding: 10px
+        flex: 0 1 100%;
+        order: 2;
+        
+        .news-container {
+            flex: 0 1 50%;
+            min-width: 400px;
+        }  
+        .changelog-container {
+            flex: 0 1 50%;
+            min-width: 400px;
+        }
+    } 
     }
+
+.posts-container {
+    background-image: url('assets/images/slider_2.jpg');
+    
+    display: flex;
+    flex-wrap: wrap;
 }

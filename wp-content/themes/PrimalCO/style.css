@@ -324,66 +324,13 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.4rem !important;
-  background-image: url("assets/images/background1.jpg");
-  background-size: cover;
-  background-position: top center;
-  background-color: #05152c; }
+  background-color: #05152c;
+  position: relative; }
 
 a {
   cursor: pointer; }
 
-h1 {
-  font-size: 3.5rem;
-  color: #854432;
-  transition: all .3s; }
-  h1 a {
-    color: #854432;
-    transition: all .3s; }
-  h1:hover a {
-    color: #c2725b;
-    text-decoration: none; }
-
-h2 {
-  font-size: 3rem;
-  color: #854432;
-  transition: all .3s; }
-  h2 a {
-    color: #854432;
-    transition: all .3s; }
-  h2:hover a {
-    color: #c2725b;
-    text-decoration: none; }
-
-h3 {
-  font-size: 2.5rem;
-  color: #854432;
-  transition: all .3s; }
-  h3 a {
-    color: #854432;
-    transition: all .3s; }
-  h3:hover a {
-    color: #c2725b;
-    text-decoration: none; }
-
-.link-right {
-  float: right; }
-
-.title-center {
-  display: block;
-  margin: 0 auto; }
-
-.h-center-div {
-  width: 100%;
-  margin: 30px auto;
-  display: block; }
-
-.website-container {
-  position: relative;
-  padding-bottom: 50px;
-  width: 100%; }
-
 .content-wrapper {
-  padding: 30px;
   position: relative; }
 
 .sticky {
@@ -400,21 +347,174 @@ h3 {
   display: inline-block;
   color: brown; }
 
+.full-width {
+  width: 100%; }
+
+/*
+|------------------------------------------------------------
+| Container styles
+|------------------------------------------------------------
+*/
+.website-container {
+  position: relative;
+  padding-bottom: 50px;
+  width: 100%; }
+
+.parallax-container {
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  max-height: 650px;
+  background-position: top center; }
+
+.whitebar {
+  max-height: 200px; }
+
+/*
+|------------------------------------------------------------
+| Headers
+|------------------------------------------------------------
+*/
+.center {
+  text-align: center; }
+
+.hs {
+  font-size: 2.2rem;
+  text-shadow: 1px 1px 3px #000; }
+
+.hm {
+  font-size: 2.7rem;
+  text-shadow: 1px 1px 3px #000; }
+
+.hl {
+  font-size: 3.5rem;
+  text-shadow: 1px 1px 3px #000; }
+
+/*
+|------------------------------------------------------------
+| Colors
+|------------------------------------------------------------
+*/
+.white {
+  color: #FFF; }
+
+.red {
+  color: #FF3333; }
+
+.black {
+  color: #000; }
+
+.blue {
+  color: #00B2EE; }
+
+.green {
+  color: #7CFC00; }
+
+/*
+|------------------------------------------------------------
+| Flex grid
+|------------------------------------------------------------
+*/
+.flex {
+  display: flex; }
+
+.evenly {
+  justify-content: space-evenly; }
+
+.around {
+  justify-content: space-around; }
+
+.between {
+  justify-content: space-between; }
+
+.one-col {
+  flex: 0 1 100%; }
+
+.two-cols {
+  flex: 0 1 47%; }
+
+.three-cols {
+  flex: 0 1 30%; }
+
+.row-column {
+  flex-direction: column; }
+
+.flex-row {
+  flex-direction: row;
+  margin-left: 0;
+  margin-right: 0; }
+
+.flex-column {
+  flex-direction: column; }
+
+@media (min-width: 768px) {
+  .row-column {
+    flex-direction: row; } }
+
+/*
+|------------------------------------------------------------
+| Positioning
+|------------------------------------------------------------
+*/
+.margin-center {
+  margin: 0 auto; }
+
+/*
+|------------------------------------------------------------
+| Border Radius
+|------------------------------------------------------------
+*/
+.br3 {
+  border-radius: 3px; }
+
+/*
+|------------------------------------------------------------
+| Spacing
+|------------------------------------------------------------
+*/
+.spacing-top {
+  margin-top: 15px; }
+
+.spacing-right {
+  margin-right: 15px; }
+
+.spacing-bottom {
+  margin-bottom: 15px; }
+
+.spacing-left {
+  margin-left: 15px; }
+
+.padding-top {
+  padding-top: 15px; }
+
+.padding-right {
+  padding-right: 15px; }
+
+.padding-bottom {
+  padding-bottom: 15px; }
+
+.padding-left {
+  padding-left: 15px; }
+
+/*
+|------------------------------------------------------------
+| Floats
+|------------------------------------------------------------
+*/
+.float-l {
+  float: left; }
+
+.float-r {
+  float: right; }
+
 /*
 |------------------------------------------------------------
 | All the styles for the header 
 |------------------------------------------------------------
 */
-header {
-  max-height: 400px;
-  height: 100%;
-  margin-bottom: 50px; }
-
 .header-container {
   position: relative;
   height: 100%;
-  min-height: 400px;
-  max-height: 400px;
   overflow: hidden; }
   .header-container .navbar {
     height: 50px;
@@ -422,7 +522,7 @@ header {
     margin: 0; }
   .header-container .primalco-logo {
     position: relative;
-    height: 100%;
+    height: 250px;
     width: 100%; }
     .header-container .primalco-logo img {
       max-height: 200px;
@@ -433,6 +533,11 @@ header {
       top: 50px;
       display: block;
       height: 100%; }
+  .header-container .text-message {
+    max-width: 400px;
+    margin: 0 auto;
+    color: white;
+    text-align: center; }
   .header-container .header-background-images {
     max-height: 500px; }
     .header-container .header-background-images img {
@@ -445,6 +550,8 @@ header {
     .header-container .menu-nav .navbar-toggler {
       background-color: rgba(255, 255, 255, 0.6);
       outline: 0; }
+  .header-container .navbar-collapse {
+    z-index: 20; }
   .header-container .navbar-nav {
     margin-left: auto;
     margin-right: auto;
@@ -460,7 +567,7 @@ header {
       line-height: 40px;
       cursor: pointer;
       transition: all .3s;
-      width: 25%; }
+      width: 100%; }
       .header-container .navbar-nav li:hover {
         text-shadow: 1px 1px 5px #FFF;
         background-color: rgba(0, 0, 0, 0.3); }
@@ -471,6 +578,7 @@ header {
         color: #000 !important;
         text-shadow: none; }
       .header-container .navbar-nav li.dropdown:hover > .dropdown-menu {
+        z-index: 10;
         margin: 0;
         display: block;
         top: 50px;
@@ -505,11 +613,18 @@ header {
       .header-container .menu-nav button {
         margin: 0 auto; }
       .header-container .menu-nav .navbar-nav {
-        max-width: 200px; } }
+        max-width: 200px; }
+  body .header-container .navbar-nav .nav-item.dropdown:hover > .dropdown-menu {
+    display: none; }
+  body .header-container .navbar-nav .nav-item.dropdown.show > .dropdown-menu.show {
+    display: block; } }
 
 @media (max-width: 768px) {
   .btn-header-div {
-    display: none; } }
+    display: none; }
+  .primalco-logo img {
+    max-width: 80vw;
+    height: auto !important; } }
 
 /*
 |------------------------------------------------------------
@@ -521,7 +636,9 @@ header {
   height: auto;
   padding: 20px;
   border-radius: 3px;
-  display: flex; }
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.6); }
   .post-container .link-picture-wrapper {
     display: block;
     padding: 0;
@@ -548,6 +665,12 @@ header {
     position: relative;
     width: 200px; }
 
+.single-post-container {
+  max-width: 800px;
+  background-color: rgba(255, 255, 255, 0.6);
+  margin: 0 auto;
+  padding: 20px; }
+
 /*
 |------------------------------------------------------------
 | All homepage styles
@@ -555,14 +678,23 @@ header {
 */
 .main-content-container {
   display: flex;
-  max-width: 1180px;
-  padding: 10px 20px;
   margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.7);
-  border-radius: 3px; }
+  border-radius: 3px;
+  flex-direction: column; }
   .main-content-container main {
-    flex: 0 1 70%;
-    padding: 10px; }
+    flex: 0 1 100%;
+    order: 2; }
+    .main-content-container main .news-container {
+      flex: 0 1 50%;
+      min-width: 400px; }
+    .main-content-container main .changelog-container {
+      flex: 0 1 50%;
+      min-width: 400px; }
+
+.posts-container {
+  background-image: url("assets/images/slider_2.jpg");
+  display: flex;
+  flex-wrap: wrap; }
 
 /*
 |------------------------------------------------------------
@@ -586,78 +718,73 @@ footer {
 |------------------------------------------------------------
 */
 .form-wrapper {
-  max-width: 600px;
-  margin: 20px 0; }
-
-.registration-notice.error {
-  color: red;
-  font-weight: bold; }
-
-.registration-notice.success {
-  color: green;
-  font-weight: bold; }
-
-.registration-notice.login.error {
-  color: red;
-  font-weight: bold; }
-
-.registration-notice.login.success {
-  color: green;
-  font-weight: bold; }
+  max-width: 800px; }
 
 /*
 |------------------------------------------------------------
 | Styling for downloads page
 |------------------------------------------------------------
 */
-.downloads {
-  padding: 40px; }
-  .downloads table {
-    margin: 40px 0;
-    max-height: 50%;
-    height: 50%;
-    overflow-y: auto;
+.downloads .clients,
+.downloads .patches {
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%; }
+  .downloads .clients h2,
+  .downloads .patches h2 {
+    color: #FFF;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+
+.downloads table {
+  max-height: 30%;
+  height: 30%;
+  overflow-y: auto;
+  width: 100%;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.7); }
+  .downloads table thead {
     width: 100%;
-    display: block; }
-    .downloads table thead {
-      width: 100%;
-      display: inline-block; }
-    .downloads table tbody {
-      width: 100%;
-      display: inline-block; }
-    .downloads table tr {
-      max-height: 40px;
-      width: 100%;
-      display: inline-block; }
-    .downloads table td {
-      width: 32%;
-      display: inline-block; }
-    .downloads table th {
-      width: 32%;
-      display: inline-block; }
-  .downloads table:last-of-type {
-    margin: 40px 0;
-    max-height: 50%;
-    height: 50%;
-    overflow-y: auto;
+    display: inline-block;
+    background-color: #212529;
+    color: #FFF; }
+  .downloads table tbody {
     width: 100%;
-    display: block; }
-    .downloads table:last-of-type thead {
-      width: 100%;
-      display: inline-block; }
-    .downloads table:last-of-type tbody {
-      width: 100%;
-      display: inline-block; }
-    .downloads table:last-of-type tr {
-      max-height: 40px;
-      width: 100%;
-      display: inline-block; }
-    .downloads table:last-of-type td {
-      width: 49%;
-      display: inline-block; }
-    .downloads table:last-of-type th {
-      width: 49%;
-      display: inline-block; }
+    display: inline-block; }
+  .downloads table tr {
+    max-height: 40px;
+    width: 100%; }
+  .downloads table td {
+    width: 32%;
+    display: inline-block; }
+  .downloads table th {
+    display: inline-block;
+    border-top: 0;
+    border-bottom: 0 !important; }
+
+.downloads .table.last thead {
+  width: 100%;
+  display: inline-block; }
+
+.downloads .table.last tbody {
+  width: 100%;
+  display: inline-block; }
+
+.downloads .table.last tr {
+  max-height: 40px;
+  width: 100%; }
+
+.downloads .table.last th {
+  width: 49%;
+  display: inline-block; }
+
+@media (max-width: 830px) {
+  body .downloads .clients,
+  body .downlodas .patches {
+    margin-left: 15px;
+    margin-right: 15px; } }
 
 /*
 |------------------------------------------------------------
@@ -674,30 +801,14 @@ footer {
 | All styles for sidebar
 |-----------------------------------------------------------
 */
-.main-content-container aside {
-  flex: 0 1 30%;
-  padding: 10px; }
-  .main-content-container aside .sidebar-div {
-    border: 1px solid rgba(0, 0, 0, 0.7);
-    box-shadow: 1px 1px 3px #000;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 3px;
-    margin: 20px 0; }
-    .main-content-container aside .sidebar-div.login-form {
-      padding-top: 0px; }
-    .main-content-container aside .sidebar-div.loggedin {
-      text-align: center; }
-      .main-content-container aside .sidebar-div.loggedin form {
-        display: inline-block;
-        margin: 5px 40px; }
-  .main-content-container aside .facebook-container {
-    border: 1px solid rgba(0, 0, 0, 0.7);
-    box-shadow: 1px 1px 3px #000;
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 3px; }
-    .main-content-container aside .facebook-container .facebook-feed {
-      border-radius: 3px; }
+.whitebar-container {
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative; }
+
+.auth-login {
+  display: block;
+  margin-top: 40px; }
 
 /*
 |------------------------------------------------------------
@@ -713,10 +824,9 @@ footer {
   .main-content-container.profile .tab {
     display: none; }
   .main-content-container.profile .tab-container {
-    height: 100%;
     margin: 20px 0 20px 0; }
     .main-content-container.profile .tab-container .selection-menu {
-      overflow: hidden; }
+      overflow: auto; }
       .main-content-container.profile .tab-container .selection-menu ul {
         overflow: hidden;
         height: 50px;
@@ -762,7 +872,7 @@ footer {
   text-align: center;
   font-weight: bold;
   position: absolute;
-  top: 10px;
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%); }
   .message.success {
@@ -775,24 +885,27 @@ footer {
 | Single blog post styles
 |------------------------------------------------------------
 */
-.main-content-container.single {
-  position: relative; }
-  .main-content-container.single .absolute-top {
-    position: absolute;
-    top: 8px;
-    left: 30px; }
-  .main-content-container.single .post-container {
-    display: block; }
-    .main-content-container.single .post-container .featured-image-single {
-      max-width: 100%;
-      margin: 0 auto; }
-      .main-content-container.single .post-container .featured-image-single img {
-        max-width: 100%;
-        height: auto; }
-    .main-content-container.single .post-container h2 {
-      margin-bottom: 10px; }
-    .main-content-container.single .post-container .single-post-content {
-      font-size: 1.4rem; }
+.rules .single-post-container,
+.changelog .single-post-container,
+.profile .single-post-container {
+  align-self: center;
+  max-height: 600px;
+  height: 100%;
+  overflow: scroll;
+  max-width: 800px;
+  background-color: rgba(255, 255, 255, 0.6);
+  margin: 0 auto;
+  padding: 20px; }
+
+.profile .single-post-container {
+  align-self: center;
+  max-height: 600px;
+  height: auto;
+  overflow: scroll;
+  max-width: 800px;
+  background-color: rgba(255, 255, 255, 0.6);
+  margin: 0 auto;
+  padding: 20px; }
 
 /* ==================================================================================
 ALL CSS FOR ANIMATIONS

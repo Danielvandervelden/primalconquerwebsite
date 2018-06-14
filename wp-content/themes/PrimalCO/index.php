@@ -1,49 +1,35 @@
-<?php 
- get_header();
+<?php get_header();
 
- if(get_the_post_thumbnail() != '') {
- $backgroundImg = wp_get_attachment_url(get_post_thumbnail_id($post->ID), 'thumbnailimagesingle');
- }  else {
-     $backgroundImg = null;
- }
+$changelog = new WP_Query(array(
+    'post_type' => 'changelog',
+    'post_count' => '4',
+))
 
 ?>
-    <div class="main-content-container">
-        <main>
-            <?php
-            if (have_posts()) {
-                while (have_posts()) {
-                 the_post(); ?>
-                <article class="post-container">
-                    <?php if(get_the_post_thumbnail() != '') { ?>
-                    <a class="link-picture-wrapper" href="<?php echo get_the_permalink() ?>"><div class="featured-image" style="background-image: url('<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)) ?>')"></div></a>
-                    <?php } ?>
-                    <div class="blog-post-inner-wrapper">
-                        <h2>
-                            <a href="<?php the_permalink(); ?>" alt="to blog post">
-                                <?php echo get_the_title(); ?>
-                            </a>
-                        </h2>
-                        <div class="blog-post-content">
-                            <?php echo get_the_excerpt(); ?>
-                        </div>
-                    </div>
-                </article>
 
-                <?php   } // end while ?>
-                <?php      } // end if 
-       
-                        echo paginate_links();
-      ?>
-        </main>
+<div class="main-content-container changelog">
+    <main>
+        <div class="parallax-container flex" style="background-image: url('<?php echo $GLOBALS['contentImage'] ?>');">
+         <?php if ($changelog->have_posts()): while ($changelog->have_posts()): $changelog->the_post();?>
 
-        <aside>
-            <?php echo get_template_part('template-parts/primal-sidebar'); ?>
-        </aside>
+		            <article class="single-post-container one-col">
+		                        <?php if (get_the_post_thumbnail() != '') {?>
+		                        <a class="link-picture-wrapper" href="<?php echo get_the_permalink() ?>"><div class="featured-image" style="background-image: url('<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)) ?>')"></div></a>
+		                        <?php }?>
+		                        <div class="blog-post-inner-wrapper">
+		                        <h2><a href="<?php the_permalink();?>" alt="to blog post"><?php echo get_the_title(); ?></a></h2>
+		                        <div class="blog-post-content">
+		                            <?php echo get_the_excerpt(); ?>
+		                        </div>
+		                        </div>
+		                    </article>
 
+		        <?php endwhile;else: ?>
+            <p>Spec didn't put any rules here, feel free to abuse everything.</p>
+        <?php endif;?>
+        </div>
+    </main>
+</div>
 
-    </div>
-    <!-- end of main-content-container -->
-<?php
-get_footer();
-?>
+<?php get_footer()?>
+

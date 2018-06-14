@@ -21,10 +21,9 @@
     }
 
     .tab-container {
-        height: 100%;
         margin: 20px 0 20px 0;
         .selection-menu {
-            overflow: hidden;
+            overflow: auto;
             ul {
                 overflow: hidden;
                 height: 50px;
@@ -95,7 +94,7 @@
      text-align: center;
      font-weight: bold;
      position: absolute;
-     top: 10px;
+     bottom: 10px;
      left: 50%;
      transform: translateX(-50%);
 

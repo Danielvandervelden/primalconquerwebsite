@@ -26,7 +26,22 @@ if($logged_in) {
     $accountLink = site_url('/account');
 }
 
+$frontpage_id = get_option( 'page_on_front' );
+
+if(get_field('parallax_1')) {
+    $headerImage =  get_field('parallax_1');
+} else {
+    $headerImage =  get_field('parallax_1', $frontpage_id);
+}
+
+if(get_field('parallax_2')) {
+    $GLOBALS['contentImage'] = get_field('parallax_2');
+} else {
+    $GLOBALS['contentImage'] = get_field('parallax_2', $frontpage_id);
+
+}
 ?>
+
 
 <html lang="en">
 
@@ -40,7 +55,7 @@ if($logged_in) {
 
 <body <?php body_class() ?>>
     <div class="website-container">
-        <header>
+        <header class="parallax-container" style="background-image: url(<?php echo $headerImage ?>);">
             <div class="header-container">
             <div id="navbar" class="navbar">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light menu-nav">
@@ -76,6 +91,17 @@ if($logged_in) {
                     <img src="<?php echo get_theme_file_uri('./assets/images/Logo.png') ?>" alt="Primal Conquer Logo">
                 </div>
 
+            <div class="text-message full-opacity">
+                <h1>Welcome to Primal Conquer.</h1>
+                <p>You have now entered an era far before the current. You've made a jump
+                    in back in time to a place where Conquer Online was all about making friends,
+                    having fun and gathering resources through sheer hard work. This server is
+                    not for the faint hearted. The only thing you can do to become the best is 
+                    put in effort. Have you got what it takes? Then register an account, download the
+                    client and go forth!
+                </p>
+            </div>
+
             <div class="header-buttons-container">
                 <div class="btn-header-div from-left">
                     <form action="<?php echo site_url('/downloads') ?>">
@@ -92,4 +118,4 @@ if($logged_in) {
             </div>
             <!-- header container -->
         </header>
-        <div class="content-wrapper full-opacity">
+          <?php echo get_template_part('template-parts/primal-sidebar'); ?>

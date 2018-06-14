@@ -2,21 +2,23 @@
 
 $client = new WP_Query(array(
      'post_type' => 'client',
-     'post_count' => '0',
+     'posts_per_page' => 99
 ));
 
 ?>
 
 <div class="main-content-container downloads">
-
     <main>
+         <div class="parallax-container flex evenly flex-column" style="background-image: url('<?php echo $GLOBALS['contentImage'] ?>');">
+
+         <div class="clients two-cols">
         <h2>Client Downloads</h2>
         <table class="table">
-            <thead class="thead-dark">
-                <tr>
-                    <th scope="col">Name</th>
-                    <th scope="col">Version</th>
-                    <th scope="col">Download</th>
+            <thead>
+                <tr class="flex between center">
+                    <th class="three-cols" scope="col">Name</th>
+                    <th class="three-cols" scope="col">Version</th>
+                    <th class="three-cols" scope="col">Download</th>
                 </tr>
             </thead>
             <tbody>
@@ -29,23 +31,25 @@ $client = new WP_Query(array(
 
                  if($clientorpatch === 'Client') { 
                   ?>
-                    <tr>
-                        <td><?php the_field('name') ?></td>
-                        <td><?php the_field('version') ?></td>
-                        <td><a href="<?php the_field('download_link') ?>">Download</a></td>
+                    <tr class="flex flex-row between center">
+                        <td class="three-cols"><?php the_field('name') ?></td>
+                        <td class="three-cols"><?php the_field('version') ?></td>
+                        <td class="three-cols"><a href="<?php the_field('download_link') ?>">Download</a></td>
                     </tr>
                     <?php   } // end while ?>
-                    <?php   } // end while ?>
-                    <?php      } // end if   ?>
+                    <?php   } wp_reset_postdata(); // end while ?>
+                    <?php      }  // end if   ?>
             </tbody>
         </table>
+        </div>
 
+        <div class="patches two-cols">
         <h2>Patches Downloads</h2>
-        <table class="table">
-            <thead class="thead-dark">
-                <tr>
-                    <th scope="col">Patch Number</th>
-                    <th scope="col">Download</th>
+        <table class="table last">
+            <thead>
+                <tr class="flex between flex-row center">
+                    <th class="two-cols" scope="col">Patch Number</th>
+                    <th class="two-cols" scope="col">Download</th>
                 </tr>
             </thead>
             <tbody>
@@ -58,20 +62,18 @@ $client = new WP_Query(array(
 
                  if($clientorpatch === 'Patch') { 
                   ?>
-                    <tr>
-                        <td><?php the_field('name') ?></td>
-                        <td><a href="<?php the_field('download_link') ?>">Download</a></td>
+                    <tr class="flex flex-row between center">
+                        <td class="two-cols"><?php the_field('name') ?></td>
+                        <td class="two-cols"><a href="<?php the_field('download_link') ?>">Download</a></td>
                     </tr>
                     <?php   } // end while ?>
-                    <?php   } // end while ?>
+                    <?php   } wp_reset_postdata(); // end while ?>
                     <?php      } // end if   ?>
             </tbody>
         </table>
+        </div>
+            </div>
     </main>
-
-    <aside>
-        <?php echo get_template_part('template-parts/primal-sidebar'); ?>
-    </aside>
 </div>
 
 <?php get_footer();

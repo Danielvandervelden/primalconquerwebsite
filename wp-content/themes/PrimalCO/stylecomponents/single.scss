@@ -4,34 +4,26 @@
 |------------------------------------------------------------
 */
 
-.main-content-container.single {
-    position: relative;
+.rules .single-post-container,
+.changelog .single-post-container,
+.profile .single-post-container {
+    align-self: center;
+    max-height: 600px;
+    height: 100%;
+    overflow: scroll;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin: 0 auto;
+    padding: 20px;
+}
 
-    .absolute-top {
-        position: absolute;
-        top: 8px;
-        left: 30px;
-    }
-
-    .post-container {
-        display: block;
-
-        .featured-image-single {
-            max-width: 100%;
-            margin: 0 auto;
-
-            img {
-                max-width: 100%;
-                height: auto;
-            }
-        }
-
-        h2 {
-            margin-bottom: 10px;
-        }
-
-        .single-post-content {
-            font-size: 1.4rem;
-        }
-    }
+.profile .single-post-container {
+    align-self: center;
+    max-height: 600px;
+    height: auto;
+    overflow: scroll;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin: 0 auto;
+    padding: 20px;
 }

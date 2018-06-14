@@ -4,43 +4,13 @@
 |-----------------------------------------------------------
 */
 
-.main-content-container {
-    aside {
-        flex: 0 1 30%;
-        padding: 10px;
+.whitebar-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+}
 
-        .sidebar-div {
-            border: 1px solid rgba(0, 0, 0, .7);
-            box-shadow: 1px 1px 3px #000;
-            padding: 20px;
-            background-color: rgba(0, 0, 0, .1);
-            border-radius: 3px;
-            margin: 20px 0;
-
-            &.login-form {
-                padding-top: 0px;
-            }
-
-            &.loggedin {
-                text-align: center;
-                
-                form {
-                    display: inline-block;
-                    margin: 5px 40px;
-                }
-            }
-        }
-
-        .facebook-container {
-            border: 1px solid rgba(0, 0, 0, .7);
-            box-shadow: 1px 1px 3px #000;
-            background-color: rgba(0, 0, 0, .1);
-            border-radius: 3px;
-
-            .facebook-feed {
-                border-radius: 3px;
-            }
-        }
-    }
-
+.auth-login {
+        display: block;
+        margin-top: 40px;
 }

@@ -38,6 +38,9 @@ return (Empty($magic1) ? '' : 'None');
 
 <div class="main-content-container profile">
     <main>
+     <div class="parallax-container flex" style="background-image: url('<?php echo $GLOBALS['contentImage'] ?>');">
+
+     <div class="single-post-container one-col">
        <?php if($loggedin) { ?>
         
         <div class="tab-container">
@@ -133,11 +136,9 @@ return (Empty($magic1) ? '' : 'None');
 
 
      <?php  } else { ?>  <?php } ?>
+     </div>
     </main>
-
-    <aside>
-        <?php echo get_template_part('template-parts/primal-sidebar'); ?>
-    </aside>
+</div>
 </div>
 
 <?php get_footer()?>

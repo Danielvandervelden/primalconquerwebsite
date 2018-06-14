@@ -19,7 +19,10 @@ if( isset($_GET['username']) && !empty($_GET['username']) AND isset($_GET['hash'
 
 <div class="main-content-container rules">
     <main>
-        <h2>Reset your password</h2>
+        <div class="parallax-container" style="background-image: url('<?php echo $GLOBALS['contentImage'] ?>');">
+
+        <div class="form-wrapper margin-center padding-top">
+        <h2 class="white hl center">Reset your password</h2>
              <form method="post" action="/forgot">
 
             <div class="form-group" style="display: none">
@@ -28,23 +31,20 @@ if( isset($_GET['username']) && !empty($_GET['username']) AND isset($_GET['hash'
             </div>
 
             <div class="form-group">
-                <label for="password">New Password</label>
+                <label class="white hm" for="password">New Password</label>
                 <input name="new-password" class="form-control" type="password" placeholder="Enter you new password">
             </div>
 
             <div class="form-group">
-                <label for="password">Re-enter New Password</label>
+                <label class="white hm" for="password">Re-enter New Password</label>
                 <input name="new-password2" class="form-control" type="password" placeholder="Confirm your new password" value="<?php echo $email ?>">
             </div>
 
             <button name="password_change_email" type="submit" class="btn btn-primary">Change Password</button>
         </form>
-
+</div>
+        </div>
     </main>
-
-    <aside>
-        <?php echo get_template_part('template-parts/primal-sidebar'); ?>
-    </aside>
 </div>
 
 <?php } else {

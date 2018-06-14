@@ -39,21 +39,9 @@ function stickyMenu() {
  }
 }
 
-function fixNotice() {
-    
-    if($('.registration-notice').length > 0 && $('.form-wrapper.register').length > 0) {
-        $('.registration-notice').prependTo('.form-wrapper.register');
-    } else if(counter < 20) {
-        setTimeout(fixNotice, 200);
-        counter++;
-    }
-};
-
-fixNotice();
-
 function fixMessage() {
     if ($('.message').length > 0) {
-        $('.message').prependTo('.main-content-container');
+        $('.message').appendTo('.header-container');
     } else if (counter < 20) {
         setTimeout(fixMessage, 200);
         counter++;
@@ -61,6 +49,7 @@ function fixMessage() {
 }
 
 fixMessage();
+
 
 menuTabsArray.forEach(function(tab) {
     $(tab).click(function() {

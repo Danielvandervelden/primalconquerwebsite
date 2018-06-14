@@ -5,19 +5,35 @@
 */
 
 .downloads {
-    padding: 40px;
+
+    .clients,
+    .patches {
+        max-width: 800px;
+        margin: 0 auto;
+        width: 100%;
+
+         h2 {
+             color: #FFF;
+             text-align: center;
+             margin: 0 auto;
+             padding-top: 20px;
+             padding-bottom: 20px;
+         }
+    }
 
     table {
-        margin: 40px 0;
-        max-height: 50%;
-        height: 50%;
+        max-height: 30%;
+        height: 30%;
         overflow-y: auto;
         width: 100%;
         display: block;
+        background-color: rgba(255, 255, 255, .7);
 
         thead {
             width: 100%;
             display: inline-block;
+            background-color: #212529;
+            color: #FFF;
         }
 
         tbody {
@@ -28,7 +44,6 @@
         tr {
             max-height: 40px;
             width: 100%;
-            display: inline-block;
         }
 
         td {
@@ -37,18 +52,13 @@
         }
         
         th {
-            width: 32%;
             display: inline-block;
+            border-top: 0;
+            border-bottom: 0 !important;
         }
     }
 
-    table:last-of-type {
-        margin: 40px 0;
-        max-height: 50%;
-        height: 50%;
-        overflow-y: auto;
-        width: 100%;
-        display: block;
+    .table.last {
 
         thead {
             width: 100%;
@@ -64,12 +74,6 @@
         tr {
             max-height: 40px;
             width: 100%;
-            display: inline-block;
-        }
-
-        td {
-            width: 49%;
-            display: inline-block;
         }
 
         th {
@@ -78,4 +82,12 @@
         }
     }
 
+}
+
+@media (max-width: 830px) {
+    body .downloads .clients,
+    body .downlodas .patches {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
 }
