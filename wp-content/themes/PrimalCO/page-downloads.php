@@ -12,7 +12,7 @@ $client = new WP_Query(array(
          <div class="parallax-container flex evenly flex-column" style="background-image: url('<?php echo $GLOBALS['contentImage'] ?>');">
 
          <div class="clients two-cols">
-        <h2>Client Downloads</h2>
+        <h2 class="center hm t-shadow white">Client Downloads</h2>
         <table class="table">
             <thead>
                 <tr class="flex between center">
@@ -44,7 +44,7 @@ $client = new WP_Query(array(
         </div>
 
         <div class="patches two-cols">
-        <h2>Patches Downloads</h2>
+        <h2 class="center hm t-shadow white">Patches Downloads</h2>
         <table class="table last">
             <thead>
                 <tr class="flex between flex-row center">

@@ -10,15 +10,15 @@
 
 
     <div class="spacing-top spacing-bottom three-cols flex evenly flex-column">
-    <h2>Welcome <?php echo $username ?>!</h2>
+    <h2 class="center hl">Welcome <?php echo $username ?>!</h2>
 
-    <div class="flex">
+    <div class="flex evenly center">
     <form class="two-cols" method="post" action="<?php echo site_url() ?>">
-     <button name="logout" class="btn btn-dark" type="submit">Logout</button>
+     <button name="logout" class="btn btn-dark btn-lg" type="submit">Logout</button>
      </form>
 
       <form class="two-cols" method="post" action="<?php echo site_url('/profile') ?>">
-     <button class="btn btn-dark" type="submit">My Profile</button>
+     <button class="btn btn-dark btn-lg" type="submit">My Profile</button>
      </form>
      </div>
    </div>

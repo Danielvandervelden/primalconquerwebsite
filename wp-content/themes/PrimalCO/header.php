@@ -92,8 +92,8 @@ if(get_field('parallax_2')) {
                 </div>
 
             <div class="text-message full-opacity">
-                <h1>Welcome to Primal Conquer.</h1>
-                <p>You have now entered an era far before the current. You've made a jump
+                <h1 class="t-shadow">Welcome to Primal Conquer.</h1>
+                <p class="t-shadow">You have now entered an era far before the current. You've made a jump
                     in back in time to a place where Conquer Online was all about making friends,
                     having fun and gathering resources through sheer hard work. This server is
                     not for the faint hearted. The only thing you can do to become the best is 

@@ -80,16 +80,17 @@ a {
 
 .hs {
     font-size: 2.2rem;
-    text-shadow: 1px 1px 3px #000;
 }
 
 .hm {
     font-size: 2.7rem;
-    text-shadow: 1px 1px 3px #000;
 }
 
 .hl {
     font-size: 3.5rem;
+}
+
+.t-shadow {
     text-shadow: 1px 1px 3px #000;
 }
 
@@ -242,3 +243,26 @@ a {
 .float-r {
     float: right;
 }
+
+/*
+|------------------------------------------------------------
+| Messages
+|------------------------------------------------------------
+*/
+
+ .message {
+     text-align: center;
+     font-weight: bold;
+     position: absolute;
+     bottom: 10px;
+     left: 50%;
+     transform: translateX(-50%);
+
+     &.success {
+         color: green;
+     }
+
+     &.error {
+         color: red;
+     }
+ }

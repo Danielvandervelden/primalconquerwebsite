@@ -379,15 +379,15 @@ a {
   text-align: center; }
 
 .hs {
-  font-size: 2.2rem;
-  text-shadow: 1px 1px 3px #000; }
+  font-size: 2.2rem; }
 
 .hm {
-  font-size: 2.7rem;
-  text-shadow: 1px 1px 3px #000; }
+  font-size: 2.7rem; }
 
 .hl {
-  font-size: 3.5rem;
+  font-size: 3.5rem; }
+
+.t-shadow {
   text-shadow: 1px 1px 3px #000; }
 
 /*
@@ -506,6 +506,23 @@ a {
 
 .float-r {
   float: right; }
+
+/*
+|------------------------------------------------------------
+| Messages
+|------------------------------------------------------------
+*/
+.message {
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%); }
+  .message.success {
+    color: green; }
+  .message.error {
+    color: red; }
 
 /*
 |------------------------------------------------------------
@@ -676,26 +693,6 @@ a {
 | All homepage styles
 |------------------------------------------------------------
 */
-.main-content-container {
-  display: flex;
-  margin: 0 auto;
-  border-radius: 3px;
-  flex-direction: column; }
-  .main-content-container main {
-    flex: 0 1 100%;
-    order: 2; }
-    .main-content-container main .news-container {
-      flex: 0 1 50%;
-      min-width: 400px; }
-    .main-content-container main .changelog-container {
-      flex: 0 1 50%;
-      min-width: 400px; }
-
-.posts-container {
-  background-image: url("assets/images/slider_2.jpg");
-  display: flex;
-  flex-wrap: wrap; }
-
 /*
 |------------------------------------------------------------
 | Styles for footer
@@ -730,13 +727,6 @@ footer {
   max-width: 800px;
   margin: 0 auto;
   width: 100%; }
-  .downloads .clients h2,
-  .downloads .patches h2 {
-    color: #FFF;
-    text-align: center;
-    margin: 0 auto;
-    padding-top: 20px;
-    padding-bottom: 20px; }
 
 .downloads table {
   max-height: 30%;
@@ -804,7 +794,32 @@ footer {
 .whitebar-container {
   padding-left: 20px;
   padding-right: 20px;
-  position: relative; }
+  position: relative;
+  box-shadow: 3px 3px 20px #000; }
+  .whitebar-container .three-cols {
+    position: relative; }
+    .whitebar-container .three-cols button {
+      font-size: 1.7rem; }
+    .whitebar-container .three-cols:after {
+      content: '';
+      height: 100%;
+      position: absolute;
+      right: -20px;
+      top: 0;
+      width: 1px;
+      background-color: rgba(0, 0, 0, 0.4); }
+    .whitebar-container .three-cols:before {
+      content: '';
+      height: 100%;
+      position: absolute;
+      left: -20px;
+      top: 0;
+      width: 1px;
+      background-color: rgba(0, 0, 0, 0.4); }
+    .whitebar-container .three-cols:nth-child(2):before {
+      width: 0; }
+    .whitebar-container .three-cols:nth-child(2):after {
+      width: 0; }
 
 .auth-login {
   display: block;
@@ -867,18 +882,6 @@ footer {
     .main-content-container.profile .tab.characters.active-tab .right-div-tabcontainer {
       flex: 0 1 70%;
       margin: 10px 20px; }
-
-.message {
-  text-align: center;
-  font-weight: bold;
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%); }
-  .message.success {
-    color: green; }
-  .message.error {
-    color: red; }
 
 /*
 |------------------------------------------------------------

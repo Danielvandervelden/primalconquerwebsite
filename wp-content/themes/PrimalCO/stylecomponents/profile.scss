@@ -89,20 +89,3 @@
     }
 
 }
-
- .message {
-     text-align: center;
-     font-weight: bold;
-     position: absolute;
-     bottom: 10px;
-     left: 50%;
-     transform: translateX(-50%);
-
-     &.success {
-         color: green;
-     }
-
-     &.error {
-         color: red;
-     }
- }

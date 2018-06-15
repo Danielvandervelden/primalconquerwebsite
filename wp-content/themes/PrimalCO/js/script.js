@@ -26,27 +26,25 @@ for (var i = -1, l = charInfo.length; ++i !== l; charInfoArray[i] = charInfo[i])
 
 window.onscroll = throttle(stickyMenu, 20); // Sticky menu scroll eventlistener with throttle.
 
-if (top.location.pathname !== '/')
-{
-    $(document).ready(scrollToElement());
-
- function scrollToElement() {
-     $("html, body").animate({ scrollTop: "830px" });
- }
-}
-
+$(document).ready(function() {
+    if (top.location.pathname !== '/') {
+        $("html, body").animate({
+            scrollTop: "830px"
+        });
+    }
+});
 
 function stickyMenu() {
-   sticky = navBar.getBoundingClientRect().top;
-	if (window.pageYOffset > 50) {
+    sticky = navBar.getBoundingClientRect().top;
+    if (window.pageYOffset > 50) {
 
-    $(navBar).addClass("sticky from-top");
-    $(logo).addClass("sticky-fix");
+        $(navBar).addClass("sticky from-top");
+        $(logo).addClass("sticky-fix");
 
- } else if(window.pageYOffset < 50){
-     $(navBar).removeClass("sticky from-top");
-     $(logo).removeClass("sticky-fix");
- }
+    } else if (window.pageYOffset < 50) {
+        $(navBar).removeClass("sticky from-top");
+        $(logo).removeClass("sticky-fix");
+    }
 }
 
 function fixMessage() {
@@ -78,8 +76,8 @@ menuTabsArray.forEach(function(tab) {
     })
 });
 
-charArray.forEach(function (char) {
-    $(char).click(function () {
+charArray.forEach(function(char) {
+    $(char).click(function() {
         var index = $(this).index();
 
         $(charArray[0]).removeClass('active');
@@ -106,24 +104,24 @@ charArray.forEach(function (char) {
 });
 
 function throttle(fn, threshhold, scope) {
-  threshhold || (threshhold = 250);
-  var last,
-      deferTimer;
-  return function () {
-    var context = scope || this;
+    threshhold || (threshhold = 250);
+    var last,
+        deferTimer;
+    return function() {
+        var context = scope || this;
 
-    var now = +new Date,
-        args = arguments;
-    if (last && now < last + threshhold) {
-      // hold on to it
-      clearTimeout(deferTimer);
-      deferTimer = setTimeout(function () {
-        last = now;
-        fn.apply(context, args);
-      }, threshhold);
-    } else {
-      last = now;
-      fn.apply(context, args);
-    }
-  };
+        var now = +new Date,
+            args = arguments;
+        if (last && now < last + threshhold) {
+            // hold on to it
+            clearTimeout(deferTimer);
+            deferTimer = setTimeout(function() {
+                last = now;
+                fn.apply(context, args);
+            }, threshhold);
+        } else {
+            last = now;
+            fn.apply(context, args);
+        }
+    };
 }
