@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif !important;
     font-size: 1.4rem !important;
     background-color: rgba(5, 21, 44, 1);
     position: relative;
@@ -67,8 +67,7 @@ a {
 .parallax-container {
     background-size: cover;
     background-attachment: fixed;
-    height: 100%;
-    max-height: 650px;
+    min-height: 650px;
     background-position: top center;
 }
 
@@ -82,6 +81,14 @@ a {
 | Headers
 |------------------------------------------------------------
 */
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.bold {
+    font-weight: bold;
+}
 
 .center {
     text-align: center;
@@ -145,6 +152,18 @@ a {
     background-color: lighten(#000, 20%);
 }
 
+.transparent {
+    background-color: transparent;
+}
+
+.faded-white-bg {
+    height: auto;
+    padding: 20px;
+    border-radius: 3px;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, .6);
+}
+
 /*
 |------------------------------------------------------------
 | Flex grid
@@ -191,6 +210,10 @@ a {
 
 .flex-column {
     flex-direction: column;
+}
+
+.align-center {
+    align-items: center;
 }
 
 @media(min-width: 768px) {

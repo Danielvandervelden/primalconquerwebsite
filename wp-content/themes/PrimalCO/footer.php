@@ -1,5 +1,4 @@
 <?php echo get_template_part('template-parts/technologies'); ?>
-<?php echo get_template_part('template-parts/discord-block'); ?>
 <footer>
     <div class="whitebar padding-bottom padding-top gray-bg evenly flex">
         <div class="three-cols">

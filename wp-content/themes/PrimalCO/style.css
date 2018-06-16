@@ -322,7 +322,7 @@ html {
   font-size: 10px; }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif !important;
   font-size: 1.4rem !important;
   background-color: #05152c;
   position: relative; }
@@ -369,8 +369,7 @@ a {
 .parallax-container {
   background-size: cover;
   background-attachment: fixed;
-  height: 100%;
-  max-height: 650px;
+  min-height: 650px;
   background-position: top center; }
 
 .whitebar {
@@ -382,6 +381,12 @@ a {
 | Headers
 |------------------------------------------------------------
 */
+.uppercase {
+  text-transform: uppercase; }
+
+.bold {
+  font-weight: bold; }
+
 .center {
   text-align: center; }
 
@@ -430,6 +435,16 @@ a {
 .gray-bg {
   background-color: #333333; }
 
+.transparent {
+  background-color: transparent; }
+
+.faded-white-bg {
+  height: auto;
+  padding: 20px;
+  border-radius: 3px;
+  max-width: 600px;
+  background-color: rgba(255, 255, 255, 0.6); }
+
 /*
 |------------------------------------------------------------
 | Flex grid
@@ -466,6 +481,9 @@ a {
 
 .flex-column {
   flex-direction: column; }
+
+.align-center {
+  align-items: center; }
 
 @media (min-width: 768px) {
   .row-column {
@@ -624,6 +642,17 @@ a {
       .header-container .navbar-nav li div a {
         color: #000 !important;
         text-shadow: none; }
+      .header-container .navbar-nav li.dropdown:hover .dropdown-item.login {
+        color: #FFF;
+        text-shadow: none; }
+        .header-container .navbar-nav li.dropdown:hover .dropdown-item.login h2 {
+          text-shadow: none; }
+        .header-container .navbar-nav li.dropdown:hover .dropdown-item.login:hover {
+          background-color: rgba(0, 0, 0, 0.2); }
+      .header-container .navbar-nav li.dropdown:hover .dropdown-item.logged {
+        color: #FFF !important; }
+        .header-container .navbar-nav li.dropdown:hover .dropdown-item.logged:hover {
+          color: #000 !important; }
       .header-container .navbar-nav li.dropdown:hover > .dropdown-menu {
         z-index: 10;
         margin: 0;
@@ -637,6 +666,9 @@ a {
           cursor: pointer; }
           .header-container .navbar-nav li.dropdown:hover > .dropdown-menu a:hover {
             color: #000 !important; }
+    .header-container .navbar-nav .fa-user {
+      font-size: 2rem;
+      margin-top: 7px; }
   .header-container .header-buttons-container {
     max-width: 1180px;
     width: 100%;
@@ -728,6 +760,65 @@ a {
 | All homepage styles
 |------------------------------------------------------------
 */
+.why-us-container {
+  max-width: 800px; }
+  .why-us-container h2 {
+    position: relative; }
+    .why-us-container h2:after {
+      content: '';
+      width: 100%;
+      height: 1px;
+      background-color: rgba(0, 0, 0, 0.4);
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%); }
+  .why-us-container .red-bg {
+    background-color: #ff7f7f; }
+  .why-us-container .green-bg {
+    background-color: #7fff7f; }
+  .why-us-container .blue-bg {
+    background-color: #7f7fff; }
+  .why-us-container .orange-bg {
+    background-color: #ffbf7f; }
+  .why-us-container .orange-bg,
+  .why-us-container .blue-bg,
+  .why-us-container .green-bg,
+  .why-us-container .red-bg {
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: white;
+    transition: all .4s; }
+  .why-us-container .orange-bg:hover {
+    background-color: #e57300;
+    color: #fff2e5; }
+  .why-us-container .blue-bg:hover {
+    background-color: #0000e5;
+    color: #e5e5ff; }
+  .why-us-container .green-bg:hover {
+    background-color: #00e500;
+    color: #e5ffe5; }
+  .why-us-container .red-bg:hover {
+    background-color: #e50000;
+    color: #ffe5e5; }
+  .why-us-container .why-us-row {
+    max-height: 230px;
+    height: 100%; }
+    .why-us-container .why-us-row:first-of-type {
+      margin-bottom: 20px; }
+    .why-us-container .why-us-row .two-cols {
+      height: 100%; }
+    .why-us-container .why-us-row .flex .two-cols {
+      position: relative;
+      height: 100%; }
+      .why-us-container .why-us-row .flex .two-cols p {
+        font-size: 1.3rem; }
+      .why-us-container .why-us-row .flex .two-cols svg {
+        font-size: 9rem;
+        margin-top: 50px; }
+      .why-us-container .why-us-row .flex .two-cols:first-of-type {
+        text-align: center; }
+
 /*
 |------------------------------------------------------------
 | Styles for footer
@@ -767,6 +858,8 @@ footer {
 */
 .form-wrapper {
   max-width: 800px; }
+  .form-wrapper form {
+    margin-bottom: 0; }
 
 /*
 |------------------------------------------------------------
@@ -873,8 +966,14 @@ footer {
       width: 0; }
 
 .auth-login {
+  width: 100%;
   display: block;
-  margin-top: 40px; }
+  margin: 0 auto; }
+  .auth-login:first-of-type {
+    margin-bottom: 30px; }
+
+.whitebar-large {
+  min-height: 450px; }
 
 /*
 |------------------------------------------------------------

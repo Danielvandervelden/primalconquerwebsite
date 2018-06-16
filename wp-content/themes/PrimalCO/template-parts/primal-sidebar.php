@@ -5,20 +5,19 @@
     $username = $_SESSION['username'];
 ?>
 
-<div class="whitebar-container flex evenly row-column">
+<div class="flex evenly flex-column">
 <?php if($loggedin) { ?>
 
-
-    <div class="spacing-top spacing-bottom three-cols flex evenly flex-column">
+    <div class="full-width spacing-top spacing-bottom three-cols flex evenly flex-column faded-white-bg">
     <h2 class="center hl">Welcome <?php echo $username ?>!</h2>
 
-    <div class="flex evenly center">
-    <form class="two-cols" method="post" action="<?php echo site_url() ?>">
-     <button name="logout" class="btn btn-dark btn-lg" type="submit">Logout</button>
+    <div class="center">
+    <form method="post" action="<?php echo site_url() ?>">
+     <button name="logout" class="btn btn-block btn-dark btn-lg" type="submit">Logout</button>
      </form>
 
-      <form class="two-cols" method="post" action="<?php echo site_url('/profile') ?>">
-     <button class="btn btn-dark btn-lg" type="submit">My Profile</button>
+      <form method="post" action="<?php echo site_url('/profile') ?>">
+     <button class="btn btn-block btn-dark btn-lg" type="submit">My Profile</button>
      </form>
      </div>
    </div>
@@ -26,8 +25,8 @@
 <?php } else { ?>
     <div class="spacing-top spacing-bottom three-cols">
     <div class="form-wrapper">
-        <h2>Login to your account</h2>
-        <form method="post" action="<?php echo site_url() ?>">
+        <h2 class="hm white t-shadow">Login to your account</h2>
+        <form class="post-container" method="post" action="<?php echo site_url() ?>">
             <div class="form-group">
                 <label for="username-side">Username</label>
                 <input name="username" class="form-control" type="text" placeholder="Enter your username.">
@@ -47,7 +46,7 @@
 <?php } ?>
 
 
-<div class="column spacing-top spacing-bottom three-cols center whitebar ">
+<div class="column spacing-top spacing-bottom three-cols center post-container full-width">
 
     <?php if($authServer) { ?>
             
@@ -62,9 +61,5 @@
         <?php } else { ?>  
             <h2 class="auth-login">Login Server Status: <span style="color: red; font-weight: bold;">OFFLINE</span></h2>
     <?php } ?>  
-</div>
-
-<div class="spacing-top spacing-bottom three-cols">
-    <?php echo do_shortcode("[custom-facebook-feed]") ?>
 </div>
         </div>

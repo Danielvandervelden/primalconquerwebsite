@@ -46,34 +46,7 @@ wp_reset_postdata(); // end while ?>
                 </div>
 
                 <div class="two-cols spacing-left spacing-right">
-                    <h2 class="white center hm spacing-top">Latest Changelog</h2>
-
-                    <?php
-$changelog = new WP_Query(array(
-    "post_type" => "changelog",
-    "posts_per_page" => 1,
-));
-if ($changelog->have_posts()): ?>
-                        <?php while ($changelog->have_posts()): $changelog->the_post();?>
-                        <article class="post-container">
-                            <?php if (get_the_post_thumbnail() != '') {?>
-                            <a class="link-picture-wrapper" href="<?php echo get_the_permalink() ?>"><div class="featured-image" style="background-image: url('<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)) ?>')"></div></a>
-                            <?php }?>
-                            <div class="blog-post-inner-wrapper">
-                                <h3>
-                                    <a href="<?php the_permalink();?>" alt="to blog post">
-                                        <?php echo get_the_title(); ?>
-                                    </a>
-                                </h3>
-                                <div class="blog-post-content">
-                                    <?php echo wp_trim_words(get_the_content(), 150); ?>
-                                </div>
-                            </div>
-                        </article>
-                        <?php endwhile;
-							wp_reset_postdata();?>
-                        <?php else: ?>
-                        <?php endif;?>
+                        <?php echo get_template_part('template-parts/primal-sidebar'); ?>
                 </div>
 
             </div>

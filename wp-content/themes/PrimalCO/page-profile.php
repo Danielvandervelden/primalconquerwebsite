@@ -139,6 +139,5 @@ return (Empty($magic1) ? '' : 'None');
      </div>
     </main>
 </div>
-</div>
 
 <?php get_footer()?>

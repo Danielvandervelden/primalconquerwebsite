@@ -106,6 +106,27 @@ $nav_link_hover_color: blue;
 
             &.dropdown:hover {
 
+                .dropdown-item.login {
+                    color: #FFF;
+                    text-shadow: none;
+
+                    h2 {
+                        text-shadow: none;
+                    }
+
+                    &:hover {
+                        background-color: rgba(0, 0, 0, .2);
+                    }
+                }
+
+                .dropdown-item.logged {
+                    color: #FFF !important;
+
+                    &:hover {
+                        color: #000 !important;
+                    }
+                }
+
                 >.dropdown-menu {
                         z-index: 10;
                         margin: 0;
@@ -125,6 +146,11 @@ $nav_link_hover_color: blue;
                         }
                 }
             }
+        }
+
+        .fa-user {
+            font-size: 2rem;
+            margin-top: 7px;
         }
     }
 
