@@ -316,10 +316,12 @@ main {
 
      &.success {
          color: green;
+         text-shadow: 1px 1px 3px #FFF;
      }
 
      &.error {
          color: red;
+         text-shadow: 1px 1px 3px #FFF;
      }
  }
 

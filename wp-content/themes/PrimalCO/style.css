@@ -564,9 +564,11 @@ main {
   left: 50%;
   transform: translateX(-50%); }
   .message.success {
-    color: green; }
+    color: green;
+    text-shadow: 1px 1px 3px #FFF; }
   .message.error {
-    color: red; }
+    color: red;
+    text-shadow: 1px 1px 3px #FFF; }
 
 /*
  |------------------------------------------------------------
