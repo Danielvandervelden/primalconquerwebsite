@@ -11,9 +11,34 @@ footer {
     color: grey;
     position: absolute;
     bottom: 0;
+    text-align: center;
 
     p {
         line-height: 40px;
         text-align: center;
     }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin: 0;
+            padding: 0;
+
+            a {
+                color: #d0d0d0;
+                
+                &:hover {
+                    color: white !important;
+                    text-shadow: none !important;
+                }
+            }
+        }
+    }
+}
+
+#wp-discord {
+     margin: 40px auto;
 }

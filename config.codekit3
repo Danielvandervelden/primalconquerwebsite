@@ -84,12 +84,23 @@
 		"oAP": "\/license.txt",
 		"oF": 0
 		},
-	"\/readme.html": {
+	"\/README.md": {
 		"cB": 0,
-		"ft": 8192,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
 		"oA": 0,
-		"oAP": "\/readme.html",
-		"oF": 0
+		"oAP": "\/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
 		},
 	"\/vendor\/autoload.php": {
 		"cB": 0,
@@ -6794,6 +6805,355 @@
 		"oAP": "\/wp-content\/plugins\/index.php",
 		"oF": 0
 		},
+	"\/wp-content\/plugins\/wp-discord\/admin\/class-admin-form-field-builder.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/wp-discord\/admin\/class-admin-form-field-builder.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/wp-discord\/admin\/class-settings-tab.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/wp-discord\/admin\/class-settings-tab.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/wp-discord\/admin\/class-wp-discord-admin.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/wp-discord\/admin\/class-wp-discord-admin.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/wp-discord\/admin\/css\/wp-discord-admin.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/wp-discord\/admin\/css\/wp-discord-admin-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/wp-content\/plugins\/wp-discord\/admin\/index.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/wp-discord\/admin\/index.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/wp-discord\/admin\/js\/wp-discord-admin.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/wp-discord\/admin\/js\/wp-discord-admin-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/wp-content\/plugins\/wp-discord\/admin\/partials\/discord_tab.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/wp-discord\/admin\/partials\/discord_tab.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/wp-discord\/admin\/partials\/settings_tab.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/wp-discord\/admin\/partials\/settings_tab.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/wp-discord\/admin\/partials\/wp-discord-admin-display.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/wp-discord\/admin\/partials\/wp-discord-admin-display.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/wp-discord\/assets\/banner-772x250.jpg": {
+		"ft": 16384,
+		"iS": 23998,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/wp-discord\/assets\/banner-772x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/plugins\/wp-discord\/assets\/icon-128x128.jpg": {
+		"ft": 16384,
+		"iS": 8334,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/wp-discord\/assets\/icon-128x128.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/plugins\/wp-discord\/assets\/icon-16x16.png": {
+		"ft": 32768,
+		"iS": 17210,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/wp-discord\/assets\/icon-16x16.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/plugins\/wp-discord\/assets\/screenshot-1.png": {
+		"ft": 32768,
+		"iS": 23827,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/wp-discord\/assets\/screenshot-1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/plugins\/wp-discord\/assets\/screenshot-2.png": {
+		"ft": 32768,
+		"iS": 18882,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/wp-discord\/assets\/screenshot-2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/plugins\/wp-discord\/assets\/screenshot-3.png": {
+		"ft": 32768,
+		"iS": 20802,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/wp-discord\/assets\/screenshot-3.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/plugins\/wp-discord\/assets\/screenshot-4.png": {
+		"ft": 32768,
+		"iS": 101218,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/wp-discord\/assets\/screenshot-4.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/plugins\/wp-discord\/includes\/class-discord-api-wrapper.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/wp-discord\/includes\/class-discord-api-wrapper.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/wp-discord\/includes\/class-wp-discord-activator.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/wp-discord\/includes\/class-wp-discord-activator.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/wp-discord\/includes\/class-wp-discord-deactivator.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/wp-discord\/includes\/class-wp-discord-deactivator.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/wp-discord\/includes\/class-wp-discord-guild.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/wp-discord\/includes\/class-wp-discord-guild.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/wp-discord\/includes\/class-wp-discord-i18n.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/wp-discord\/includes\/class-wp-discord-i18n.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/wp-discord\/includes\/class-wp-discord-loader.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/wp-discord\/includes\/class-wp-discord-loader.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/wp-discord\/includes\/class-wp-discord-shortcodes.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/wp-discord\/includes\/class-wp-discord-shortcodes.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/wp-discord\/includes\/class-wp-discord-webhook.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/wp-discord\/includes\/class-wp-discord-webhook.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/wp-discord\/includes\/class-wp-discord-widget.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/wp-discord\/includes\/class-wp-discord-widget.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/wp-discord\/includes\/class-wp-discord.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/wp-discord\/includes\/class-wp-discord.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/wp-discord\/includes\/helpers\/class-whp-widget.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/wp-discord\/includes\/helpers\/class-whp-widget.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/wp-discord\/includes\/helpers\/class-wp-doin-shortcode.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/wp-discord\/includes\/helpers\/class-wp-doin-shortcode.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/wp-discord\/includes\/helpers\/class-wp-doin-shortcodes-generator.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/wp-discord\/includes\/helpers\/class-wp-doin-shortcodes-generator.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/wp-discord\/includes\/index.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/wp-discord\/includes\/index.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/wp-discord\/index.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/wp-discord\/index.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/wp-discord\/languages\/plugin-name.pot": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/wp-discord\/languages\/plugin-name.pot",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/wp-discord\/LICENSE.txt": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/wp-discord\/LICENSE.txt",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/wp-discord\/public\/class-wp-discord-public.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/wp-discord\/public\/class-wp-discord-public.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/wp-discord\/public\/css\/wp-discord.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/wp-discord\/public\/css\/wp-discord-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/wp-content\/plugins\/wp-discord\/public\/img\/discord.png": {
+		"ft": 32768,
+		"iS": 2403,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/wp-discord\/public\/img\/discord.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/plugins\/wp-discord\/public\/img\/icon.png": {
+		"ft": 32768,
+		"iS": 2193,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/wp-discord\/public\/img\/icon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/plugins\/wp-discord\/public\/index.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/wp-discord\/public\/index.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/wp-discord\/public\/js\/wp-discord.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/wp-discord\/public\/js\/wp-discord-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/wp-content\/plugins\/wp-discord\/public\/partials\/plugin-name-public-display.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/wp-discord\/public\/partials\/plugin-name-public-display.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/wp-discord\/README.txt": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/wp-discord\/README.txt",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/wp-discord\/uninstall.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/wp-discord\/uninstall.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/wp-discord\/wp-discord.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/wp-discord\/wp-discord.php",
+		"oF": 0
+		},
 	"\/wp-content\/themes\/index.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -6845,163 +7205,130 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/wp-content\/themes\/PrimalCO\/assets\/images\/logos\/logo1.jpg": {
+		"ft": 16384,
+		"iS": 33163,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/PrimalCO\/assets\/images\/logos\/logo1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/wp-content\/themes\/PrimalCO\/assets\/images\/logos\/logo10.png": {
+		"ft": 32768,
+		"iS": 84434,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/PrimalCO\/assets\/images\/logos\/logo10.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/themes\/PrimalCO\/assets\/images\/logos\/logo11.png": {
+		"ft": 32768,
+		"iS": 29203,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/PrimalCO\/assets\/images\/logos\/logo11.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/themes\/PrimalCO\/assets\/images\/logos\/logo2.png": {
+		"ft": 32768,
+		"iS": 105795,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/PrimalCO\/assets\/images\/logos\/logo2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/themes\/PrimalCO\/assets\/images\/logos\/logo3.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/PrimalCO\/assets\/images\/logos\/logo3.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/PrimalCO\/assets\/images\/logos\/logo4.png": {
+		"ft": 32768,
+		"iS": 27254,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/PrimalCO\/assets\/images\/logos\/logo4.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/themes\/PrimalCO\/assets\/images\/logos\/logo5.png": {
+		"ft": 32768,
+		"iS": 5777,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/PrimalCO\/assets\/images\/logos\/logo5.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/themes\/PrimalCO\/assets\/images\/logos\/logo6.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/PrimalCO\/assets\/images\/logos\/logo6.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/PrimalCO\/assets\/images\/logos\/logo7.jpg": {
+		"ft": 16384,
+		"iS": 38740,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/PrimalCO\/assets\/images\/logos\/logo7.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/PrimalCO\/assets\/images\/logos\/logo8.png": {
+		"ft": 32768,
+		"iS": 18885,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/PrimalCO\/assets\/images\/logos\/logo8.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/themes\/PrimalCO\/assets\/images\/logos\/logo9.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/PrimalCO\/assets\/images\/logos\/logo9.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/wp-content\/themes\/PrimalCO\/assets\/images\/PrimalCO.htm": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/wp-content\/themes\/PrimalCO\/assets\/images\/PrimalCO.htm",
 		"oF": 0
-		},
-	"\/wp-content\/themes\/PrimalCO\/assets\/images\/PrimalCO_files\/2269470bd8a5a3a74340a23771f47416(1).png": {
-		"ft": 32768,
-		"iS": 1163,
-		"oA": 0,
-		"oAP": "\/wp-content\/themes\/PrimalCO\/assets\/images\/PrimalCO_files\/2269470bd8a5a3a74340a23771f47416(1).png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/themes\/PrimalCO\/assets\/images\/PrimalCO_files\/2269470bd8a5a3a74340a23771f47416.png": {
-		"ft": 32768,
-		"iS": 901,
-		"oA": 0,
-		"oAP": "\/wp-content\/themes\/PrimalCO\/assets\/images\/PrimalCO_files\/2269470bd8a5a3a74340a23771f47416.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/themes\/PrimalCO\/assets\/images\/PrimalCO_files\/admin-bar.min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/wp-content\/themes\/PrimalCO\/assets\/images\/PrimalCO_files\/admin-bar.min-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/wp-content\/themes\/PrimalCO\/assets\/images\/PrimalCO_files\/admin-bar.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/wp-content\/themes\/PrimalCO\/assets\/images\/PrimalCO_files\/admin-bar.min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/wp-content\/themes\/PrimalCO\/assets\/images\/PrimalCO_files\/all.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/wp-content\/themes\/PrimalCO\/assets\/images\/PrimalCO_files\/all-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/wp-content\/themes\/PrimalCO\/assets\/images\/PrimalCO_files\/background1.jpg": {
-		"ft": 16384,
-		"iS": 160523,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/wp-content\/themes\/PrimalCO\/assets\/images\/PrimalCO_files\/background1.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/wp-content\/themes\/PrimalCO\/assets\/images\/PrimalCO_files\/css": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/wp-content\/themes\/PrimalCO\/assets\/images\/PrimalCO_files\/css",
-		"oF": 0
-		},
-	"\/wp-content\/themes\/PrimalCO\/assets\/images\/PrimalCO_files\/dashicons.min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/wp-content\/themes\/PrimalCO\/assets\/images\/PrimalCO_files\/dashicons.min-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/wp-content\/themes\/PrimalCO\/assets\/images\/PrimalCO_files\/jquery-migrate.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/wp-content\/themes\/PrimalCO\/assets\/images\/PrimalCO_files\/jquery-migrate.min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/wp-content\/themes\/PrimalCO\/assets\/images\/PrimalCO_files\/jquery.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/wp-content\/themes\/PrimalCO\/assets\/images\/PrimalCO_files\/jquery-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/wp-content\/themes\/PrimalCO\/assets\/images\/PrimalCO_files\/Logo.png": {
-		"ft": 32768,
-		"iS": 49032,
-		"oA": 0,
-		"oAP": "\/wp-content\/themes\/PrimalCO\/assets\/images\/PrimalCO_files\/Logo.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/themes\/PrimalCO\/assets\/images\/PrimalCO_files\/script.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/wp-content\/themes\/PrimalCO\/assets\/images\/PrimalCO_files\/script-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/wp-content\/themes\/PrimalCO\/assets\/images\/PrimalCO_files\/style.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/wp-content\/themes\/PrimalCO\/assets\/images\/PrimalCO_files\/style-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/wp-content\/themes\/PrimalCO\/assets\/images\/PrimalCO_files\/wp-embed.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/wp-content\/themes\/PrimalCO\/assets\/images\/PrimalCO_files\/wp-embed.min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/wp-content\/themes\/PrimalCO\/assets\/images\/PrimalCO_files\/wp-emoji-release.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/wp-content\/themes\/PrimalCO\/assets\/images\/PrimalCO_files\/wp-emoji-release.min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
 		},
 	"\/wp-content\/themes\/PrimalCO\/assets\/images\/slider_2.jpg": {
 		"ft": 16384,
@@ -7115,6 +7442,16 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/wp-content\/themes\/PrimalCO\/js\/owl-carousel\/owl.carousel.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/PrimalCO\/js\/owl-carousel\/owl.carousel.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/wp-content\/themes\/PrimalCO\/js\/script-min.js": {
 		"ft": 64,
 		"ma": 0,
@@ -7161,6 +7498,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/wp-content\/themes\/PrimalCO\/page-home.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/PrimalCO\/page-news.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/PrimalCO\/page-news.php",
 		"oF": 0
 		},
 	"\/wp-content\/themes\/PrimalCO\/page-profile.php": {
@@ -7335,6 +7679,36 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/wp-content\/themes\/PrimalCO\/stylecomponents\/owl-carousel\/owl.carousel.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/PrimalCO\/stylecomponents\/owl-carousel\/owl.carousel.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/wp-content\/themes\/PrimalCO\/stylecomponents\/owl-carousel\/owl.theme.default.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/PrimalCO\/stylecomponents\/owl-carousel\/owl.theme.default.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/wp-content\/themes\/PrimalCO\/stylecomponents\/owl-carousel\/owl.theme.green.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/PrimalCO\/stylecomponents\/owl-carousel\/owl.theme.green.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/wp-content\/themes\/PrimalCO\/stylecomponents\/profile.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -7483,11 +7857,25 @@
 		"oAP": "\/wp-content\/themes\/PrimalCO\/template-parts\/change-pass.php",
 		"oF": 0
 		},
+	"\/wp-content\/themes\/PrimalCO\/template-parts\/discord-block.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/PrimalCO\/template-parts\/discord-block.php",
+		"oF": 0
+		},
 	"\/wp-content\/themes\/PrimalCO\/template-parts\/primal-sidebar.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/wp-content\/themes\/PrimalCO\/template-parts\/primal-sidebar.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/PrimalCO\/template-parts\/technologies.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/PrimalCO\/template-parts\/technologies.php",
 		"oF": 0
 		},
 	"\/wp-content\/uploads\/2018\/05\/big_1466744641_image-1024x576.jpg": {

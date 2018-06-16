@@ -27,6 +27,66 @@ for (var i = -1, l = charInfo.length; ++i !== l; charInfoArray[i] = charInfo[i])
 window.onscroll = throttle(stickyMenu, 20); // Sticky menu scroll eventlistener with throttle.
 
 $(document).ready(function() {
+    function print_console()
+		{
+			var logo_style = [
+			    'background-color: #000'
+			    , 'border: 1px solid #030303'
+			    , 'color: #fff'
+			    , 'display: inline-block'
+			    , 'text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4)'
+			    , 'line-height: 40px'
+			    , 'text-align: center'
+			    , 'font-weight: bold'
+			    , 'padding: 10px 30px'
+			    , 'font-size: 16px'
+			    , 'border-radius: 2px'
+			].join(';');
+
+			var test = [
+			     'font-size: 8px'
+			     , 'line-height: 8px'
+			].join(';');
+
+			console.log("\n"+'%c Primal Conquer', logo_style);
+
+             console.log("Hi, thanks for taking a look here! Just FYI, the website is still not finished at this point. Quite a lot remains, but that will be fixed soon enough. It was specifically made for Primal Conquer and every single line of code is written by me. Let me know if you find any major flaws, and no: it's not mobile responsive at all :D")
+		}
+
+		print_console()
+
+    jQuery(".owl-carousel").owlCarousel({
+        responsiveClass: true,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        responsive : {
+            0:{
+            items:1,
+            nav:false
+            },
+            320:{
+            items:2,
+            nav:false
+            },
+
+            500: {
+                items: 3,
+                nav: false
+            },
+            700: {
+                items: 4,
+                nav: false
+            },
+            1000:{
+            items:5,
+            nav:false,
+            loop:true
+        }
+        },
+        items: 5,
+    });
+
     if (top.location.pathname !== '/') {
         $("html, body").animate({
             scrollTop: "830px"

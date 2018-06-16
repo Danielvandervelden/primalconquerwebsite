@@ -57,3 +57,11 @@
     margin: 0 auto;
     padding: 20px;
 }
+
+.post-overview .parallax-container {
+    overflow: auto;
+
+    .post-container {
+        margin: 20px auto;
+    }
+}

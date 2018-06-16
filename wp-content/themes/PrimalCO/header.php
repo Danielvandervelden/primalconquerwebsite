@@ -40,8 +40,14 @@ if(get_field('parallax_2')) {
     $GLOBALS['contentImage'] = get_field('parallax_2', $frontpage_id);
 
 }
-?>
 
+if(get_field('parallax_3')) {
+    $GLOBALS['contentImage2'] = get_field('parallax_3');
+} else {
+    $GLOBALS['contentImage2'] = get_field('parallax_3', $frontpage_id);
+
+}
+?>
 
 <html lang="en">
 
@@ -74,13 +80,11 @@ if(get_field('parallax_2')) {
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Server</a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="<?php echo site_url('/news') ?>">News</a>
                                     <a class="dropdown-item" href="<?php echo site_url('/downloads') ?>">Downloads</a>
                                     <a class="dropdown-item" href="<?php echo site_url('/rules') ?>">Rules</a>
                                     <a class="dropdown-item" href="<?php echo site_url('/changelog') ?>">Changelog</a>
                                 </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="<?php echo site_url('/support') ?>">Support</a>
                             </li>
                         </ul>
                     </div>

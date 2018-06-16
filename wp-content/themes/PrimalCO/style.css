@@ -328,7 +328,13 @@ body {
   position: relative; }
 
 a {
-  cursor: pointer; }
+  cursor: pointer;
+  text-shadow: 1px 1px 3px transparent;
+  transition: all .3s; }
+  a:hover {
+    text-decoration: none !important;
+    color: black !important;
+    text-shadow: 1px 1px 3px #FFF; }
 
 .content-wrapper {
   position: relative; }
@@ -357,7 +363,7 @@ a {
 */
 .website-container {
   position: relative;
-  padding-bottom: 50px;
+  padding-bottom: 216px;
   width: 100%; }
 
 .parallax-container {
@@ -368,7 +374,8 @@ a {
   background-position: top center; }
 
 .whitebar {
-  max-height: 200px; }
+  max-height: 200px;
+  height: 100%; }
 
 /*
 |------------------------------------------------------------
@@ -386,6 +393,16 @@ a {
 
 .hl {
   font-size: 3.5rem; }
+
+.hxxl {
+  font-size: 9rem; }
+
+.block-title {
+  width: 342px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 140px; }
 
 .t-shadow {
   text-shadow: 1px 1px 3px #000; }
@@ -409,6 +426,9 @@ a {
 
 .green {
   color: #7CFC00; }
+
+.gray-bg {
+  background-color: #333333; }
 
 /*
 |------------------------------------------------------------
@@ -523,6 +543,16 @@ a {
     color: green; }
   .message.error {
     color: red; }
+
+/*
+ |------------------------------------------------------------
+ | Images
+ |------------------------------------------------------------
+ */
+.carousel-image {
+  width: auto !important;
+  max-height: 100px;
+  margin: 0 auto; }
 
 /*
 |------------------------------------------------------------
@@ -688,6 +718,11 @@ a {
   margin: 0 auto;
   padding: 20px; }
 
+.post-overview .parallax-container {
+  overflow: auto; }
+  .post-overview .parallax-container .post-container {
+    margin: 20px auto; }
+
 /*
 |------------------------------------------------------------
 | All homepage styles
@@ -704,10 +739,26 @@ footer {
   width: 100%;
   color: grey;
   position: absolute;
-  bottom: 0; }
+  bottom: 0;
+  text-align: center; }
   footer p {
     line-height: 40px;
     text-align: center; }
+  footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    footer ul li {
+      margin: 0;
+      padding: 0; }
+      footer ul li a {
+        color: #d0d0d0; }
+        footer ul li a:hover {
+          color: white !important;
+          text-shadow: none !important; }
+
+#wp-discord {
+  margin: 40px auto; }
 
 /*
 |------------------------------------------------------------
@@ -890,7 +941,8 @@ footer {
 */
 .rules .single-post-container,
 .changelog .single-post-container,
-.profile .single-post-container {
+.profile .single-post-container,
+.single .single-post-container {
   align-self: center;
   max-height: 600px;
   height: 100%;

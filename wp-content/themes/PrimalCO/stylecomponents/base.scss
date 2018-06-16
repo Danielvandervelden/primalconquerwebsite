@@ -17,6 +17,14 @@ body {
 
 a {
     cursor: pointer;
+    text-shadow: 1px 1px 3px transparent;
+    transition: all .3s;
+
+    &:hover {
+        text-decoration: none !important;
+        color: black !important;
+        text-shadow: 1px 1px 3px #FFF;
+    }
 }
 
 .content-wrapper {
@@ -52,7 +60,7 @@ a {
 
 .website-container {
     position: relative;
-    padding-bottom: 50px; // reserve space for absolute positioned footer.
+    padding-bottom: 216px; // reserve space for absolute positioned footer.
     width: 100%;
 }
 
@@ -66,6 +74,7 @@ a {
 
 .whitebar {
     max-height: 200px;
+    height: 100%;
 }
 
 /*
@@ -88,6 +97,18 @@ a {
 
 .hl {
     font-size: 3.5rem;
+}
+
+.hxxl {
+    font-size: 9rem;
+}
+
+.block-title {
+    width: 342px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 140px;
 }
 
 .t-shadow {
@@ -118,6 +139,10 @@ a {
 
 .green {
     color: $green;
+}
+
+.gray-bg {
+    background-color: lighten(#000, 20%);
 }
 
 /*
@@ -265,4 +290,16 @@ a {
      &.error {
          color: red;
      }
+ }
+
+ /*
+ |------------------------------------------------------------
+ | Images
+ |------------------------------------------------------------
+ */
+
+ .carousel-image {
+     width: auto !important;
+     max-height: 100px;
+     margin: 0 auto;
  }
