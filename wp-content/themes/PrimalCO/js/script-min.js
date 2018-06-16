@@ -89,7 +89,7 @@ $(document).ready(function() {
 
     if (top.location.pathname !== '/') {
         $("html, body").animate({
-            scrollTop: "830px"
+            scrollTop: "1200px"
         });
     }
 });
@@ -109,7 +109,7 @@ function stickyMenu() {
 
 function fixMessage() {
     if ($('.message').length > 0) {
-        $('.message').appendTo('.header-container');
+        $('.message').prependTo('main');
     } else if (counter < 20) {
         setTimeout(fixMessage, 200);
         counter++;
