@@ -7196,7 +7196,7 @@
 		},
 	"\/wp-content\/themes\/PrimalCO\/assets\/images\/logo.png": {
 		"ft": 32768,
-		"iS": 268027,
+		"iS": 281283,
 		"oA": 0,
 		"oAP": "\/wp-content\/themes\/PrimalCO\/assets\/images\/logo.png",
 		"oF": 0,
@@ -7205,15 +7205,15 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/wp-content\/themes\/PrimalCO\/assets\/images\/logos\/logo1.jpg": {
-		"ft": 16384,
-		"iS": 33163,
-		"jF": 0,
+	"\/wp-content\/themes\/PrimalCO\/assets\/images\/logos\/logo1.png": {
+		"ft": 32768,
+		"iS": 141930,
 		"oA": 0,
-		"oAP": "\/wp-content\/themes\/PrimalCO\/assets\/images\/logos\/logo1.jpg",
+		"oAP": "\/wp-content\/themes\/PrimalCO\/assets\/images\/logos\/logo1.png",
 		"oF": 0,
-		"oIPL": 0,
+		"oIPL": 1,
 		"opt": 1,
+		"oT": 1,
 		"q": 100
 		},
 	"\/wp-content\/themes\/PrimalCO\/assets\/images\/logos\/logo10.png": {
@@ -7276,8 +7276,8 @@
 		"oA": 0,
 		"oAP": "\/wp-content\/themes\/PrimalCO\/assets\/images\/logos\/logo5.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},

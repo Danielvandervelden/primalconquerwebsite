@@ -8,7 +8,7 @@
 <div class="flex evenly flex-column">
 <?php if($loggedin) { ?>
 
-    <div class="full-width spacing-top spacing-bottom three-cols flex evenly flex-column faded-white-bg">
+    <div class="needs-more-space full-width spacing-top spacing-bottom three-cols flex evenly flex-column faded-white-bg">
     <h2 class="center hl">Welcome <?php echo $username ?>!</h2>
 
     <div class="center">

@@ -768,6 +768,9 @@ main {
 | All homepage styles
 |------------------------------------------------------------
 */
+.needs-more-space {
+  margin-top: 50px; }
+
 .why-us-container {
   max-width: 800px; }
   .why-us-container h2 {
@@ -776,7 +779,7 @@ main {
       content: '';
       width: 100%;
       height: 1px;
-      background-color: rgba(0, 0, 0, 0.4);
+      background-color: #FFF;
       position: absolute;
       bottom: 0;
       left: 50%;
@@ -947,7 +950,9 @@ footer {
   padding-left: 20px;
   padding-right: 20px;
   position: relative;
-  box-shadow: 3px 3px 20px #000; }
+  box-shadow: 3px 3px 20px #000;
+  background-color: #191919;
+  color: #FFF; }
   .whitebar-container .three-cols {
     position: relative; }
     .whitebar-container .three-cols button {
@@ -981,7 +986,9 @@ footer {
     margin-bottom: 30px; }
 
 .whitebar-large {
-  min-height: 450px; }
+  min-height: 450px;
+  background-color: #191919;
+  color: #FFF; }
 
 /*
 |------------------------------------------------------------
@@ -1053,16 +1060,6 @@ footer {
   align-self: center;
   max-height: 600px;
   height: 100%;
-  overflow: scroll;
-  max-width: 800px;
-  background-color: rgba(255, 255, 255, 0.6);
-  margin: 0 auto;
-  padding: 20px; }
-
-.profile .single-post-container {
-  align-self: center;
-  max-height: 600px;
-  height: auto;
   overflow: scroll;
   max-width: 800px;
   background-color: rgba(255, 255, 255, 0.6);
