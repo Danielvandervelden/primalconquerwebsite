@@ -1,0 +1,322 @@
+/*
+|------------------------------------------------------------
+| Base styles that are used accross the entire website.
+|------------------------------------------------------------
+*/
+
+/*
+|------------------------------------------------------------
+| COLORS
+|------------------------------------------------------------
+*/
+
+$color_1: #ff6666;
+$color_2: #4848ff;
+$color_3: #56eb56;
+$color_4: rgba(24, 45, 54, 1);
+$color_5: rgba(179, 204, 210, 1);
+$color_6: rgba(10, 21, 24, 1);
+
+$white: #FFF;
+$black: #000;
+
+
+
+.white {
+    color: $white;
+}
+
+.red {
+    color: $color_1;
+}
+
+.black {
+    color: $black;
+}
+
+.blue {
+    color: $color_2;
+}
+
+.green {
+    color: $color_3;
+}
+
+.faded-black-bg {
+    background-color: rgba($black, .6);
+}
+
+
+
+html, body {
+    font-size: 62.5%; // setting all font-size everywhere to 10px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgba(179, 204, 210, 1);
+}
+
+a {
+    color: $color_1;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        color: darken($color_1, 20%);
+    }
+}
+
+/*
+|------------------------------------------------------------
+| FLEXBOX GRID
+|------------------------------------------------------------
+*/
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-row-column {
+    flex-direction: row;
+}
+
+@media screen and (max-width: 768px) {
+    .flex-row-column {
+        flex-direction: column;
+    }
+}
+
+.flex-10 {
+    flex: 0 1 10%;
+}
+
+.flex-20 {
+    flex: 0 1 20%;
+}
+
+.flex-25 {
+    flex: 0 1 25%;
+}
+
+.flex-30 {
+    flex: 0 1 30%;
+}
+
+.flex-33 {
+    flex: 0 1 33%;
+}
+
+.flex-40 {
+    flex: 0 1 40%;
+}
+
+.flex-50 {
+    flex: 0 1 50%;
+}
+
+.flex-60 {
+    flex: 0 1 60%;
+}
+
+.flex-70 {
+    flex: 0 1 70%;
+}
+
+.flex-75 {
+    flex: 0 1 75%;
+}
+
+.flex-80 {
+    flex: 0 1 80%;
+}
+
+.flex-90 {
+    flex: 0 1 90%;
+}
+
+.flex-100 {
+    flex: 0 1 100%;
+}
+
+.j-center {
+    justify-content: center;
+}
+
+.j-evenly {
+    justify-content: space-evenly;
+}
+
+.j-around {
+    justify-content: space-around;
+}
+
+.j-between {
+    justify-content: space-between;
+}
+
+.align-top {
+    align-content: flex-start;
+}
+
+.align-center {
+    align-content: center;
+}
+
+.align-bottom {
+    align-content: flex-end;
+}
+
+/*
+|------------------------------------------------------------
+| Headings
+|------------------------------------------------------------
+*/
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.center {
+    text-align: center;
+}
+
+.hs {
+    font-size: 2.2rem;
+}
+
+.hm {
+    font-size: 2.7rem;
+}
+
+.hl {
+    font-size: 3.5rem;
+}
+
+.hxl {
+    font-size: 5.5rem;
+}
+
+.hxxl {
+    font-size: 7rem;
+}
+
+/*
+|------------------------------------------------------------
+| Positioning
+|------------------------------------------------------------
+*/
+
+.margin-center {
+    margin: 0 auto;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+.fixed {
+    position: fixed;
+}
+
+/*
+|------------------------------------------------------------
+| Spacing
+|------------------------------------------------------------
+*/
+
+.spacing-top {
+    margin-top: 15px
+}
+
+.spacing-right {
+    margin-right: 15px
+}
+
+.spacing-bottom {
+    margin-bottom: 15px
+}
+
+.spacing-left {
+    margin-left: 15px
+}
+
+.padding-top {
+    padding-top: 15px;
+}
+
+.padding-right {
+    padding-right: 15px;
+}
+
+.padding-bottom {
+    padding-bottom: 15px;
+}
+
+.padding-left {
+    padding-left: 15px;
+}
+
+/*
+|------------------------------------------------------------
+| Floats
+|------------------------------------------------------------
+*/
+
+.float-l {
+    float: left;
+}
+
+.float-r {
+    float: right;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*
+|------------------------------------------------------------
+| Containers
+|------------------------------------------------------------
+*/
+
+.website-container {
+    font-size: 1.5rem;
+}
+
+.blackbar-container {
+    background-color: $color_4;
+    box-shadow: -2px 3px 10px #000;
+}
+
+.technologies-container {
+    height: 200px;
+    background-color: lighten($color_5, 10%);
+}
+
+ /*
+ |------------------------------------------------------------
+ | Images
+ |------------------------------------------------------------
+ */
+
+ .carousel-image {
+     width: auto !important;
+     max-height: 100px;
+     margin: 0 auto;
+ }

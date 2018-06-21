@@ -1,0 +1,17 @@
+/*
+ Theme Name:   PrimalCO-new
+ Author:       Daniel van der Velden
+ Version:      2.0.0
+ Tags:         Conquer Online 1.0, PrimalCO, CO 1.0, ClassicCO
+*/
+
+@import 'normalize';                    // Make everything the same cross browser.
+@import 'base';                         // Cuz we need a base...
+@import 'animations';                   // Cuz we need animations.
+@import 'buttons';                      // All styles for buttons.
+@import 'forms';
+
+@import 'header';                       // Styles for header.
+@import 'why-us';                       // Styles for why us container.
+@import 'footer';                       // Styles for footer
+@import 'homepage';                     // Styles for homepage
