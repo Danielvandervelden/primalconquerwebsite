@@ -122,9 +122,15 @@
 
         .dropdown-menu {
             display: none;
+            margin-top: 10px;
 
             a:after {
                 display: none;
+            }
+
+            a {
+                padding: 10px 0;
+                display:block;
             }
         }
     }

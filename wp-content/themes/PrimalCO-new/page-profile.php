@@ -40,7 +40,7 @@ return (Empty($magic1) ? '' : 'None');
     <main>
      <div class="parallax-container flex" style="background-image: url('<?php echo $GLOBALS['contentImage'] ?>');">
 
-     <div class="single-post-container one-col">
+     <div class="single-post-container flex-100">
        <?php if($loggedin) { ?>
         
         <div class="tab-container">

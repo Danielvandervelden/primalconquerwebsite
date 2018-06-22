@@ -11,14 +11,14 @@ $client = new WP_Query(array(
     <main>
          <div class="parallax-container flex evenly flex-column" style="background-image: url('<?php echo $GLOBALS['contentImage'] ?>');">
 
-         <div class="clients two-cols">
+         <div class="clients flex-50">
         <h2 class="center hm t-shadow white">Client Downloads</h2>
         <table class="table">
             <thead>
                 <tr class="flex between center">
-                    <th class="three-cols" scope="col">Name</th>
-                    <th class="three-cols" scope="col">Version</th>
-                    <th class="three-cols" scope="col">Download</th>
+                    <th class="flex-30" scope="col">Name</th>
+                    <th class="flex-30" scope="col">Version</th>
+                    <th class="flex-30" scope="col">Download</th>
                 </tr>
             </thead>
             <tbody>
@@ -32,9 +32,9 @@ $client = new WP_Query(array(
                  if($clientorpatch === 'Client') { 
                   ?>
                     <tr class="flex flex-row between center">
-                        <td class="three-cols"><?php the_field('name') ?></td>
-                        <td class="three-cols"><?php the_field('version') ?></td>
-                        <td class="three-cols"><a href="<?php the_field('download_link') ?>">Download</a></td>
+                        <td class="flex-30"><?php the_field('name') ?></td>
+                        <td class="flex-30"><?php the_field('version') ?></td>
+                        <td class="flex-30"><a href="<?php the_field('download_link') ?>">Download</a></td>
                     </tr>
                     <?php   } // end while ?>
                     <?php   } wp_reset_postdata(); // end while ?>
@@ -43,13 +43,13 @@ $client = new WP_Query(array(
         </table>
         </div>
 
-        <div class="patches two-cols">
+        <div class="patches flex-50">
         <h2 class="center hm t-shadow white">Patches Downloads</h2>
         <table class="table last">
             <thead>
                 <tr class="flex between flex-row center">
-                    <th class="two-cols" scope="col">Patch Number</th>
-                    <th class="two-cols" scope="col">Download</th>
+                    <th class="flex-50" scope="col">Patch Number</th>
+                    <th class="flex-50" scope="col">Download</th>
                 </tr>
             </thead>
             <tbody>
@@ -63,8 +63,8 @@ $client = new WP_Query(array(
                  if($clientorpatch === 'Patch') { 
                   ?>
                     <tr class="flex flex-row between center">
-                        <td class="two-cols"><?php the_field('name') ?></td>
-                        <td class="two-cols"><a href="<?php the_field('download_link') ?>">Download</a></td>
+                        <td class="flex-50"><?php the_field('name') ?></td>
+                        <td class="flex-50"><a href="<?php the_field('download_link') ?>">Download</a></td>
                     </tr>
                     <?php   } // end while ?>
                     <?php   } wp_reset_postdata(); // end while ?>

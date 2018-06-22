@@ -530,6 +530,10 @@ a {
   height: 200px;
   background-color: #d3e1e5; }
 
+main {
+  max-width: 1000px;
+  margin: 0 auto; }
+
 /*
  |------------------------------------------------------------
  | Images
@@ -539,6 +543,25 @@ a {
   width: auto !important;
   max-height: 100px;
   margin: 0 auto; }
+
+.message {
+  text-align: center;
+  font-weight: bold;
+  width: 700px;
+  height: 30px;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  left: 0;
+  background-color: #FFF; }
+  .message.success {
+    color: green;
+    text-shadow: 1px 1px 3px #FFF; }
+  .message.error {
+    color: red;
+    text-shadow: 1px 1px 3px #FFF; }
 
 /* ==================================================================================
 ALL CSS FOR ANIMATIONS
@@ -812,9 +835,13 @@ form {
         .main-menu .main-menu-item .inner-menu .inner-menu-item:hover a {
           color: #ff6666; }
     .main-menu .main-menu-item .dropdown-menu {
-      display: none; }
+      display: none;
+      margin-top: 10px; }
       .main-menu .main-menu-item .dropdown-menu a:after {
         display: none; }
+      .main-menu .main-menu-item .dropdown-menu a {
+        padding: 10px 0;
+        display: block; }
   .main-menu .main-menu-item:hover a {
     color: #ff6666; }
   .main-menu .main-menu-item.dropdown:hover a:after {
@@ -961,3 +988,201 @@ footer {
   line-height: 35px;
   color: #FFF;
   text-decoration: none; }
+
+/*
+|------------------------------------------------------------
+| All styles for blog posts etc.
+|------------------------------------------------------------
+*/
+.pagination {
+  text-align: center;
+  position: relative;
+  max-width: 300px;
+  margin: 10px auto; }
+  .pagination .prev,
+  .pagination .next {
+    font-size: 3rem;
+    position: absolute;
+    top: 5px; }
+  .pagination .prev {
+    left: 0; }
+  .pagination .next {
+    right: 0; }
+  .pagination a {
+    text-decoration: none;
+    margin: 0 10px;
+    line-height: 40px; }
+  .pagination span {
+    border-radius: 50%;
+    width: 30px;
+    line-height: 30px;
+    height: 30px;
+    display: inline-block;
+    margin: 0 10px; }
+    .pagination span.current {
+      background-color: #ff6666;
+      color: #FFF; }
+
+.post-container {
+  max-width: 600px;
+  margin: 10px auto;
+  min-height: 200px;
+  position: relative; }
+  .post-container.news .featured-image {
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 150px;
+    background-size: cover;
+    background-position: center center;
+    margin-right: 20px; }
+  .post-container.news:after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.5); }
+
+/*
+|------------------------------------------------------------
+| Sidebar styles
+|------------------------------------------------------------
+*/
+.sidebar {
+  position: relative; }
+  .sidebar:before {
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background-color: rgba(0, 0, 0, 0.4);
+    content: '';
+    top: 53%;
+    left: -20px;
+    transform: translateY(-50%); }
+
+@media (max-width: 768px) {
+  .sidebar {
+    position: relative; }
+    .sidebar:before {
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: rgba(0, 0, 0, 0.4);
+      content: '';
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%); } }
+
+/*
+|------------------------------------------------------------
+| Styling for downloads page
+|------------------------------------------------------------
+*/
+.downloads .clients,
+.downloads .patches {
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%; }
+
+.downloads table {
+  max-height: 30%;
+  height: 30%;
+  overflow-y: auto;
+  width: 100%;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.7); }
+  .downloads table thead {
+    width: 100%;
+    display: inline-block;
+    background-color: #212529;
+    color: #FFF; }
+  .downloads table tbody {
+    width: 100%;
+    display: inline-block; }
+  .downloads table tr {
+    max-height: 40px;
+    width: 100%; }
+  .downloads table td {
+    width: 32%;
+    display: inline-block; }
+  .downloads table th {
+    display: inline-block;
+    border-top: 0;
+    border-bottom: 0 !important; }
+
+.downloads .table.last thead {
+  width: 100%;
+  display: inline-block; }
+
+.downloads .table.last tbody {
+  width: 100%;
+  display: inline-block; }
+
+.downloads .table.last tr {
+  max-height: 40px;
+  width: 100%; }
+
+.downloads .table.last th {
+  width: 49%;
+  display: inline-block; }
+
+/*
+|------------------------------------------------------------
+| All styles for profile page
+|------------------------------------------------------------
+*/
+.main-content-container.profile {
+  position: relative; }
+  .main-content-container.profile .active {
+    background-color: #ffcccc !important; }
+  .main-content-container.profile .active-tab {
+    display: block !important; }
+  .main-content-container.profile .tab {
+    display: none; }
+  .main-content-container.profile .tab-container {
+    margin: 20px 0 20px 0; }
+    .main-content-container.profile .tab-container .selection-menu {
+      overflow: auto; }
+      .main-content-container.profile .tab-container .selection-menu ul {
+        overflow: hidden;
+        height: 50px;
+        text-align: center;
+        padding: 0; }
+        .main-content-container.profile .tab-container .selection-menu ul li {
+          display: block;
+          float: left;
+          width: 33%;
+          line-height: 50px;
+          background-color: #ff6666;
+          color: white; }
+          .main-content-container.profile .tab-container .selection-menu ul li:hover {
+            background-color: #ff9999; }
+  .main-content-container.profile .char-info {
+    display: none; }
+  .main-content-container.profile .display {
+    display: block !important; }
+  .main-content-container.profile .tab.characters.active-tab {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between; }
+    .main-content-container.profile .tab.characters.active-tab .left-div-tabcontainer {
+      flex: 0 1 25%; }
+      .main-content-container.profile .tab.characters.active-tab .left-div-tabcontainer ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+        font-size: 1.7rem; }
+        .main-content-container.profile .tab.characters.active-tab .left-div-tabcontainer ul li {
+          height: 40px;
+          line-height: 40px;
+          cursor: pointer;
+          background-color: #ff6666;
+          color: #FFF; }
+          .main-content-container.profile .tab.characters.active-tab .left-div-tabcontainer ul li:hover {
+            background-color: #ff9999; }
+    .main-content-container.profile .tab.characters.active-tab .right-div-tabcontainer {
+      flex: 0 1 70%;
+      margin: 10px 20px; }
+
+.main-content-container.profile {
+  min-height: 400px; }

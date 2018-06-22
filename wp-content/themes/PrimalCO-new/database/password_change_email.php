@@ -16,11 +16,11 @@ function randomString($length = 20) {
 }
 
 if ($newPassword !== $newPassword2) {
-    echo "<div class='message error'>
+    echo "<div class='message from-top error'>
             <p>Your new passwords don't match!</p>
         </div>";
 } else if($_SESSION["usernameParam"] !== $username) { 
-    echo "<div class='message error'>
+    echo "<div class='message from-top error'>
             <p>Sorry, but you failed to fuck with us :)</p>
         </div>";
 
@@ -33,11 +33,11 @@ if ($newPassword !== $newPassword2) {
     mysqli_query($mysqli, $changehash);
 
     if (mysqli_query($mysqli, $sql)) {
-        echo "<div class='message success'>
+        echo "<div class='message from-top success'>
         <p>Your password has been changed!</p>
     </div>";
     } else {
-        echo "<div class='message error'><p>Failed for some reason</p></div>";
+        echo "<div class='message from-top error'><p>Failed for some reason</p></div>";
     }
 
 }

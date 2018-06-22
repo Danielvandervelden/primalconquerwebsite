@@ -19,5 +19,5 @@
                 <input name="password" class="form-control" type="password" placeholder="Confirm your new password" value="<?php echo $email ?>">
             </div>
 
-            <button name="email_change" type="submit" class="btn btn-primary">Change Password</button>
+            <button name="email_change" type="submit" class="btn btn-primary">Change Email</button>
         </form>

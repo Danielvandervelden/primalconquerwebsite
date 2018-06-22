@@ -11,15 +11,15 @@ $newPassword = $mysqli->escape_string($_POST['new-password']);
 $newPassword2 = $mysqli->escape_string($_POST['new-password2']);
 
 if ($password !== $passwordDatabase) {
-    echo "<div class='message error'>
+    echo "<div class='message from-top error'>
             <p>The current password you entered is wrong!</p>
         </div>";
 } else if ($newPassword !== $newPassword2) {
-    echo "<div class='message error'>
+    echo "<div class='message from-top error'>
             <p>Your new passwords don't match!</p>
         </div>";
 } else if ($usernameForm !== $username) {
-    echo "<div class='message error'>
+    echo "<div class='message from-top error'>
             <p>Your username is incorrect!</p>
         </div>";
 } else {
@@ -27,11 +27,11 @@ if ($password !== $passwordDatabase) {
     $sql = "UPDATE accounts SET Password='$newPassword' WHERE Username='$usernameForm'";
 
     if (mysqli_query($mysqli, $sql)) {
-        echo "<div class='message success'>
+        echo "<div class='message from-top success'>
         <p>Your password has been changed!</p>
     </div>";
     } else {
-        echo "<div class='message error'><p>Failed for some reason</p></div>";
+        echo "<div class='message from-top error'><p>Failed for some reason</p></div>";
     }
 
 }

@@ -16,7 +16,7 @@ function randomString($length = 20) {
 
 if($result->num_rows == 0) {//if user doesn't exist.. 
 
-    $_SESSION['message'] = "<div class='message error'>User with that username does not exist/div>";
+    $_SESSION['message'] = "<div class='message from-top error'>User with that username does not exist/div>";
 
 } else { // user exists
     $user = $result->fetch_assoc();
@@ -34,6 +34,6 @@ if($result->num_rows == 0) {//if user doesn't exist..
 
         $_SESSION['logged-in'] = true;
     } else {
-        echo "<div class='message error'>WRONG PASSWORD BRAH</div>";
+        echo "<div class='message from-top error'>WRONG PASSWORD BRAH</div>";
     }
 }

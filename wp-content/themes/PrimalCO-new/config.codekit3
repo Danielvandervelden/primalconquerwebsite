@@ -427,6 +427,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/styles\/blog.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/styles\/blog.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/styles\/buttons.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -436,6 +449,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/styles\/buttons.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/styles\/download.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/styles\/download.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -534,6 +560,32 @@
 		"oAP": "\/styles\/owl-carousel\/owl.theme.green.min-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"\/styles\/profile.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/styles\/profile.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/styles\/sidebar.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/styles\/sidebar.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
 		},
 	"\/styles\/style.scss": {
 		"aP": 0,

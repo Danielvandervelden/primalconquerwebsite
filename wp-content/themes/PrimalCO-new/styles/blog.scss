@@ -1,0 +1,75 @@
+/*
+|------------------------------------------------------------
+| All styles for blog posts etc.
+|------------------------------------------------------------
+*/
+
+.pagination {
+    text-align: center;
+    position: relative;
+    max-width: 300px;
+    margin: 10px auto;
+
+    .prev,
+    .next {
+        font-size: 3rem;
+        position: absolute;
+        top: 5px;
+    }
+
+    .prev {
+        left: 0;
+    }
+
+    .next {
+        right: 0;
+    }
+
+    a {
+        text-decoration: none;
+        margin: 0 10px;
+        line-height: 40px;
+    }
+
+    span {
+        border-radius: 50%;
+        width: 30px;
+        line-height: 30px;
+        height: 30px;
+        display: inline-block;
+        margin: 0 10px;
+
+        &.current {
+            background-color: $color_1;
+            color: #FFF;
+        }
+    }
+}
+
+.post-container {
+    max-width: 600px;
+    margin: 10px auto;
+    min-height: 200px;
+    position: relative;
+
+    &.news {
+
+    .featured-image {
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 150px;
+        background-size: cover;
+        background-position: center center;
+        margin-right: 20px;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        width: 100%;
+        height: 1px;
+        background-color: rgba(0, 0, 0, .5);
+    }
+}
+}

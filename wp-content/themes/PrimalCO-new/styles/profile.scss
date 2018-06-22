@@ -1,0 +1,94 @@
+/*
+|------------------------------------------------------------
+| All styles for profile page
+|------------------------------------------------------------
+*/
+
+.main-content-container.profile {
+    position: relative;
+
+    .active {
+        background-color: lighten($color_1, 20%) !important;
+
+    }
+
+    .active-tab {
+        display: block !important;
+    }
+
+    .tab {
+        display: none;
+    }
+
+    .tab-container {
+        margin: 20px 0 20px 0;
+        .selection-menu {
+            overflow: auto;
+            ul {
+                overflow: hidden;
+                height: 50px;
+                text-align: center;
+                padding: 0;
+                li {
+                    display: block;
+                    float: left;
+                    width: 33%;
+                    line-height: 50px;
+                    background-color: $color_1;
+                    color: white;
+
+                    &:hover {
+                        background-color: lighten($color_1, 10%);
+
+                    }
+                }
+            }
+        }
+    }
+
+    .char-info {
+        display: none;
+    }
+
+    .display {
+        display: block !important;
+    }
+
+    .tab.characters.active-tab {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .left-div-tabcontainer {
+            flex: 0 1 25%;
+
+            ul {
+                list-style: none;
+                padding: 0;
+                text-align: center;
+                font-size: 1.7rem;
+
+                li {
+                    height: 40px;
+                    line-height: 40px;
+                    cursor: pointer;
+                    background-color: $color_1;
+                    color: #FFF;
+
+                    &:hover {
+                        background-color: lighten($color_1, 10%);
+                    }
+                }
+            }
+        }
+        .right-div-tabcontainer {
+            flex: 0 1 70%;
+            margin: 10px 20px;
+        }
+
+    }
+
+}
+.main-content-container.profile {
+    min-height: 400px;
+}

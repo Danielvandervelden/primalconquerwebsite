@@ -309,6 +309,11 @@ a {
     background-color: lighten($color_5, 10%);
 }
 
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
  /*
  |------------------------------------------------------------
  | Images
@@ -320,3 +325,27 @@ a {
      max-height: 100px;
      margin: 0 auto;
  }
+
+.message {
+    text-align: center;
+    font-weight: bold;
+    width: 700px;
+    height: 30px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    left: 0;
+    background-color: #FFF;
+
+    &.success {
+        color: green;
+        text-shadow: 1px 1px 3px #FFF;
+    }
+
+    &.error {
+        color: red;
+        text-shadow: 1px 1px 3px #FFF;
+    }
+}
