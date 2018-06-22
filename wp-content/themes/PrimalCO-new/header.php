@@ -66,6 +66,9 @@ if($logged_in) {
                             </li>
                         </ul>
                     </li>
+                    <li class="flex-20 main-menu-item center">
+                        <a href="<?php echo site_url('/support') ?>">Support</a>
+                    </li>
         <?php if (!$_SESSION['logged-in']) {?>
                     <li class="flex-20 main-menu-item dropdown center">
                         <a href="#">Login</a>
@@ -95,9 +98,6 @@ if($logged_in) {
                         </div>
                     </li>
                     <?php }?>
-                    <li class="flex-20 main-menu-item center">
-                        <a href="<?php echo site_url('/support') ?>">Support</a>
-                    </li>
                 </ul>
             </nav>
             </div>

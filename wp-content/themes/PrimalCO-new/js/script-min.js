@@ -108,6 +108,34 @@ charArray.forEach(function(char) {
 });
 
 $(document).ready(function() {
+    function print_console()
+		{
+			var logo_style = [
+			    'background-color: #000'
+			    , 'border: 1px solid #030303'
+			    , 'color: #fff'
+			    , 'display: inline-block'
+			    , 'text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4)'
+			    , 'line-height: 40px'
+			    , 'text-align: center'
+			    , 'font-weight: bold'
+			    , 'padding: 10px 30px'
+			    , 'font-size: 16px'
+			    , 'border-radius: 2px'
+			].join(';');
+
+			var test = [
+			     'font-size: 8px'
+			     , 'line-height: 8px'
+			].join(';');
+
+			console.log("\n"+'%c Primal Conquer', logo_style);
+
+             console.log("Hi, thanks for taking a look here! Just FYI, the website is still not finished at this point. Quite a lot remains, but that will be fixed soon enough. It was specifically made for Primal Conquer and every single line of code is written by me. Tech used: Wordpress, MYSQL, PHP, Javascript & jQuery and Sass. Yes, everything should be safe af, Spirited. Let me know if you find any major flaws.")
+		}
+
+		print_console()
+
     if($('.message').length > 0) {
         setTimeout(function() {
             $('.message').removeClass('from-top');
