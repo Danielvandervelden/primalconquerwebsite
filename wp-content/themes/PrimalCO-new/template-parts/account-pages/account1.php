@@ -1,28 +1,28 @@
-<table class="table">
+<div class="table">
     <?php  if($acca === NULL) {
         echo "You have no characters yet!";
             } else { ?>
-            <tr>
-                <td>AccountName:</td>
-                <td><?php echo $acca["Name"]; ?></td>
-            </tr>
-            <tr>
-                <td>Total Silver:</td>
-                <td><?php echo $acca["Money"]; ?></td>
-            </tr>
-            <tr>
-                <td>Account Status</td>
-                <td><?php 
+            <div class="row">
+                <div class="cell">AccountName:</div>
+                <div class="cell"><?php echo $acca["Name"]; ?></div>
+            </div>
+            <div class="row">
+                <div class="cell">Total Silver:</div>
+                <div class="cell"><?php echo $acca["Money"]; ?></div>
+            </div>
+            <div class="row">
+                <div class="cell">Account Status:</div>
+                <div class="cell"><?php 
                 if($acca['Online'] === 1) {
                     echo "Online";
                     } else {
                     echo "Offline";
-                    } ?></td>
-            </tr>
-            <tr>
-                <td>Sex</td>
-                <td><?php echo Sex($acca['Body']); ?></td>
-            </tr>
+                    } ?></div>
+            </div>
+            <div class="row">
+                <div class="cell">Sex:</div>
+                <div class="cell"><?php echo Sex($acca['Body']); ?></div>
+            </div>
             <?php    } ?>
     
-</table>
+</div>

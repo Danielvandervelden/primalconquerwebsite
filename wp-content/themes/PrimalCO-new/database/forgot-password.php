@@ -68,7 +68,7 @@ if($user['Email'] === $userEmail) {
 if (!$mail->send()) {
     echo "Mailer Error: " . $mail->ErrorInfo;
 } else {
-    echo "<div class='message success'>If the username and email match, an email will be sent to you!</div>";
+    echo "<div class='full-opacity faded-black-bg notice flex align-center j-center'><div class='message success flex-40'><i class='fa fa-window-close' aria-hidden='true'></i><p>If the username and email match, an email will be sent to you!</p></div></div>";
     //Section 2: IMAP
     //Uncomment these to save your message in the 'Sent Mail' folder.
     #if (save_mail($mail)) {
@@ -76,5 +76,5 @@ if (!$mail->send()) {
     #}
 }
 } else { 
-    echo "<div class='message success'>If the username and email match, an email will be sent to you!</div>";
+    echo "<div class='full-opacity faded-black-bg notice flex align-center j-center'><div class='message success flex-40'><i class='fa fa-window-close' aria-hidden='true'></i><p>If the username and email match, an email will be sent to you!</p></div></div>";
  } ?>

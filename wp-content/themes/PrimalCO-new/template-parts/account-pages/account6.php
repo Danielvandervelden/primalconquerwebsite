@@ -1,23 +1,23 @@
-<table class="table">
-            <tr>
-                <td>AccountName:</td>
-                <td><?php echo $acca6["Name"]; ?></td>
-            </tr>
-            <tr>
-                <td>Total Silver:</td>
-                <td><?php echo $acca6["Money"]; ?></td>
-            </tr>
-            <tr>
-                <td>Account Status</td>
-                <td><?php 
+<div class="table">
+            <div class="row">
+                <div class="cell">AccountName:</div>
+                <div class="cell"><?php echo $acca6["Name"]; ?></div>
+            </div>
+            <div class="row">
+                <div class="cell">Total Silver:</div>
+                <div class="cell"><?php echo $acca6["Money"]; ?></div>
+            </div>
+            <div class="row">
+                <div class="cell">Account Status:</div>
+                <div class="cell"><?php 
                 if($acca6['Online'] === 1) {
                     echo "Online";
                     } else {
                     echo "Offline";
-                    } ?></td>
-            </tr>
-            <tr>
-                <td>Sex</td>
-                <td><?php echo Sex($acca6['Body']); ?></td>
-            </tr>    
-</table>
+                    } ?></div>
+            </div>
+            <div class="row">
+                <div class="cell">Sex:</div>
+                <div class="cell"><?php echo Sex($acca6['Body']); ?></div>
+            </div>   
+</div>

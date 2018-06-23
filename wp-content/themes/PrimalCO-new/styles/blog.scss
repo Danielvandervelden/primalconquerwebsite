@@ -8,7 +8,7 @@
     text-align: center;
     position: relative;
     max-width: 300px;
-    margin: 10px auto;
+    margin: 20px auto;
 
     .prev,
     .next {
@@ -66,10 +66,44 @@
     &:after {
         content: '';
         position: absolute;
-        bottom: -5px;
+        bottom: -15px;
         width: 100%;
         height: 1px;
-        background-color: rgba(0, 0, 0, .5);
+        background-color: rgba(255, 255, 255, .5);
     }
 }
+}
+
+/*
+|------------------------------------------------------------
+| Single blog post
+|------------------------------------------------------------
+*/
+
+.featured-image-single {
+    width: 100%;
+    text-align: right;
+
+    img {
+        max-width: 400px;
+        height: auto;
+    }
+}
+
+.single-post-content {
+    max-width: 800px;
+    position: relative;
+
+    .btn {
+        top: 30px;
+        left:0;
+    }
+}
+
+.single-post-content h2 {
+    padding-top: 50px;
+}
+
+.single-post-content .featured-image-single + h2 {
+    padding-top: 0px;
 }

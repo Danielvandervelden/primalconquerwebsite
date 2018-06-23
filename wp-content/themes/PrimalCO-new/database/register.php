@@ -37,9 +37,9 @@ $hash = randomString();
 $result = $mysqli->query("SELECT * FROM accounts WHERE username='$username'") or die ($mysqli->error());
 
 if(!empty($security)) {
-  echo "<div class='message from-top error'><p>Error!</p></div>";
+  echo "<div class='full-opacity faded-black-bg notice flex align-center j-center'><div class='message error flex-40'><i class='fa fa-window-close' aria-hidden='true'></i><p>Error!</p></div></div>";
 } else if($result->num_rows > 0) {
-  echo "<div class='message from-top error'><p>User with this username already exists!</p></div>";
+  echo "<div class='full-opacity faded-black-bg notice flex align-center j-center'><div class='message error flex-40'><i class='fa fa-window-close' aria-hidden='true'></i><p>User with this username already exists!</p></div></div>";
 
   } elseif ($password === $password2){
     $addtable = "ALTER TABLE  `accounts` ADD  `Hash` VARCHAR(100) NOT NULL";
@@ -50,11 +50,11 @@ if(!empty($security)) {
             . "VALUES('$username','$password','$email','$question','$answer','$security_code','$authority','$hash')";
 
             if($mysqli->query($sql)) {
-              echo "<div class='message from-top success'><p>Registration successfull!</p></div>";
+              echo "<div class='full-opacity faded-black-bg notice flex align-center j-center'><div class='message success flex-40'><i class='fa fa-window-close' aria-hidden='true'></i><p>Registration successfull!</p></div></div>";
 
             } else {
-              echo "<div class='message from-top error'><p>Something went wrong!</p></div>";
+              echo "<div class='full-opacity faded-black-bg notice flex align-center j-center'><div class='message error flex-40'><i class='fa fa-window-close' aria-hidden='true'></i><p>Something went wrong!</p></div></div>";
             }
   } else {
-  echo "<div class='message from-top error'><p>Passwords don't match!</p></div>";
+  echo "<div class='full-opacity faded-black-bg notice flex align-center j-center'><div class='message error flex-40'><i class='fa fa-window-close' aria-hidden='true'></i><p>Passwords don't match!</p></div></div>";
   }

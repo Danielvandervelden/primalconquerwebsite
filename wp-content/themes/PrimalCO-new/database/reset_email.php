@@ -11,27 +11,19 @@ $newEmail = $mysqli->escape_string($_POST['new-email']);
 $password = $mysqli->escape_string($_POST['password']);
 
 if ($currentEmail !== $emailDatabase) {
-    echo "<div class='message from-top error'>
-            <p>The current email you entered is wrong!</p>
-        </div>";
+    echo "<div class='full-opacity faded-black-bg notice flex align-center j-center'><div class='message error flex-40'><i class='fa fa-window-close' aria-hidden='true'></i><p>The current email you entered is wrong!</p></div></div>";
 } else if ($usernameForm !== $username) {
-    echo "<div class='message from-top error'>
-            <p>Your username is incorrect!</p>
-        </div>";
+    echo "<div class='full-opacity faded-black-bg notice flex align-center j-center'><div class='message error flex-40'><i class='fa fa-window-close' aria-hidden='true'></i><p>Your username is incorrect!</p></div></div>";
 } else if ($password !== $user['Password']) {
-    echo "<div class='message from-top error'>
-            <p>Your password is incorrect!</p>
-        </div>";
+    echo "<div class='full-opacity faded-black-bg notice flex align-center j-center'><div class='message error flex-40'><i class='fa fa-window-close' aria-hidden='true'></i><p>Your password is incorrect!</p></div></div>";
 } else {
 
     $sql = "UPDATE accounts SET Email='$newEmail' WHERE Username='$usernameForm'";
 
     if (mysqli_query($mysqli, $sql)) {
-        echo "<div class='message from-top success'>
-        <p>Your email has been changed!</p>
-    </div>";
+        echo "<div class='full-opacity faded-black-bg notice flex align-center j-center'><div class='message success flex-40'><i class='fa fa-window-close' aria-hidden='true'></i><p>Your email has been changed!</p></div></div>";
     } else {
-        echo "<div class='message from-top error'><p>Failed for some reason</p></div>";
+        echo "<div class='full-opacity faded-black-bg notice flex align-center j-center'><div class='message error flex-40'><i class='fa fa-window-close' aria-hidden='true'></i><p>Failed for some reason</p></div></div>";
     }
 
 }

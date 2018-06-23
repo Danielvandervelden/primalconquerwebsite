@@ -20,8 +20,18 @@ for (var i = -1, l = divTabs.length; ++i !== l; divTabsArray[i] = divTabs[i]);
 for (var i = -1, l = characters.length; ++i !== l; charArray[i] = characters[i]);
 for (var i = -1, l = charInfo.length; ++i !== l; charInfoArray[i] = charInfo[i]);
 
-
 $(document).ready(function() {
+
+    setTimeout(function() {
+         var closeButton = document.getElementsByClassName('fa-window-close');
+         $(closeButton).click(function() {
+             console.log("clicked");
+             $('.notice').removeClass('full-opacity');
+             $('.notice').addClass('no-opacity');
+             setTimeout(function() { $('.notice').remove(); }, 300)
+         })
+    }, 500)
+
     jQuery(".owl-carousel").owlCarousel({
         responsiveClass: true,
         autoplay: true,
@@ -131,21 +141,10 @@ $(document).ready(function() {
 
 			console.log("\n"+'%c Primal Conquer', logo_style);
 
-             console.log("Hi, thanks for taking a look here! Just FYI, the website is still not finished at this point. Quite a lot remains, but that will be fixed soon enough. It was specifically made for Primal Conquer and every single line of code is written by me. Tech used: Wordpress, MYSQL, PHP, Javascript & jQuery and Sass. Yes, everything should be safe af, Spirited. Let me know if you find any major flaws.")
+             console.log("Hi, thanks for taking a look here! It was specifically made for Primal Conquer and every single line of code is written by me. Tech used: Wordpress, MYSQL, PHP, Javascript & jQuery and Sass. Yes, everything should be safe af, Spirited. Let me know if you find any major flaws.")
 		}
 
 		print_console()
-
-    if($('.message').length > 0) {
-        setTimeout(function() {
-            $('.message').removeClass('from-top');
-            $('.message').addClass('move-up no-opacity');
-
-            setTimeout(function() {
-                $('.message').remove();
-            }, 200)
-        }, 5000)
-    }
 })
 
 function throttle(fn, threshhold, scope) {

@@ -86,8 +86,23 @@
             flex: 0 1 70%;
             margin: 10px 20px;
 
-            td {
-                color: #FFF;
+            .char-info {
+                margin-top: 5px;
+
+                .table {
+
+                    .row {
+                        height: 40px;
+
+                        .cell {
+                            display: inline-block;
+                            line-height: 40px;
+                            max-width: 200px;
+                            width: 100%;
+                            text-align: left;
+                        }
+                    }
+                }
             }
         }
 

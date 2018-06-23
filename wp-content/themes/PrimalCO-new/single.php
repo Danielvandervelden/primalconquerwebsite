@@ -2,19 +2,21 @@
 
 <div class="main-content-container single">
 <div class="parallax-container flex" style="background-image: url('<?php echo $GLOBALS['contentImage'] ?>');">
-  <div class="single-post-container one-col">
-    <form action="<?php echo site_url('/') ?>" method="POST">
-    <button type="submit" class="absolute-top btn btn-dark"><i class="fa fa-chevron-left"></i>Back to the homepage</button>
+  <div class="single-post-container flex-100">
+    <main class="single-post-content margin-center">
+        <form action="<?php echo site_url('/news') ?>" method="POST">
+    <button type="submit" class="absolute btn"><i class="fa fa-chevron-left"></i>Back to the News</button>
     </form>
-    <main>
      <?php   if (have_posts()) {
     while (have_posts()) {
         the_post();?>
-        <div>
-            <div class="featured-image-single"><?php echo get_the_post_thumbnail(); ?></div>
+        <div class="single-blog-post">
+            <?php if (has_post_thumbnail(get_the_ID())) {?>
+	                <div class="featured-image-single"><?php echo get_the_post_thumbnail(); ?></div>
+            <?php }?>
                 <h2 class="hm"><?php the_title(); ?></h2>
 
-                <div class="single-post-content"><?php the_content(); ?></div>
+                <div><?php the_content(); ?></div>
         </div>
                 <?php } // end while ?>
                 <?php } // end if
