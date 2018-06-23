@@ -1,6 +1,8 @@
-<div class="padding-bottom blackbar-container">
-    <div class="why-us-container margin-center">
-        <h2 class="spacing-bottom hl center uppercase bold">Why Us?</h2>
+        <div class="why-us-container margin-center">
+        <h2 class="hl center uppercase bold">Why Us?</h2>
+        <p>We aim to provide the most authentic, solid and lag-free game play experience by utilizing our very own game emulator.</p>
+        </div>
+        <div class="why-us-blocks">
         <div class="spacing-bottom row-column flex j-evenly align-center why-us-row">
             <div class="flex-40 blue-bg">
                 <div class="flex">
@@ -52,5 +54,4 @@
                 </div>
             </div>
         </div>
-    </div>
-</div>
+        </div>

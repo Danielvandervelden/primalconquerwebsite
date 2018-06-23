@@ -6,6 +6,7 @@
 
 .main-content-container.profile {
     position: relative;
+    color: #FFF;
 
     .active {
         background-color: lighten($color_1, 20%) !important;
@@ -84,6 +85,10 @@
         .right-div-tabcontainer {
             flex: 0 1 70%;
             margin: 10px 20px;
+
+            td {
+                color: #FFF;
+            }
         }
 
     }

@@ -306,12 +306,25 @@ a {
 
 .technologies-container {
     height: 200px;
-    background-color: lighten($color_5, 10%);
+    background-color: $color_5;
 }
 
 main {
     max-width: 1000px;
     margin: 0 auto;
+    color: #FFF;
+
+    h2 {
+        margin-top: 0;
+        padding-top: 20px;
+    }
+
+    padding-bottom: 20px;
+}
+
+.main-content-container,
+.post-overview {
+    background-color: $color_4;
 }
 
  /*
