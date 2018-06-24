@@ -9,27 +9,27 @@
     <div class="form-wrapper margin-center">
         <form method="post" action="/account">
             <div class="form-group">
-                <label class="white hs" for="username">Username</label>
+                <label class="white" for="username">Username</label>
                 <input class="form-control" name="username" type="text" placeholder="What will be your username?">
             </div>
 
             <div class="form-group">
-                <label class="white hs"  for="password">Password</label>
+                <label class="white"  for="password">Password</label>
                 <input name="password" class="form-control" type="password" placeholder="Enter your chosen password">
             </div>
 
             <div class="form-group">
-                <label class="white hs"  for="password">Re-enter password</label>
+                <label class="white"  for="password">Re-enter password</label>
                 <input name="password2" class="form-control" type="password" placeholder="Confirm your password">
             </div>
 
             <div class="form-group">
-                <label class="white hs"  for="email">Email</label>
+                <label class="white"  for="email">Email</label>
                 <input name="email" class="form-control" type="email" placeholder="Please enter your email-address">
             </div>
 
             <div class="form-group">
-                <label class="white hs"  for="question">Security Question</label>
+                <label class="white"  for="question">Security Question</label>
                 <input name="question" class="form-control" type="text" placeholder="Example: What date did I lose my virginity?">
             </div>
 
