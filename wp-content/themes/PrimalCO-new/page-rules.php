@@ -3,7 +3,7 @@
 <div class="main-content-container single">
     <div class="parallax-container flex" style="background-image: url('<?php echo $GLOBALS['contentImage'] ?>');">
         <div class="single-post-container flex-100">
-            <main class="single-post-content margin-center">
+            <main class="single-post-content margin-center blog-post-content">
                 <?php   if (have_posts()) {
                     while (have_posts()) {
                         the_post();?>

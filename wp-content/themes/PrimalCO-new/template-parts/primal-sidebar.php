@@ -1,5 +1,5 @@
 <?php 
-    $authServer = true;
+    $worldServer = false;
     $loginServer = true;
     $loggedin = $_SESSION['logged-in'];
     $username = $_SESSION['username'];
@@ -8,16 +8,16 @@
 <div class="sidebar flex evenly flex-column">
 <?php if($loggedin) { ?>
 
-    <div class="full-width spacing-top spacing-bottom flex j-evenly row-column">
-    <h2 class="center hl">Welcome <?php echo $username ?>!</h2>
+    <div class="full-width spacing-top spacing-bottom flex j-evenly flex-column">
+    <h2 class="flex-10 center hs">Welcome <?php echo $username ?>!</h2>
 
-    <div class="center">
-    <form method="post" action="<?php echo site_url() ?>">
-     <button name="logout" class="btn btn-block btn-dark btn-lg" type="submit">Logout</button>
+    <div class="center flex-10">
+    <form method="post" action="<?php echo site_url('/profile') ?>">
+     <button class="btn btn-block btn-dark btn-lg" type="submit">My Profile</button>
      </form>
 
-      <form method="post" action="<?php echo site_url('/profile') ?>">
-     <button class="btn btn-block btn-dark btn-lg" type="submit">My Profile</button>
+    <form method="post" action="<?php echo site_url() ?>">
+     <button name="logout" class="btn btn-block btn-dark btn-lg" type="submit">Logout</button>
      </form>
      </div>
    </div>
@@ -48,18 +48,18 @@
 
 <div class="column spacing-top spacing-bottom three-cols center post-container full-width">
 
-    <?php if($authServer) { ?>
+    <?php if($worldServer) { ?>
             
-            <h2 class="auth-login">Auth Server Status: <span style="color: green; font-weight: bold;">ONLINE</span></h2>
+            <h2 class="hxs">World Server <i class="green fas fa-check-circle"></i></h2>
         <?php } else { ?>  
-            <h2 class="auth-login">Auth Server Status: <span style="color: red; font-weight: bold;">OFFLINE</span></h2>
+            <h2 class="hxs">World Server <i class="red fas fa-times-circle"></i></h2>
     <?php } ?>  
     
     <?php if($loginServer) { ?>
             
-            <h2 class="auth-login">Login Server Status: <span style="color: green; font-weight: bold;">ONLINE</span></h2>
+            <h2 class="hxs">Logon Server <i class="green fas fa-check-circle"></i></h2>
         <?php } else { ?>  
-            <h2 class="auth-login">Login Server Status: <span style="color: red; font-weight: bold;">OFFLINE</span></h2>
+            <h2 class="hxs">Logon Server <i class="red fas fa-times-circle"></i></h2>
     <?php } ?>  
 </div>
         </div>

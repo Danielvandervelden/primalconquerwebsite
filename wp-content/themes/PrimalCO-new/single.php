@@ -10,7 +10,7 @@
      <?php   if (have_posts()) {
     while (have_posts()) {
         the_post();?>
-        <div class="single-blog-post">
+        <div class="single-blog-post blog-post-content">
             <?php if (has_post_thumbnail(get_the_ID())) {?>
 	                <div class="featured-image-single"><?php echo get_the_post_thumbnail(); ?></div>
             <?php }?>

@@ -41,6 +41,7 @@ $why-us-orange: #ffbf7f;
         color: #FFF;
         padding: 30px 0;
         z-index: 1;
+        margin-bottom: 10px;
 
 
         &:after {
@@ -65,58 +66,23 @@ $why-us-orange: #ffbf7f;
     background-color: $color_5;
     padding: 20px 0;
 
-    .red-bg {
-        background-color: darken(#ff7f7f, 40%);
-    }
-
-    .green-bg {
-        background-color: darken(#7fff7f, 40%);
-    }
-
-    .blue-bg {
-        background-color: darken(#7f7fff, 40%);
-    }
-
-    .orange-bg {
-        background-color: darken(#ffbf7f, 40%);
-    }
-
-    .orange-bg,
-    .blue-bg,
-    .green-bg,
-    .red-bg {
+    .why-us-block {
         border-radius: 10px;
         padding: 10px 20px;
-        color: white;
         transition: all .4s;
         min-width: 370px;
         max-height: 230px;
         height: 100%;
     }
 
-    .orange-bg:hover {
-        background-color: darken($why-us-orange, 30%);
-        color: lighten($why-us-orange, 20%);
-    }
-
-    .blue-bg:hover {
-        background-color: darken($why-us-blue, 30%);
-        color: lighten($why-us-blue, 20%);
-    }
-
-    .green-bg:hover {
-        background-color: darken($why-us-green, 30%);
-        color: lighten($why-us-green, 20%);
-    }
-
-    .red-bg:hover {
-        background-color: darken($why-us-red, 30%);
-        color: lighten($why-us-red, 20%);
-    }
-
     .why-us-row {
         flex-wrap: wrap;
         z-index: 2;
+
+         p {
+             font-size: 1.3rem;
+             color: rgba(118, 118, 118, 1);
+         }
 
         &:first-of-type {
             margin-bottom: 20px;
@@ -131,13 +97,10 @@ $why-us-orange: #ffbf7f;
                 position: relative;
                 height: 100%;
 
-                p {
-                    font-size: 1.3rem;
-                }
-
                 svg {
                     font-size: 9rem;
                     margin-top: 50px;
+                    color: rgba(252, 56, 104, 1);
                 }
 
                 &:first-of-type {

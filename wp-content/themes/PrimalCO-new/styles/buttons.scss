@@ -20,8 +20,8 @@
     transition: all .3s ease-in-out;
 
     &:hover {
-        color: #000;
-        background-color: #FFF;
+        border: 2px solid $color_1;
+        background-color: $color_1;
     }
 }
 

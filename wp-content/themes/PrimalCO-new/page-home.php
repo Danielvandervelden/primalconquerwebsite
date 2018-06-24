@@ -6,7 +6,7 @@ get_header();
     <div class="flex row-column margin-center br3">
         <main class="full-width">
 
-            <div class="flex flex-row-column j-evenly" style="background-image: url('<?php echo $GLOBALS['contentImage'] ?>');">
+            <div class="flex flex-row-column j-between" style="background-image: url('<?php echo $GLOBALS['contentImage'] ?>');">
                 <div class="flex-70 spacing-left spacing-right">
                     <h2 class="white center hm spacing-top">Latest news</h2>
 
@@ -40,7 +40,7 @@ wp_reset_postdata(); // end while ?>
 
                 </div>
 
-                <div class="flex-30 spacing-left spacing-right">
+                <div class="flex-20 spacing-left spacing-right">
                         <?php echo get_template_part('template-parts/primal-sidebar'); ?>
                 </div>
 

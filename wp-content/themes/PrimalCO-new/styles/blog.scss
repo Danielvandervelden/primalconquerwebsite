@@ -46,6 +46,10 @@
     }
 }
 
+.home .post-container {
+    max-width: 850px;
+}
+
 .post-container {
     max-width: 600px;
     margin: 10px auto;
@@ -72,6 +76,10 @@
         background-color: rgba(255, 255, 255, .5);
     }
 }
+}
+
+.blog-post-content {
+    font-size: 1.4rem;
 }
 
 /*

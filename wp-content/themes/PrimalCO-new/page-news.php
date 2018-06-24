@@ -16,7 +16,7 @@
                 ));
                 if ($news->have_posts()) { ?>
                     <?php while ($news->have_posts()): $news->the_post();?>
-	                    <article class="post-container news flex">
+	                    <article class="blog-post-content post-container news flex">
 	                        <?php if (has_post_thumbnail( get_the_ID() )) { ?>
 	                        <a class="link-picture-wrapper" href="<?php echo get_the_permalink() ?>"><div class="featured-image" style="background-image: url('<?php echo wp_get_attachment_image_src(get_post_thumbnail_id())[0] ?>')"></div></a>
 	                        <?php }?>

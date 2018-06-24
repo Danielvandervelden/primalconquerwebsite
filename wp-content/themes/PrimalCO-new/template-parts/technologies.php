@@ -12,5 +12,6 @@
   <div><img class="carousel-image" src="<?php echo get_theme_file_uri('assets/images/logos/logo9.svg') ?>"></div>
   <div><img class="carousel-image" src="<?php echo get_theme_file_uri('assets/images/logos/logo10.png') ?>"></div>
   <div><img class="carousel-image" src="<?php echo get_theme_file_uri('assets/images/logos/logo11.png') ?>"></div>
+  <div><img class="carousel-image" src="<?php echo get_theme_file_uri('assets/images/logos/logo12.png') ?>"></div>
 </div>
 </div>
