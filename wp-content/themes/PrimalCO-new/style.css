@@ -781,7 +781,7 @@ ALL CSS FOR ANIMATIONS
 */
 form {
   padding: 10px;
-  width: 50%;
+  max-width: 500px;
   margin: 0 auto; }
 
 .form-group {

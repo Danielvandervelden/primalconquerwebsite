@@ -34,12 +34,12 @@
             </div>
 
             <div class="form-group">
-                <label class="white hs"  for="answer">Security Answer</label>
+                <label class="white"  for="answer">Security Answer</label>
                 <input name="answer" class="form-control" type="text" placeholder="Exampe: FML, I'm still a virgin..">
             </div>
 
              <div class="form-group">
-                <label class="white hs" >Security Code</label>
+                <label class="white" >Security Code</label>
                 <input name="securitycode" class="form-control" type="text" placeholder="Enter your chosen security code.">
             </div>
 

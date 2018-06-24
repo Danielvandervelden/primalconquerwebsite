@@ -25,8 +25,8 @@
 <?php } else { ?>
     <div class="spacing-top spacing-bottom clearfix">
     <div class="form-wrapper">
-        <h2 class="hm white t-shadow">Login to your account</h2>
         <form class="post-container" method="post" action="<?php echo site_url() ?>">
+        <h2 class="hm white t-shadow">Login to your account</h2>
             <div class="form-group">
                 <label for="username-side">Username</label>
                 <input name="username" class="form-control" type="text" placeholder="Enter your username.">
