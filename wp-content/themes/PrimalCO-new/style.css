@@ -797,7 +797,7 @@ form {
 */
 .header-container {
   width: 100%;
-  max-height: 70vh;
+  max-height: 75vh;
   height: 100%;
   background-image: url("assets/images/slider_2.jpg");
   background-size: cover;
