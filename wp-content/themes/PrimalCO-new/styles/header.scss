@@ -154,6 +154,8 @@
 
     .main-menu-item.dropdown:hover>.dropdown-menu {
         display: block;
+        position: absolute;
+        width: 100%;
         animation: openUp 300ms ease-in-out;
     }
 
