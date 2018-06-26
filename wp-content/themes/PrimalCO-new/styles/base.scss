@@ -173,6 +173,18 @@ a {
     align-content: flex-end;
 }
 
+.align-s-end {
+    align-self: flex-end;
+}
+
+.align-s-start {
+    align-self: flex-start;
+}
+
+.align-s-center {
+    align-self: flex-end;
+}
+
 /*
 |------------------------------------------------------------
 | Headings

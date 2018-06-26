@@ -1,8 +1,23 @@
 <?php 
-    $worldServer = false;
-    $loginServer = true;
+    $hostIp = "104.238.159.58";
+    $world1Server = false;
+    $world2Server = false;
+    $loginServer = false;
     $loggedin = $_SESSION['logged-in'];
     $username = $_SESSION['username'];
+
+if(fsockopen($hostIP, 5816)) {
+    $world1Server = true;
+}
+
+if(fsockopen($hostIP, 5817)) {
+    $world2Server = true;
+}
+
+if(fsockopen($hostIP, 9958)) {
+    $loginServer = true;
+}
+
 ?>
 
 <div class="sidebar flex evenly flex-column">
@@ -48,12 +63,19 @@
 
 <div class="column spacing-top spacing-bottom three-cols center post-container full-width">
 
-    <?php if($worldServer) { ?>
+    <?php if($world1Server) { ?>
             
             <h2 class="hxs">World Server <i class="green fas fa-check-circle"></i></h2>
         <?php } else { ?>  
             <h2 class="hxs">World Server <i class="red fas fa-times-circle"></i></h2>
     <?php } ?>  
+
+     <?php if ($world2Server) {?>
+
+            <h2 class="hxs">World 2 Server <i class="green fas fa-check-circle"></i></h2>
+        <?php } else {?>
+            <h2 class="hxs">World 2 Server <i class="red fas fa-times-circle"></i></h2>
+    <?php }?>
     
     <?php if($loginServer) { ?>
             
