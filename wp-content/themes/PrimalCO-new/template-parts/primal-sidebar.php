@@ -6,15 +6,15 @@
     $loggedin = $_SESSION['logged-in'];
     $username = $_SESSION['username'];
 
-if(is_resource(fsockopen($hostIP, 5816))) {
+if(is_resource(fsockopen($hostIP, 5816, $errno, $errstr, 1))) {
     $world1Server = true;
 }
 
-if(is_resource(fsockopen($hostIP, 5817))) {
+if(is_resource(fsockopen($hostIP, 5817, $errno, $errstr, 1))) {
     $world2Server = true;
 }
 
-if(is_resource(fsockopen($hostIP, 9958))) {
+if(is_resource(fsockopen($hostIP, 9958, $errno, $errstr, 1))) {
     $loginServer = true;
 }
 
