@@ -6,17 +6,20 @@
     $loggedin = $_SESSION['logged-in'];
     $username = $_SESSION['username'];
 
-if(is_resource(fsockopen($hostIP, 5816, $errno, $errstr, 1))) {
+$fp1 = fsockopen($hostIP, '5816', $errno, $errstr, 2);
+if($fp1) {
     $world1Server = true;
-}
+} 
 
-if(is_resource(fsockopen($hostIP, 5817, $errno, $errstr, 1))) {
-    $world2Server = true;
-}
+// if(is_resource(fsockopen($hostIP, 5817, $errno, $errstr, 1))) {
+//     $world2Server = true;
+// }
 
-if(is_resource(fsockopen($hostIP, 9958, $errno, $errstr, 1))) {
+$fp2 = fsockopen($hostIP, '9958', $errno, $errstr, 2);
+if ($fp2) {
     $loginServer = true;
 }
+
 
 ?>
 
@@ -41,7 +44,7 @@ if(is_resource(fsockopen($hostIP, 9958, $errno, $errstr, 1))) {
     <div class="spacing-top spacing-bottom clearfix">
     <div class="form-wrapper">
         <form class="post-container" method="post" action="<?php echo site_url() ?>">
-        <h2 class="hm white t-shadow">Login to your account</h2>
+        <h2 class="hs white t-shadow">Account Login</h2>
             <div class="form-group">
                 <label for="username-side">Username</label>
                 <input name="username" class="form-control" type="text" placeholder="Enter your username.">
@@ -62,6 +65,14 @@ if(is_resource(fsockopen($hostIP, 9958, $errno, $errstr, 1))) {
 
 
 <div class="column spacing-top spacing-bottom three-cols center post-container full-width">
+    <h2 class="hs">Server Status</h2>
+
+<?php if($loginServer) { ?>
+            
+            <h2 class="hxs">Logon Server <i class="green fas fa-check-circle"></i></h2>
+        <?php } else { ?>  
+            <h2 class="hxs">Logon Server <i class="red fas fa-times-circle"></i></h2>
+    <?php } ?>  
 
     <?php if($world1Server) { ?>
             
@@ -70,18 +81,12 @@ if(is_resource(fsockopen($hostIP, 9958, $errno, $errstr, 1))) {
             <h2 class="hxs">World Server <i class="red fas fa-times-circle"></i></h2>
     <?php } ?>  
 
-     <?php if ($world2Server) {?>
+     <!-- <?php if ($world2Server) {?>
 
             <h2 class="hxs">World 2 Server <i class="green fas fa-check-circle"></i></h2>
         <?php } else {?>
             <h2 class="hxs">World 2 Server <i class="red fas fa-times-circle"></i></h2>
     <?php }?>
-    
-    <?php if($loginServer) { ?>
-            
-            <h2 class="hxs">Logon Server <i class="green fas fa-check-circle"></i></h2>
-        <?php } else { ?>  
-            <h2 class="hxs">Logon Server <i class="red fas fa-times-circle"></i></h2>
-    <?php } ?>  
+     -->
 </div>
         </div>
