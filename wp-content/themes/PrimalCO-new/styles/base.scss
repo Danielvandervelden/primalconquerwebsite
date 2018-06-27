@@ -46,6 +46,16 @@ $black: #000;
     background-color: rgba($black, .6);
 }
 
+body .website-container .header-container .active-menu-item {
+    color: $color_1 !important;
+    border-bottom: 1px solid $color_1;
+
+    &:hover {
+        color: lighten($color_1, 20%);
+        border-bottom: lighten($color_1, 20%);
+    }
+}
+
 
 
 html, body {

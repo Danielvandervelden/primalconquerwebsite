@@ -71,6 +71,49 @@ $(document).ready(function() {
         },
     });
 
+    //Active menu item
+
+    var page  = {
+        "home": {
+            "selector": ".menu .home"
+        },
+        "account":  {
+            "selector": ".menu .account"
+        },
+        "server": {
+            "selector": ".menu .server"
+        },
+        "news": {
+            "selector": ".menu .server"
+        },
+        "changelog": {
+            "selector": ".menu .server"
+        },
+        "downloads": {
+            "selector": ".menu .server"
+        },
+        "rules": {
+            "selector": ".menu .server"
+        },
+        "support": {
+            "selector": ".menu .support"
+        }
+    }
+
+    for(var key in page) {
+                if (window.location.href.indexOf(key) > -1) {
+                    
+                    var obj = page[key];
+
+                    for(var prop in obj) {
+                        if(!jQuery(obj[prop]).hasClass("active-menu-item")) {
+                            console.log(obj);
+                        jQuery(obj[prop]).addClass("active-menu-item");
+                        }
+                    }
+                }
+            }
+
 })
 
 menuTabsArray.forEach(function(tab) {

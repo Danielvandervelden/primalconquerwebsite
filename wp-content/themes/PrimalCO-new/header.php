@@ -47,16 +47,19 @@ if($logged_in) {
             <nav class="flex-100 menu relative">
                 <ul class="main-menu margin-center absolute flex evenly">
                     <li class="flex-20 main-menu-item center">
-                        <a href="<?php echo site_url('/home') ?>">Home</a>
+                        <a class="home" href="<?php echo site_url('/home') ?>">Home</a>
                     </li>
                     <li class="flex-20 main-menu-item center">
-                        <a href="<?php echo site_url('/account') ?>">Account</a>
+                        <a class="account" href="<?php echo site_url('/account') ?>">Account</a>
                     </li>
                     <li class="flex-20 main-menu-item dropdown center">
-                        <a href="#">Server</a>
+                        <a class="server" href="#">Server</a>
                         <ul class="inner-menu faded-black-bg">
                              <li class="inner-menu-item">
                                 <a href="<?php echo site_url('/news') ?>">News</a>
+                            </li>
+                            <li class="inner-menu-item">
+                                <a href="<?php echo site_url('/changelog') ?>">Changelog</a>
                             </li>
                             <li class="inner-menu-item">
                                 <a href="<?php echo site_url('/downloads') ?>">Downloads</a>
@@ -67,7 +70,7 @@ if($logged_in) {
                         </ul>
                     </li>
                     <li class="flex-20 main-menu-item center">
-                        <a href="<?php echo site_url('/support') ?>">Support</a>
+                        <a class="support" href="<?php echo site_url('/support') ?>">Support</a>
                     </li>
         <?php if (!$_SESSION['logged-in']) {?>
                     <li class="flex-20 main-menu-item dropdown center">

@@ -331,6 +331,13 @@ template {
 .faded-black-bg {
   background-color: rgba(0, 0, 0, 0.6); }
 
+body .website-container .header-container .active-menu-item {
+  color: #fc3868 !important;
+  border-bottom: 1px solid #fc3868; }
+  body .website-container .header-container .active-menu-item:hover {
+    color: #fe9cb4;
+    border-bottom: #fe9cb4; }
+
 html, body {
   font-size: 62.5%;
   font-family: 'Open Sans', sans-serif;
@@ -798,6 +805,9 @@ form {
   .form-group input {
     width: 100%;
     margin: 4px 0; }
+
+.main-content-container.register .form-group {
+  margin: 0 0 20px 0; }
 
 /*
 |------------------------------------------------------------
