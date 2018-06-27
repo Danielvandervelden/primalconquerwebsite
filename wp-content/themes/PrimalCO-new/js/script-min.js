@@ -23,9 +23,15 @@ for (var i = -1, l = charInfo.length; ++i !== l; charInfoArray[i] = charInfo[i])
 $(document).ready(function() {
 
     setTimeout(function() {
-         var closeButton = document.getElementsByClassName('fa-window-close');
+
+        var closeButton = document.getElementsByClassName('fa-window-close');
+        var background_popup = document.querySelector('.faded-black-bg.notice');
+
+        $(background_popup).click(function () {
+            $('.notice').addClass('no-opacity');
+             setTimeout(function() { $('.notice').remove(); }, 300)
+        })
          $(closeButton).click(function() {
-             console.log("clicked");
              $('.notice').removeClass('full-opacity');
              $('.notice').addClass('no-opacity');
              setTimeout(function() { $('.notice').remove(); }, 300)
