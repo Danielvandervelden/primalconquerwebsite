@@ -1149,6 +1149,18 @@ footer {
 .single-post-content .featured-image-single + h2 {
   padding-top: 0px; }
 
+@media (max-width: 625px) {
+  .posts-container {
+    padding: 0 10px; }
+    .posts-container .blog-post-content.post-container.flex {
+      flex-direction: column; }
+      .posts-container .blog-post-content.post-container.flex .link-picture-wrapper {
+        margin: 0 auto; } }
+
+@media (max-width: 830px) {
+  .single-post-container {
+    padding: 0 10px; } }
+
 /*
 |------------------------------------------------------------
 | Sidebar styles
