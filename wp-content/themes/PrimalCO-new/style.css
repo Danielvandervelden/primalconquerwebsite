@@ -332,11 +332,21 @@ template {
   background-color: rgba(0, 0, 0, 0.6); }
 
 body .website-container .header-container .active-menu-item {
-  color: #fc3868 !important;
-  border-bottom: 1px solid #fc3868; }
+  position: relative;
+  color: #fc3868 !important; }
+  body .website-container .header-container .active-menu-item:before {
+    content: '';
+    background-color: #fc3868 !important;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%); }
   body .website-container .header-container .active-menu-item:hover {
-    color: #fe9cb4;
-    border-bottom: #fe9cb4; }
+    color: #fe9cb4; }
+    body .website-container .header-container .active-menu-item:hover:before {
+      background-color: #fe9cb4; }
 
 html, body {
   font-size: 62.5%;
@@ -863,7 +873,8 @@ form {
   .main-menu .main-menu-item {
     float: left;
     width: 10%;
-    position: relative; }
+    position: relative;
+    padding: 10px 0; }
     .main-menu .main-menu-item.dropdown a {
       position: relative; }
       .main-menu .main-menu-item.dropdown a:after {
@@ -878,16 +889,20 @@ form {
     .main-menu .main-menu-item .inner-menu {
       display: none;
       padding: 0;
-      margin-top: 10px; }
+      margin-top: 10px;
+      padding: 5px; }
       .main-menu .main-menu-item .inner-menu .inner-menu-item {
         padding-top: 5px;
         padding-bottom: 10px; }
-        .main-menu .main-menu-item .inner-menu .inner-menu-item a {
-          color: #FFF; }
-          .main-menu .main-menu-item .inner-menu .inner-menu-item a:after {
-            content: ''; }
-        .main-menu .main-menu-item .inner-menu .inner-menu-item:hover a {
+      .main-menu .main-menu-item .inner-menu a {
+        color: #FFF; }
+        .main-menu .main-menu-item .inner-menu a:after {
+          display: none !important; }
+        .main-menu .main-menu-item .inner-menu a:hover a {
           color: #fc3868; }
+      .main-menu .main-menu-item .inner-menu input {
+        max-width: 100%;
+        margin-bottom: 8px; }
     .main-menu .main-menu-item .dropdown-menu {
       display: none;
       margin-top: 10px; }
@@ -903,7 +918,9 @@ form {
     color: #fc3868; }
   .main-menu .main-menu-item.dropdown:hover > .inner-menu {
     display: block;
-    animation: openUp 300ms ease-in-out; }
+    animation: openUp 300ms ease-in-out;
+    position: absolute;
+    width: 100%; }
   .main-menu .main-menu-item.dropdown:hover > .dropdown-menu {
     display: block;
     position: absolute;

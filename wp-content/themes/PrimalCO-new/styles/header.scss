@@ -80,6 +80,7 @@
         float: left;
         width: 10%;
         position: relative;
+        padding: 10px 0;
 
 
         &.dropdown a {
@@ -101,22 +102,28 @@
             display: none;
             padding: 0;
             margin-top: 10px;
+            padding:5px;
 
             .inner-menu-item {
                 padding-top: 5px;
                 padding-bottom: 10px;
+                }
 
                 a {
                     color: #FFF;
 
                     &:after {
-                        content: '';
+                        display: none !important;
                     }
-                }
 
                 &:hover a {
                     color: $color_1;
                 }
+            }
+
+            input {
+                max-width: 100%;
+                margin-bottom:8px;
             }
         }
 
@@ -149,6 +156,8 @@
         &>.inner-menu {
             display: block;
             animation: openUp 300ms ease-in-out;
+            position: absolute;
+            width: 100%;
         }
     }
 
@@ -158,7 +167,6 @@
         width: 100%;
         animation: openUp 300ms ease-in-out;
     }
-
 }
 
 @keyframes openUp {

@@ -47,12 +47,26 @@ $black: #000;
 }
 
 body .website-container .header-container .active-menu-item {
+    position: relative;
     color: $color_1 !important;
-    border-bottom: 1px solid $color_1;
+
+    &:before {
+    content: '';
+    background-color: $color_1 !important;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    }
 
     &:hover {
         color: lighten($color_1, 20%);
-        border-bottom: lighten($color_1, 20%);
+
+        &:before {
+            background-color: lighten($color_1, 20%);
+        }
     }
 }
 

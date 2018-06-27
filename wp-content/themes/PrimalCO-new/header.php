@@ -75,7 +75,7 @@ if($logged_in) {
         <?php if (!$_SESSION['logged-in']) {?>
                     <li class="flex-20 main-menu-item dropdown center">
                         <a href="#">Login</a>
-                        <div class="dropdown-menu login faded-black-bg">
+                        <ul class="inner-menu login faded-black-bg">
                             <div class="form-wrapper">
                                 <form method="post" action="<?php echo site_url() ?>">
                                     <div>
@@ -88,17 +88,17 @@ if($logged_in) {
                                     <button name="login" class="btn btn-block" type="submit">Login</button><a class="center" href="<?php echo site_url('/forgot') ?>">Forgot password</a>
                                 </form>
                             </div>
-                        </div>
+                        </ul>
                     </li>
                     <?php } else {?>
                     <li class="flex-20 main-menu-item dropdown center">
-                        <a href="#" ><i class="fas fa-user"></i></a>
-                        <div class="dropdown-menu faded-black-bg">
+                        <a class="profile" href="#" ><i class="fas fa-user"></i></a>
+                        <ul class="inner-menu faded-black-bg">
                             <a class="inner-menu-item" href="<?php echo site_url('/profile') ?>">My Profile</a>
                             <form action="/" method="POST">
                             <button class="btn" name="logout" type="submit">Logout</button>
                             </form>
-                        </div>
+                        </ul>
                     </li>
                     <?php }?>
                 </ul>

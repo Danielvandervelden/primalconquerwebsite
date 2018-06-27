@@ -94,6 +94,9 @@ $(document).ready(function() {
         },
         "support": {
             "selector": ".menu .support"
+        },
+        "profile": {
+            "selector": ".menu .profile"
         }
     }
 
