@@ -4,7 +4,7 @@
 
 <div class="post-overview">
     <main>
-        <h2 class="hm white center">All News posts</h2>
+        <h2 class="hm white center">All Changelogs</h2>
         <div class="posts-container">
 		
 		   <?php 

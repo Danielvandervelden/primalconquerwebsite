@@ -74,9 +74,6 @@ $(document).ready(function() {
     //Active menu item
 
     var page  = {
-        "home": {
-            "selector": ".menu .home"
-        },
         "account":  {
             "selector": ".menu .account"
         },
@@ -113,6 +110,10 @@ $(document).ready(function() {
                     }
                 }
             }
+
+                if ($('.active-menu-item').length === 0) {
+                    $('.menu .home').addClass('active-menu-item');
+                }
 
 })
 
