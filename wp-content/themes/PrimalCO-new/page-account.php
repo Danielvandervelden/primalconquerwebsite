@@ -30,12 +30,12 @@
 
             <div class="form-group">
                 <label class="white"  for="question">Security Question</label>
-                <input name="question" class="form-control" type="text" placeholder="Example: What date did I lose my virginity?">
+                <input name="question" class="form-control" type="text" placeholder="Example: What's the name of my pet?">
             </div>
 
             <div class="form-group">
                 <label class="white"  for="answer">Security Answer</label>
-                <input name="answer" class="form-control" type="text" placeholder="Exampe: FML, I'm still a virgin..">
+                <input name="answer" class="form-control" type="text" placeholder="Exampe: Franklin the Destroyer">
             </div>
 
              <div class="form-group">

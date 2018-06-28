@@ -34,6 +34,6 @@ if($result->num_rows == 0) {//if user doesn't exist..
 
         $_SESSION['logged-in'] = true;
     } else {
-        echo "<div class='full-opacity faded-black-bg notice flex align-center j-center'><div class='message error flex-40'><i class='fa fa-window-close' aria-hidden='true'></i><p>WRONG PASSWORD BRAH</p></div></div>";
+        echo "<div class='full-opacity faded-black-bg notice flex align-center j-center'><div class='message error flex-40'><i class='fa fa-window-close' aria-hidden='true'></i><p>That password is incorrect, please try again.</p></div></div>";
     }
 }
