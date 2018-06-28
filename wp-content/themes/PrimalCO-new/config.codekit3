@@ -31,6 +31,13 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/assets\/images\/conquer.ico": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/images\/conquer.ico",
+		"oF": 0
+		},
 	"\/assets\/images\/dopebackground.jpg": {
 		"ft": 16384,
 		"iS": 248271,
@@ -40,6 +47,17 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/Dragon_PNG981 (1).png": {
+		"ft": 32768,
+		"iS": 276026,
+		"oA": 0,
+		"oAP": "\/assets\/images\/Dragon_PNG981 (1).png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/assets\/images\/elitepvpers-shield.png": {

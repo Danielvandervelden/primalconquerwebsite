@@ -1,2 +1,0 @@
-<?php if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
-$environment_variable = '{"theme":{"folder_name":"PrimalCO-new","mapped_name":""},"allowed_paths":["\/Users\/daniel\/workspace\/primalco-dev\/wp-content\/themes"],"cache_path":"\/Users\/daniel\/workspace\/primalco-dev\/wp-content\/cache\/wph\/","wordpress_directory":"","site_relative_path":"\/"}' ?>
