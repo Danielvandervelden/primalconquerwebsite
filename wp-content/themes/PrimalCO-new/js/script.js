@@ -194,7 +194,7 @@ $(document).ready(function() {
 
 			console.log("\n"+'%c Primal Conquer', logo_style);
 
-             console.log("Hi, thanks for taking a look here! It was specifically made for Primal Conquer and every single line of code is written by me. Tech used: Wordpress, MYSQL, PHP, Javascript & jQuery and Sass. Yes, everything should be safe af, Spirited. Let me know if you find any major flaws.")
+             console.log("Hi, thanks for taking a look here! It was specifically made for Primal Conquer and every single line of code is written by me. Tech used: Wordpress, MYSQL, PHP, Javascript & jQuery and Sass. Let us know if you find any major flaws.")
 		}
 
 		print_console()

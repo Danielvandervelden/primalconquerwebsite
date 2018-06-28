@@ -35,7 +35,7 @@
 
             <div class="form-group">
                 <label class="white"  for="answer">Security Answer</label>
-                <input name="answer" class="form-control" type="text" placeholder="Exampe: Franklin the Destroyer">
+                <input name="answer" class="form-control" type="text" placeholder="Example: Franklin the Destroyer">
             </div>
 
              <div class="form-group">
