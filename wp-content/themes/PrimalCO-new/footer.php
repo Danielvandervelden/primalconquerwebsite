@@ -21,7 +21,7 @@
 
     <div class="social-container flex evenly margin-center center">
         <div class="flex-33">
-            <a href="#"><i class="white fab fa-facebook-f"></i></a>
+            <a href="https://www.facebook.com/PrimalConquer/"><i class="white fab fa-facebook-f"></i></a>
         </div>
         <div class="flex-33">
             <a href="http://www.elitepvpers.de" target="_blank"><img class="epvp-logo" src="<?php echo get_theme_file_uri('./assets/images/elitepvpers-shield.png') ?>" alt="ElitePVPers logo" /></a>
