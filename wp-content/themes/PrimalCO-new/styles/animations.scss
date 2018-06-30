@@ -3,7 +3,7 @@ ALL CSS FOR ANIMATIONS
 ================================================================================== */
 
 .full-opacity {
-    animation: fullOpacity 500ms;
+    animation: fullOpacity 700ms ease-in-out;
 }
 
 @keyframes fullOpacity {
@@ -16,7 +16,7 @@ ALL CSS FOR ANIMATIONS
 }
 
 .no-opacity {
-    animation: noOpacity 500ms;
+    animation: noOpacity 700ms ease-in-out;
 }
 
 @keyframes noOpacity {
@@ -29,7 +29,7 @@ ALL CSS FOR ANIMATIONS
 }
 
 .from-top {
-    animation: fromTop 500ms;
+    animation: fromTop 700ms ease-in-out;
 }
 
 @keyframes fromTop {
@@ -43,12 +43,12 @@ ALL CSS FOR ANIMATIONS
 }
 
 .from-left {
-    animation: fromLeft 500ms ease-in-out;
+    animation: fromLeft 700ms ease-in-out;
 }
 
 @keyframes fromLeft {
     0% {
-        transform: translateX(-500px);
+        transform: translateX(-1000px);
     }
 
     100% {
@@ -57,12 +57,12 @@ ALL CSS FOR ANIMATIONS
 }
 
 .from-right {
-    animation: fromRight 500ms ease-in-out;
+    animation: fromRight 700ms ease-in-out;
 }
 
 @keyframes fromRight {
     0% {
-        transform: translateX(500px);
+        transform: translateX(1000px);
     }
 
     100% {
@@ -71,7 +71,7 @@ ALL CSS FOR ANIMATIONS
 }
 
 .from-bottom {
-    animation: fromBottom 500ms ease-in-out;
+    animation: fromBottom 700ms ease-in-out;
 }
 
 @keyframes fromBottom {
@@ -85,7 +85,7 @@ ALL CSS FOR ANIMATIONS
 }
 
 .move-up {
-    animation: moveUp 500ms ease-in-out;
+    animation: moveUp 700ms ease-in-out;
 }
 
 @keyframes moveUp {
@@ -99,7 +99,7 @@ ALL CSS FOR ANIMATIONS
 }
 
 .move-right {
-    animation: moveRight 500ms ease-in-out;
+    animation: moveRight 700ms ease-in-out;
 }
 
 @keyframes moveRight {
@@ -113,7 +113,7 @@ ALL CSS FOR ANIMATIONS
 }
 
 .move-down {
-    animation: moveDown 500ms ease-in-out;
+    animation: moveDown 700ms ease-in-out;
 }
 
 @keyframes moveDown {
@@ -127,7 +127,7 @@ ALL CSS FOR ANIMATIONS
 }
 
 .move-left {
-    animation: moveLeft 500ms ease-in-out;
+    animation: moveLeft 700ms ease-in-out;
 }
 
 @keyframes moveLeft {
@@ -141,7 +141,7 @@ ALL CSS FOR ANIMATIONS
 }
 
 .menu-left {
-    animation: menuLeft 500ms;
+    animation: menuLeft 700ms ease-in-out;
 }
 
 @keyframes menuLeft {
@@ -155,7 +155,7 @@ ALL CSS FOR ANIMATIONS
 }
 
 .menu-right {
-    animation: menuRight 500ms;
+    animation: menuRight 700ms ease-in-out;
 }
 
 @keyframes menuRight {

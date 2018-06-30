@@ -292,6 +292,13 @@
 		"oAP": "\/database\/reset_password.php",
 		"oF": 0
 		},
+	"\/database\/submit_support.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/database\/submit_support.php",
+		"oF": 0
+		},
 	"\/footer.php": {
 		"cB": 0,
 		"ft": 8192,

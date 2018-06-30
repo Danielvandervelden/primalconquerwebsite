@@ -18,6 +18,8 @@ $logged_in = $_SESSION['logged-in'];
         require 'database/forgot-password.php';
     } elseif (isset($_POST['password_change_email'])) { // if change email button gets clicked
         require 'database/password_change_email.php';
+    } elseif (isset($_POST['submit-support'])) { // if change email button gets clicked
+        require 'database/submit_support.php';
     }
 
 if($logged_in) {

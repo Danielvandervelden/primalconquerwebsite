@@ -1,8 +1,8 @@
 <?php get_header()?>
 
 <div class="main-content-container single">
-    <div class="parallax-container flex" style="background-image: url('<?php echo $GLOBALS['contentImage'] ?>');">
-        <div class="single-post-container flex-100">
+    <div class="parallax-container flex flex-row-column" style="background-image: url('<?php echo $GLOBALS['contentImage'] ?>');">
+        <div class="single-post-container flex-70">
             <main class="single-post-content margin-center blog-post-content">
                 <?php if (have_posts()) {
                     while (have_posts()) {
@@ -21,8 +21,36 @@
                 </div>
                 <?php } // end while ?>
                 <?php } // end if
-?>
+            ?>
             </main>
+
+            <form method="post" action="/home">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input required type="text" name="name" placeholder="Type your name here">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input required type="email" name="email" placeholder="Type your email address here">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input required type="text" name="subject" placeholder="The subject of your support ticket">
+                </div>
+                <div style="visibility: hidden; position: absolute; top: 0;" class="form-group">
+                <label>Random</label>
+                <input name="security" class="form-control" type="text" placeholder="security">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea required rows="5" cols="60" name="message" placeholder="What is your issue/question?"></textarea>
+                </div>
+                    <button name="submit-support" class="btn btn-large float-l" type="submit">Submit message</button>
+            </form>
+        </div>
+
+        <div class="flex-30 spacing-top spacing-bottom margin-center">
+            <iframe src="https://discordapp.com/widget?id=393293613448298497&theme=dark" width="300" height="450" allowtransparency="true" frameborder="0"></iframe>
         </div>
     </div>
 </div>
