@@ -52,7 +52,7 @@ if($logged_in) {
                         <a class="home" href="<?php echo site_url('/home') ?>">Home</a>
                     </li>
                     <li class="flex-20 main-menu-item center">
-                        <a class="account" href="<?php echo site_url('/account') ?>">Account</a>
+                        <a class="account" href="<?php echo site_url('/account') ?>">Register</a>
                     </li>
                     <li class="flex-20 main-menu-item dropdown center">
                         <a class="server" href="#">Server</a>
