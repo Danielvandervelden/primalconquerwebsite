@@ -36,6 +36,7 @@ if($logged_in) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php wp_head(); ?>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="google-site-verification" content="Rl_KK5vG4-rHG-3Vihro0sMxRz6j8h6IAZxHj23rNTU" />
     <title>PrimalCO</title>
 </head>
 
