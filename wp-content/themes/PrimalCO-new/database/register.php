@@ -3,21 +3,21 @@
    and sends account confirmation email message
  */
 
-$_SESSION['username'] = $_POST['username'];
-$_SESSION['password'] = $_POST['password'];
-$_SESSION['email'] = $_POST['email'];
-$_SESSION['question'] = $_POST['question'];
-$_SESSION['answer'] = $_POST['answer'];
-$_SESSION['securitycode'] = $_POST['securitycode'];
+$_SESSION['username'] = $_POST['register_username'];
+$_SESSION['password'] = $_POST['register_password'];
+$_SESSION['email'] = $_POST['register_email'];
+$_SESSION['question'] = $_POST['register_question'];
+$_SESSION['answer'] = $_POST['register_answer'];
+$_SESSION['securitycode'] = $_POST['register_securitycode'];
 
-$username = $mysqli->escape_string($_POST['username']);
-$email = $mysqli->escape_string($_POST['email']);
-$question = $mysqli->escape_string($_POST['question']);
-$answer = $mysqli->escape_string($_POST['answer']);
-$security_code = $mysqli->escape_string($_POST['securitycode']);
-$password = $mysqli->escape_string($_POST['password']);
-$password2 = $mysqli->escape_string($_POST['password2']);
-$security = $mysqli->escape_string($_POST['security']);
+$username = $mysqli->escape_string($_POST['register_username']);
+$email = $mysqli->escape_string($_POST['register_email']);
+$question = $mysqli->escape_string($_POST['register_question']);
+$answer = $mysqli->escape_string($_POST['register_answer']);
+$security_code = $mysqli->escape_string($_POST['register_securitycode']);
+$password = $mysqli->escape_string($_POST['register_password']);
+$password2 = $mysqli->escape_string($_POST['register_password2']);
+$security = $mysqli->escape_string($_POST['register_security']);
 $authority = 0;
 
 function randomString($length = 20) {

@@ -4,11 +4,11 @@
 require 'vendor/autoload.php';
 require 'db.php';
 
-$supportName = $mysqli->escape_string($_POST['name']);
-$supportEmail = $mysqli->escape_string($_POST['email']);
-$supportSubject = $mysqli->escape_string($_POST['subject']);
-$supportMessage = $mysqli->escape_string($_POST['message']);
-$security = $mysqli->escape_string($_POST['security']);
+$supportName = $mysqli->escape_string($_POST['support_name']);
+$supportEmail = $mysqli->escape_string($_POST['support_email']);
+$supportSubject = $mysqli->escape_string($_POST['support_subject']);
+$supportMessage = $mysqli->escape_string($_POST['support_message']);
+$security = $mysqli->escape_string($_POST['support_security']);
 
 
 /**

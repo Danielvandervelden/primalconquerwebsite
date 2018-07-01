@@ -4,8 +4,8 @@
 require 'vendor/autoload.php';
 require 'db.php';
 
-$userEmail = $_POST['email'];
-$username = $_POST['username'];
+$userEmail = $_POST['forgot_password_email'];
+$username = $_POST['forgot_password_username'];
 $websiteUrl = site_url();
 $result = $mysqli->query("SELECT * FROM accounts WHERE username='$username'");
 $user = $result->fetch_assoc();
