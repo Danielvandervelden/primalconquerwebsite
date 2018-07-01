@@ -24,7 +24,7 @@
             ?>
             </main>
 
-            <form method="post" action="/home">
+            <form method="POST" action="/">
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input required type="text" name="name" placeholder="Type your name here">
