@@ -30,13 +30,13 @@ get_header();
                                     </a>
                                 </h3>
                                 <div class="blog-post-content">
-                                    <?php echo wp_trim_words(get_the_content(), 150); ?>
+                                    <?php echo lt_html_excerpt($text); ?>
                                 </div>
                             </div>
                         </article>
 
                         <?php endwhile;
-wp_reset_postdata(); // end while ?>
+                            wp_reset_postdata(); // end while ?>
 
                 </div>
 
