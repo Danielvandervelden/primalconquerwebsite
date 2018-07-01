@@ -7,7 +7,7 @@
         <div class="parallax-container" style="background-image: url('<?php echo $GLOBALS['contentImage'] ?>');">
     <h2 class="white center hl t-shadow padding-top">Create an account!</h2>
     <div class="form-wrapper margin-center">
-        <form method="post" action="/account">
+        <form method="post" action="/account" class="margin-center">
             <div class="form-group">
                 <label class="white" for="username">Username</label>
                 <input class="form-control" name="username" type="text" placeholder="What will be your username?">
