@@ -34,7 +34,7 @@ if ($fp2) {
      <button class="btn btn-block btn-dark btn-lg" type="submit">My Profile</button>
      </form>
 
-    <form method="post" action="<?php echo site_url() ?>">
+    <form method="post" action="<?php echo site_url('/') ?>">
      <button name="logout" class="btn btn-block btn-dark btn-lg" type="submit">Logout</button>
      </form>
      </div>

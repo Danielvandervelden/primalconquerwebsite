@@ -23,7 +23,7 @@ if( isset($_GET['username']) && !empty($_GET['username']) AND isset($_GET['hash'
 
         <div class="form-wrapper margin-center padding-top">
         <h2 class="white hl center">Reset your password</h2>
-             <form method="post" action="/forgot">
+             <form method="post" action=<?php echo site_url('/support') ?>>
 
             <div class="form-group" style="display: none">
                 <label for="username">Username</label>

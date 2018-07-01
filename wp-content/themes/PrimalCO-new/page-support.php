@@ -24,7 +24,7 @@
             ?>
             </main>
 
-            <form method="POST" action="/">
+            <form method="POST" action="<?php echo site_url('/support') ?>">
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input required type="text" name="name" placeholder="Type your name here">
