@@ -22,7 +22,6 @@
                 <?php } // end while ?>
                 <?php } // end if
             ?>
-            </main>
 
             <form method="POST" action="<?php echo site_url('/support') ?>">
                 <div class="form-group">
@@ -43,10 +42,11 @@
                 </div>
                 <div class="form-group">
                     <label for="message">Message</label>
-                    <textarea required rows="5" cols="60" name="message" placeholder="What is your issue/question?"></textarea>
+                    <textarea required rows="5" cols="69" name="message" placeholder="What is your issue/question?"></textarea>
                 </div>
                     <button name="submit-support" class="btn btn-large float-l" type="submit">Submit message</button>
             </form>
+            </main>
         </div>
 
         <div class="flex-30 spacing-top spacing-bottom margin-center">
