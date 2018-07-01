@@ -14,10 +14,9 @@
             <?php if (has_post_thumbnail(get_the_ID())) {?>
 	                <div class="featured-image-single"><?php echo get_the_post_thumbnail(); ?></div>
             <?php }?>
+                <h2 class="hm"><?php the_title(); ?></h2>
 
-                <div>
-                <h2 class="hm"><?php the_title(); ?></h2>    
-                <?php the_content(); ?></div>
+                <div><?php the_content(); ?></div>
         </div>
                 <?php } // end while ?>
                 <?php } // end if

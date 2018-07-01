@@ -825,6 +825,9 @@ form {
 .main-content-container form {
   padding: 0; }
 
+.single .main-content-container form {
+  overflow: hidden; }
+
 /*
 |------------------------------------------------------------
 | All header styles.
