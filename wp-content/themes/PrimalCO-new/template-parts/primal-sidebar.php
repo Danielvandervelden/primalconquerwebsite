@@ -1,13 +1,17 @@
 <?php 
     $hostIp = "104.238.159.58";
+    $world1Port = 5516;
+    $logonPort = 9958;
     $world1Server = false;
     $world2Server = false;
     $loginServer = false;
     $loggedin = $_SESSION['logged-in'];
     $username = $_SESSION['username'];
 
-$fp1 = fsockopen($hostIP, '5816', $errno, $errstr, 2);
-if($fp1) {
+$world1 = @fsockopen($hostIP, $world1Port, $errno, $errstr, 0.1);
+
+// $fp1 = fsockopen($hostIP, '5816', $errno, $errstr, 2);
+if($world1) {
     $world1Server = true;
 } 
 
@@ -15,8 +19,9 @@ if($fp1) {
 //     $world2Server = true;
 // }
 
-$fp2 = fsockopen($hostIP, '9958', $errno, $errstr, 2);
-if ($fp2) {
+$logon = @fsockopen($hostIP, $logonPort, $errno, $errstr, 0.1);
+// $fp2 = fsockopen($hostIP, '9958', $errno, $errstr, 2);
+if ($logon) {
     $loginServer = true;
 }
 
