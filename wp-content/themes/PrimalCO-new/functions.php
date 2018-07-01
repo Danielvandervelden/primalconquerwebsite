@@ -17,7 +17,9 @@ function primal_files()
 
     wp_enqueue_style('custom-google-fonts', '//fonts.googleapis.com/css?family=Source+Sans+Pro');
     wp_enqueue_style('style.css', get_stylesheet_uri());
-    wp_enqueue_script('font-awesome', 'https://use.fontawesome.com/releases/v5.0.1/js/all.js', array(), null);
+    wp_enqueue_style( 'font-awesome-free', '//use.fontawesome.com/releases/v5.0.12/css/all.css');
+
+    
 }
 
 add_action('wp_enqueue_scripts', 'primal_files');

@@ -886,7 +886,8 @@ form {
         position: absolute;
         right: -20px;
         content: "\f078";
-        font-family: FontAwesome;
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
         font-size: 1.5rem;
         top: 2px;
         color: #FFF;
@@ -997,7 +998,7 @@ form {
     .why-us-blocks .why-us-row .flex .flex-40 {
       position: relative;
       height: 100%; }
-      .why-us-blocks .why-us-row .flex .flex-40 svg {
+      .why-us-blocks .why-us-row .flex .flex-40 .fas {
         font-size: 9rem;
         margin-top: 50px;
         color: #fc3868; }
@@ -1044,10 +1045,10 @@ footer {
   footer .social-container {
     max-width: 200px;
     margin: 0 auto; }
-    footer .social-container svg {
+    footer .social-container .fab {
       font-size: 3rem;
       transition: all .3s ease-in-out; }
-      footer .social-container svg:hover {
+      footer .social-container .fab:hover {
         color: #fc3868; }
   footer .epvp-logo {
     max-height: 50px;
