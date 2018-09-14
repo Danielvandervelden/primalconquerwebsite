@@ -44,7 +44,7 @@ if($logged_in) {
     <div class="website-container">
         <header class="header-container clearfix flex flex-column relative">
             <div class="header-v-center absolute">
-            <div class="relative flex-100 logo center">
+            <div class="no-opacity full-opacity-animation relative flex-100 logo center">
                 <img src="<?php echo get_theme_file_uri('./assets/images/logo.png') ?>" alt="Primal Conquer Logo">
             </div>
             <nav class="flex-100 menu relative">

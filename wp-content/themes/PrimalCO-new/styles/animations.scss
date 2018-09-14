@@ -2,8 +2,9 @@
 ALL CSS FOR ANIMATIONS
 ================================================================================== */
 
-.full-opacity {
-    animation: fullOpacity 700ms ease-in-out;
+.full-opacity-animation {
+    animation: fullOpacity 700ms ease-in-out forwards;
+    animation-delay: 0.5s;
 }
 
 @keyframes fullOpacity {
@@ -15,7 +16,7 @@ ALL CSS FOR ANIMATIONS
     }
 }
 
-.no-opacity {
+.no-opacity-animation {
     animation: noOpacity 700ms ease-in-out;
 }
 

@@ -281,6 +281,10 @@ a {
     display: none;
 }
 
+.no-opacity {
+    opacity: 0;
+}
+
 .hidden {
     transform: translateX(-99999px);
 }

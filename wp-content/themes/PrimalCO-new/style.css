@@ -596,6 +596,10 @@ a:hover {
   display: none;
 }
 
+.no-opacity {
+  opacity: 0;
+}
+
 .hidden {
   transform: translateX(-99999px);
 }
@@ -763,8 +767,9 @@ div:blank {
 /* ==================================================================================
 ALL CSS FOR ANIMATIONS
 ================================================================================== */
-.full-opacity {
-  animation: fullOpacity 700ms ease-in-out;
+.full-opacity-animation {
+  animation: fullOpacity 700ms ease-in-out forwards;
+  animation-delay: 0.5s;
 }
 
 @keyframes fullOpacity {
@@ -775,7 +780,7 @@ ALL CSS FOR ANIMATIONS
     opacity: 1;
   }
 }
-.no-opacity {
+.no-opacity-animation {
   animation: noOpacity 700ms ease-in-out;
 }
 
@@ -1035,7 +1040,7 @@ textarea {
   outline: 0;
   width: 100%;
   border-radius: 3px;
-  padding: 0 5px 0 5px;
+  padding: 5px 5px 0 5px;
   border: 0;
 }
 
