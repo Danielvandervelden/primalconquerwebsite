@@ -38,7 +38,7 @@ return (Empty($magic1) ? '' : 'None');
 
 <div class="main-content-container profile">
     <main>
-     <div class="flex" style="background-image: url('<?php echo $GLOBALS['contentImage'] ?>');">
+     <div class="padding-sides flex" style="background-image: url('<?php echo $GLOBALS['contentImage'] ?>');">
 
      <div class="single-post-container flex-100">
        <?php if($loggedin) { ?>
