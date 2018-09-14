@@ -82,7 +82,7 @@ if($logged_in) {
                             <div class="form-wrapper">
                                 <form method="post" action="<?php echo site_url() ?>">
                                     <div>
-                                        <input name="username" type="text" placeholder="Username.">
+                                        <input name="username" type="text" placeholder="Username">
                                     </div>
                                     <div>
                                         <input name="password" type="password" placeholder="Password">
