@@ -53,8 +53,8 @@ return (Empty($magic1) ? '' : 'None');
             </div>
 
             <div class="tab characters active-tab">
-                <div class="left-div-tabcontainer">
-                    <?php if($acca != NULL) { ?> 
+            <?php if($acca != NULL) { ?>
+                <div class="left-div-tabcontainer"> 
                     <ul>
                         <?php 
                         if($acca['Name'] != NULL) {
@@ -83,8 +83,8 @@ return (Empty($magic1) ? '' : 'None');
                         }
                          ?>
                     </ul>
-                   <?php  } ?>
                 </div>
+                <?php  } ?>
 
                 <div class="right-div-tabcontainer">
                     <div class="char-info display">
