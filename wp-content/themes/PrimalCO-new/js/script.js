@@ -200,6 +200,41 @@ $(document).ready(function() {
 		print_console()
 })
 
+//#############################################################
+// Oh well, why not add some animations when scrolling to a
+// certain point...
+//#############################################################
+
+// grab all the why-us blocks
+let whyUsBlocks = document.getElementsByClassName('why-us-block');
+// add an event listener on the window
+$(window).scroll(throttle(showWhyUsBlocks));
+
+function showWhyUsBlocks() {
+    // check whether the user scrolled past 200px from the top
+    if($(window).scrollTop() > 200) {
+        // if so every even block comes in from the left, and uneven from the left
+        for(var i = 0; i<whyUsBlocks.length; i++) {
+            if(isEven(i)) {
+                $(whyUsBlocks[i]).removeClass('hidden');
+                $(whyUsBlocks[i]).addClass('from-left');
+            } else {
+                $(whyUsBlocks[i]).removeClass('hidden');
+                $(whyUsBlocks[i]).addClass('from-right');
+            }
+        }
+        // and let's remove the event listener since we don't need it anymore. SAVE PERFORMANCEEEEEE
+        $(window).unbind('scroll');
+    }
+
+}
+
+
+function isEven(n) {
+    n = Number(n);
+    return n === 0 || !!(n && !(n%2));
+    }
+
 function throttle(fn, threshhold, scope) {
     threshhold || (threshhold = 250);
     var last,

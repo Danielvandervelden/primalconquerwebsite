@@ -281,6 +281,10 @@ a {
     display: none;
 }
 
+.hidden {
+    transform: translateX(-99999px);
+}
+
 /*
 |------------------------------------------------------------
 | Spacing

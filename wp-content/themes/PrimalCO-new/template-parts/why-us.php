@@ -4,7 +4,7 @@
         </div>
         <div class="why-us-blocks">
         <div class="spacing-bottom row-column flex j-evenly align-center why-us-row">
-            <div class="flex-40 why-us-block">
+            <div class="flex-40 why-us-block hidden">
                 <div class="flex">
                     <div class="flex-40">
                         <i class="fas fa-bolt"></i>
@@ -16,7 +16,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex-40 why-us-block">
+            <div class="flex-40 why-us-block hidden">
                 <div class="flex">
                     <div class="flex-40">
                         <i class="fas fa-wrench"></i>
@@ -30,7 +30,7 @@
             </div>
         </div>
         <div class="spacing-top row-column flex j-evenly align-center why-us-row">
-            <div class="flex-40 why-us-block">
+            <div class="flex-40 why-us-block hidden">
                 <div class="flex">
                     <div class="flex-40">
                         <i class="fas fa-star"></i>
@@ -42,7 +42,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex-40 why-us-block">
+            <div class="flex-40 why-us-block hidden">
                 <div class="flex">
                     <div class="flex-40">
                         <i class="fas fa-users"></i>
