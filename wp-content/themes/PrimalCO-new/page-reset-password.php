@@ -27,7 +27,7 @@ if( isset($_GET['username']) && !empty($_GET['username']) AND isset($_GET['hash'
 
             <div class="form-group" style="display: none">
                 <label for="username">Username</label>
-                <input readonly class="form-control" name="username" type="text" placeholder="Enter your current username." value=<?php echo $usernameParam ?>>
+                <input readonly class="form-control" name="username" type="text" placeholder="Enter your username" value=<?php echo $usernameParam ?>>
             </div>
 
             <div class="form-group">
