@@ -1,6 +1,6 @@
         <div class="why-us-container margin-center">
         <h2 class="hxl center uppercase bold black">Why Us?</h2>
-        <p>We aim to provide the most authentic, solid and lag-free game play experience by utilizing our very own game emulator.</p>
+        <p class="padding-sides">We aim to provide the most authentic, solid and lag-free game play experience by utilizing our very own game emulator.</p>
         </div>
         <div class="why-us-blocks">
         <div class="spacing-bottom row-column flex j-evenly align-center why-us-row">

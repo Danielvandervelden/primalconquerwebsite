@@ -11,7 +11,6 @@
     background-image: url('assets/images/slider_2.jpg');
     background-size: cover;
     background-position: center center;
-    z-index: 0;
     position: relative;
 
     &:after {
@@ -19,6 +18,10 @@
         height: 100%;
         background-color: rgba(0, 0, 0, .4);
         position: absolute;
+    }
+
+    #mobile-menu {
+        display: none;
     }
 
     .header-v-center.absolute {
@@ -147,7 +150,7 @@
             }
         }
     }
-
+@media (min-width: 768px) {
     .main-menu-item:hover a {
         color: $color_1;
     }
@@ -167,11 +170,13 @@
         }
     }
 
-    .main-menu-item.dropdown:hover>.dropdown-menu {
-        display: block;
-        position: absolute;
-        width: 100%;
-        animation: openUp 300ms ease-in-out;
+    
+        .main-menu-item.dropdown:hover>.dropdown-menu {
+            display: block;
+            position: absolute;
+            width: 100%;
+            animation: openUp 300ms ease-in-out;
+        }
     }
 }
 
@@ -182,5 +187,122 @@
 
     100% {
         opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    .header-container .header-v-center.absolute {
+        top: 50%;
+    }
+
+    .header-container #mobile-menu {
+        display: block;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        font-size: 3rem; 
+        z-index:10;
+        
+        .fa.fa-bars {
+            color: #FFF;
+            cursor: pointer;
+            text-shadow: 1px 1px 1px #000;
+        }
+
+        .fa-times {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            color: #000;
+            font-size: 3rem;
+            cursor: pointer;
+        }
+
+        .mobile-menu-content {
+            height: 100vh;
+            background-color: rgba(255, 255, 255, .9);
+            width: 80vw;
+            transform: translateX(-1000px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 99;
+            transition: all 1s ease-in-out;
+
+            &.menu-active {
+                transform:translateX(0) !important;
+            }
+        }
+
+        // we want the actual cloned nav to be displayed.
+        nav {
+            display: block;
+            height: auto;
+            margin-top: 50px;
+            text-align: left;
+
+            .main-menu {
+                position: static;
+                display: block;
+                transform: translateX(0);
+
+                .main-menu-item {
+                    display: block;
+                    float: none;
+                    width: auto;
+                    text-align: left;
+                    padding: 0 0 10px 20px;
+                    font-size: 2rem;
+
+                    a {
+                        display: inline-block;
+                        width: auto;
+                        min-width: 100px;
+                        color: #000 !important;
+
+                        &.active-menu-item {
+                            color: $color_1 !important;
+
+                            &:after{
+                                color: $color_1 !important;
+                                transition: all .3s ease-in-out;
+                            }
+                        }
+
+                        &:after{
+                            color: #000 !important;
+                        }
+                    }
+
+                    .inner-menu {
+                        background-color: transparent !important;
+                        list-style: none;
+                        padding: 0 0 0 10px;
+
+                        .inner-menu-item {
+                            font-size: 1.4rem;
+                        }
+
+                        form {
+                            padding: 0;
+                            max-width: 50%;
+                        }
+
+                        button {
+                            background-color: #000;
+                            border-color: #000;
+                        }
+                    }
+
+                    &.active a:after {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
     }
 }

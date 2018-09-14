@@ -5,7 +5,7 @@ get_header();
 <div class="main-content-container rules">
     <main>
     <div style="background-image: url('<?php echo $GLOBALS['contentImage'] ?>');">
-    <div class="form-wrapper margin-center padding-top">
+    <div class="padding-sides form-wrapper margin-center padding-top">
         <form action="/forgot" method="POST">
         <div class="form-group">
             <label class="white hm" for="username">Username</label>

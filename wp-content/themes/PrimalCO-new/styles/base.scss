@@ -77,6 +77,10 @@ html, body {
     font-family: 'Open Sans', sans-serif;
     background-color: rgba(179, 204, 210, 1);
     overflow-x: hidden; // Stop overflowwwwwwww
+
+    &.no-scroll {
+        overflow: hidden;
+    }
 }
 
 a {

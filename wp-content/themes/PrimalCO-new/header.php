@@ -43,6 +43,12 @@ if($logged_in) {
 <body <?php body_class() ?>>
     <div class="website-container">
         <header class="header-container clearfix flex flex-column relative">
+            <div id="mobile-menu">
+                <i class="open-menu fa fa-bars"></i>
+                <div class="mobile-menu-content">
+                <i class="close-menu fa fa-times"></i>
+                </div>
+            </div>
             <div class="header-v-center absolute">
             <div class="no-opacity full-opacity-animation relative flex-100 logo center">
                 <img src="<?php echo get_theme_file_uri('./assets/images/logo.png') ?>" alt="Primal Conquer Logo">

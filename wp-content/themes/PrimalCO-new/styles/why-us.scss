@@ -11,9 +11,8 @@
 
     p {
         color: #FFF;
-        z-index: 5;
-        position: absolute;
-        width: 100%;
+        z-index: 1;
+        position: relative;
         text-align: center;
         font-size: 1.6rem;
         margin-top: 0;
@@ -104,14 +103,10 @@
         margin-bottom: 0 !important;
         margin-top: 0 !important;
         flex-direction: column !important;
-        .orange-bg,
-        .blue-bg,
-        .green-bg,
-        .red-bg {
-            margin-bottom: 20px;
-            margin-left: 10px;
-            margin-right: 10px;
-            min-width: 0;
-        }
+    }
+
+    .why-us-blocks .why-us-block {
+        min-width: 0;
+        flex: 0 1 100%;
     }
 }
