@@ -4,7 +4,7 @@ get_header();
 ?>
 <div class="main-content-container rules">
     <main>
-    <div class="parallax-container" style="background-image: url('<?php echo $GLOBALS['contentImage'] ?>');">
+    <div style="background-image: url('<?php echo $GLOBALS['contentImage'] ?>');">
     <div class="form-wrapper margin-center padding-top">
         <form action="/forgot" method="POST">
         <div class="form-group">

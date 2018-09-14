@@ -211,9 +211,13 @@ a {
 
 /*
 |------------------------------------------------------------
-| Headings
+| Text
 |------------------------------------------------------------
 */
+
+.font-xs {
+    font-size: 1rem;
+}
 
 .uppercase {
     text-transform: uppercase;
@@ -313,6 +317,11 @@ a {
 
 .padding-left {
     padding-left: 15px;
+}
+
+.padding-sides {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /*

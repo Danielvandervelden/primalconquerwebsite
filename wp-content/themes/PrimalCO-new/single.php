@@ -1,11 +1,11 @@
 <?php get_header()?>
 
 <div class="main-content-container single">
-<div class="parallax-container flex" style="background-image: url('<?php echo $GLOBALS['contentImage'] ?>');">
+<div class="flex" style="background-image: url('<?php echo $GLOBALS['contentImage'] ?>');">
   <div class="single-post-container flex-100">
     <main class="single-post-content margin-center">
-        <form action="<?php echo site_url('/news') ?>" method="POST">
-            <button type="submit" class="absolute btn"><i class="fa fa-chevron-left"></i>Back to the News</button>
+        <form class="spacing-top" action="<?php echo site_url('/news') ?>" method="POST">
+            <button type="submit" class="btn"><i class="fa fa-chevron-left"></i>Back to the News</button>
         </form>
      <?php   if (have_posts()) {
     while (have_posts()) {

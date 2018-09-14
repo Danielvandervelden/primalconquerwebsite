@@ -1,7 +1,7 @@
 <?php get_header()?>
 
 <div class="main-content-container single">
-    <div class="parallax-container flex flex-row-column" style="background-image: url('<?php echo $GLOBALS['contentImage'] ?>');">
+    <div class="padding-sides flex flex-row-column" style="background-image: url('<?php echo $GLOBALS['contentImage'] ?>');">
         <div class="single-post-container flex-70">
             <main class="single-post-content margin-center blog-post-content">
                 <?php if (have_posts()) {

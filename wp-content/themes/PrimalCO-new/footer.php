@@ -31,7 +31,7 @@
         </div>
     </div>
 
-    <p class="white center">Made by Dan A.K.A. Anti, only to be used for PrimalCO.</p>
+    <p class="white center font-xs">Made exclusively for Primal Conquer. Dan © </p>
 </footer>
 </div> <!-- end of container div -->
 </body>

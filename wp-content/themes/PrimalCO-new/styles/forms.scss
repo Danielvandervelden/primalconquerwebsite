@@ -35,3 +35,25 @@ form {
 .single .main-content-container form {
     overflow: hidden;
 }
+
+input {
+    outline: 0;
+    height: 25px;
+    width: 100%;
+    border-radius: 3px;
+    padding: 0 5px 0 5px;
+    border: 0;
+}
+
+textarea {
+    outline: 0;
+    width: 100%;
+    border-radius: 3px;
+    padding: 0 5px 0 5px;
+    border: 0;
+}
+
+button + a {
+    margin-top: 8px;
+    display: inline-block;
+}

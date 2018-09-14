@@ -4,7 +4,7 @@
 
 <div class="main-content-container register">
     <main>
-        <div class="parallax-container" style="background-image: url('<?php echo $GLOBALS['contentImage'] ?>');">
+        <div style="background-image: url('<?php echo $GLOBALS['contentImage'] ?>');">
     <h2 class="white center hl t-shadow padding-top">Create an account!</h2>
     <div class="form-wrapper margin-center">
         <form method="post" action="/account" class="margin-center">

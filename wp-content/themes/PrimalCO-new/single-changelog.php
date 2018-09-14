@@ -1,7 +1,7 @@
 <?php get_header()?>
 
 <div class="main-content-container single">
-<div class="parallax-container flex" style="background-image: url('<?php echo $GLOBALS['contentImage'] ?>');">
+<div class="flex" style="background-image: url('<?php echo $GLOBALS['contentImage'] ?>');">
   <div class="single-post-container flex-100">
     <main class="single-post-content margin-center">
         <form action="<?php echo site_url('/changelog') ?>" method="POST">

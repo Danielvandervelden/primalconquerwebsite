@@ -55,7 +55,7 @@ if ($logon) {
                 <input name="password" class="form-control" type="password" placeholder="Enter your password">
             </div>
 
-            <button name="login" class="float-l btn btn-large" type="submit">Login</button><a class="float-r forgotpassword-login" href="<?php echo site_url('/forgot') ?>">Forgot password</a>
+            <button name="login" class="btn btn-large" type="submit">Login</button><a class="forgotpassword-login" href="<?php echo site_url('/forgot') ?>">Forgot password</a>
         </form>
 
     </div>

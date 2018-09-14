@@ -9,7 +9,7 @@ $client = new WP_Query(array(
 
 <div class="main-content-container downloads">
     <main>
-         <div class="parallax-container flex evenly flex-column" style="background-image: url('<?php echo $GLOBALS['contentImage'] ?>');">
+         <div class="flex evenly flex-column" style="background-image: url('<?php echo $GLOBALS['contentImage'] ?>');">
 
          <div class="clients flex-50">
         <h2 class="center hm t-shadow white">Client Downloads</h2>
