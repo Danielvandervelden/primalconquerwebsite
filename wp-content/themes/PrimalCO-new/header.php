@@ -62,9 +62,6 @@ if($logged_in) {
                                 <a href="<?php echo site_url('/news') ?>">News</a>
                             </li>
                             <li class="inner-menu-item">
-                                <a href="<?php echo site_url('/changelog') ?>">Changelog</a>
-                            </li>
-                            <li class="inner-menu-item">
                                 <a href="<?php echo site_url('/downloads') ?>">Downloads</a>
                             </li>
                             <li class="inner-menu-item">
