@@ -27,7 +27,7 @@
             <a href="http://www.elitepvpers.de" target="_blank"><img class="epvp-logo" src="<?php echo get_theme_file_uri('./assets/images/elitepvpers-shield.png') ?>" alt="ElitePVPers logo" /></a>
         </div>
         <div class="flex-33">
-            <a href="#"><i class="white fab fa-youtube"></i></a>
+            <a href="https://www.youtube.com/channel/UCF07MuYVw26fmSXTVE3_5XA"><i class="white fab fa-youtube"></i></a>
         </div>
     </div>
 
