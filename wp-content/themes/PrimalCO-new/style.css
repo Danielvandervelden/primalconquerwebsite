@@ -1135,6 +1135,9 @@ button + a {
   max-width: 100%;
   margin-bottom: 8px;
 }
+.main-menu .main-menu-item .inner-menu form button {
+  margin: 0 auto;
+}
 .main-menu .main-menu-item .dropdown-menu {
   display: none;
   margin-top: 10px;

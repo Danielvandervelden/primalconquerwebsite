@@ -54,12 +54,9 @@ return (Empty($magic1) ? '' : 'None');
 
             <div class="tab characters active-tab">
                 <div class="left-div-tabcontainer">
+                    <?php if($acca != NULL) ?> {
                     <ul>
                         <?php 
-                        if($acca === NULL) {
-                            echo "";
-                        }
-
                         if($acca['Name'] != NULL) {
                             echo "<li class=' active inner-menu-tab'>" . $acca['Name'] . "</li>";
                         }
@@ -86,6 +83,7 @@ return (Empty($magic1) ? '' : 'None');
                         }
                          ?>
                     </ul>
+                    }
                 </div>
 
                 <div class="right-div-tabcontainer">
