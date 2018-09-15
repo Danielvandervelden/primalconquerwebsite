@@ -20,6 +20,8 @@ $logged_in = $_SESSION['logged-in'];
         require 'database/password_change_email.php';
     } elseif (isset($_POST['submit-support'])) { // if change email button gets clicked
         require 'database/submit_support.php';
+    } elseif (isset($_POST['submit_donation'])) { // if you submit your donation gets clicked
+        require 'paypal/submit-donation.php';
     }
 
 if($logged_in) {

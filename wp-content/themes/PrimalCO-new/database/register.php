@@ -38,6 +38,8 @@ $result = $mysqli->query("SELECT * FROM accounts WHERE username='$username'") or
 
 if(!empty($security)) {
   echo "<div class='full-opacity faded-black-bg notice flex align-center j-center'><div class='message error flex-40'><i class='fa fa-window-close' aria-hidden='true'></i><p>Error!</p></div></div>";
+} else if (empty($question) || empty($answer) || empty($security_code) || empty($username) || empty($password) || empty($password2) || empty($email)) {
+  echo "<div class='full-opacity faded-black-bg notice flex align-center j-center'><div class='message error flex-40'><i class='fa fa-window-close' aria-hidden='true'></i><p>Please fill in all the fields!</p></div></div>";
 } else if($result->num_rows > 0) {
   echo "<div class='full-opacity faded-black-bg notice flex align-center j-center'><div class='message error flex-40'><i class='fa fa-window-close' aria-hidden='true'></i><p>User with this username already exists!</p></div></div>";
 
