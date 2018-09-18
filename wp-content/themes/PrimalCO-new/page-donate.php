@@ -77,10 +77,10 @@ var donationAmount;
  })
      // Render the PayPal button
      paypal.Button.render({
-  env: 'sandbox', // Optional: specify 'sandbox' environment
+  env: 'production', // Optional: specify 'sandbox' environment
   client: {
     sandbox:    'ATShcGVgsH1xyn04dH_bT0Bbe9D0gBx6fVq012aY4EBe9SCj4G_hFNJcAz-3Kzjo02NF6QCyylmJq_bb',
-    production: 'xxxxxxxxx'
+    production: 'xxxxxx'
   },
   commit: true, // Optional: show a 'Pay Now' button in the checkout flow
   payment: function (data, actions) {
