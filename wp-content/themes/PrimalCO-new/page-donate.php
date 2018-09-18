@@ -29,30 +29,32 @@ $acca8 = mysqli_fetch_array(mysqli_query($mysqli, "SELECT * FROM characters WHER
 ?>
 
 <div class="main-content-container single">
-    <form class="no-display" action="/donate-success"><button id="success-button" type="submit">Test</button></form>
-    <div class="padding-top padding-bottom padding-sides">
-        <?php if($loggedin) { ?>
+    <div class="donation-form">
+        <form class="no-display" action="/donate-success"><button id="success-button" type="submit">Test</button></form>
+        <div class="padding-top padding-bottom padding-sides">
+            <?php if($loggedin) { ?>
+                
+            <div class="white"><p>Hello there! We are very happy to see that you're interested in donating money to our server.
+            Please keep in mind that any donation you make CANNOT be refunded under any circumstances. If you 
+            are below 18 years old, please make sure you have permission of your caretaker(s). </p>
             
-        <div class="white"><p>Hello there! We are very happy to see that you're interested in donating money to our server.
-        Please keep in mind that any donation you make CANNOT be refunded under any circumstances. If you 
-        are below 18 years old, please make sure you have permission of your caretaker(s). </p>
-        
-        <p>The currency is in Euro, 1 Euro = 1CPs. Please take note: CPs cannot be traded in game. Their only
-        use is the purchase of items in the shopping mall. The items purchased from the shopping mall, however,
-        are tradable.</p>
+            <p>The currency is in Euros and 1 Euro = 1CPs. Please take note: CPs cannot be traded in game. Their only
+            use is the purchase of items in the shopping mall. The items purchased from the shopping mall, however,
+            are tradable.</p>
 
-        <p>If you wish to donate, you can do so below. Only WHOLE Euro's are allowed. Any amounts containing decimals
-        WILL be rounded. Make sure to double check your payment screen to make sure everything is correct!</p>
-        </div>
-        <form action="/donate" method="POST">
-                <div class="form-group">
-                    <input id="donation-amount" type="number" name="donation_amount" min="1" step="1" />
-                </div>
-            <div id="paypal-button-container"></div>
-        </form>
+            <p>If you wish to donate, you can do so below. Only WHOLE Euro's are allowed. Any amounts containing decimals
+            WILL be rounded. Make sure to double check your payment screen to make sure everything is correct!</p>
+            </div>
+            <form action="/donate" method="POST">
+                    <div class="form-group">
+                        <input id="donation-amount" type="number" name="donation_amount" min="1" step="1" />
+                    </div>
+                <div id="paypal-button-container"></div>
+            </form>
             <?php } else { ?>
                 <div class="white">You need to be logged in to use this feature!</div>
             <?php } ?>
+        </div>
     </div>
 </div>
 <script src="https://www.paypalobjects.com/api/checkout.js"></script>

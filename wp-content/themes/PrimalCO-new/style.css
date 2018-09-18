@@ -1146,6 +1146,7 @@ button + a {
 .main-menu .main-menu-item .inner-menu .inner-menu-item {
   padding-top: 5px;
   padding-bottom: 10px;
+  display: block;
 }
 .main-menu .main-menu-item .inner-menu a {
   color: #FFF;
@@ -1760,6 +1761,17 @@ footer .epvp-logo:hover {
 
 .main-content-container.profile {
   min-height: 400px;
+}
+
+/*
+|------------------------------------------------------------
+| All styles for donations.
+|------------------------------------------------------------
+*/
+.donate-success > div,
+.donation-form {
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */

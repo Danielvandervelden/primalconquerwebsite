@@ -17,12 +17,13 @@ $currentCPs = $user['CPs'];
 
 $totalDonation = $currentCPs + $donation;
 
-$changeCPs = $mysqli->query("UPDATE accounts SET CPs = '$totalDonation' WHERE username = '$username'")
+$changeCPs = $mysqli->query("UPDATE accounts SET CPs = '$totalDonation' WHERE username = '$username'");
 
-
+// lmao, let's destroy the session variable. Otherwise you can keep refreshing the page for free CPS xD
+unset($_SESSION['donate']);
 ?>
 
-<div class="main-content-container"> 
+<div class="main-content-container donate-success"> 
     <div class="padding-top padding-bottom padding-left padding-right white">
         <?php if($loggedin && $donation !== false) {?>
         Thank you for your donation, <?php echo $username ?>. Please relog your account and check your inventory! The amount of money you donated should be converted into CPS!

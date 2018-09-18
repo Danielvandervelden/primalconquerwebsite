@@ -103,6 +103,7 @@ if($logged_in) {
                         <a class="profile" href="#" ><i class="fas fa-user"></i></a>
                         <ul class="inner-menu faded-black-bg">
                             <a class="inner-menu-item" href="<?php echo site_url('/profile') ?>">My Profile</a>
+                            <a class="inner-menu-item" href="<?php echo site_url('/donate') ?>">Donate</a>
                             <form action="/" method="POST">
                             <button class="btn" name="logout" type="submit">Logout</button>
                             </form>
