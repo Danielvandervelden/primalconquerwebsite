@@ -10,8 +10,9 @@ User: Administrator Password: Summer2k18
 
 function primal_files()
 {
-	wp_enqueue_script('primal_js', get_theme_file_uri('js/script.js'), array('jquery'), null, '1.0', true);
-	wp_enqueue_script('owl-carousel-js', get_theme_file_uri('js/owl-carousel/owl.carousel.min.js'), array('jquery'), null, '1.0', true);
+    wp_enqueue_script('primal_js', get_theme_file_uri('js/script.js'), array('jquery'), null, '1.0', true);
+    
+    wp_enqueue_script('owl-carousel-js', get_theme_file_uri('js/owl-carousel/owl.carousel.min.js'), array('jquery'), null, '1.0', true);
 	wp_enqueue_style('owl-carousel', get_template_directory_uri() . '/styles/owl-carousel/owl.carousel.min.css');
 	wp_enqueue_style('owl-carousel-default', get_template_directory_uri() . '/styles/owl-carousel/owl.theme.default.min.css');
 
