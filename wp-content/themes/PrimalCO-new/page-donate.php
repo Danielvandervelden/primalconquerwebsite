@@ -89,7 +89,7 @@ var donationAmount;
         transactions: [
           {
             amount: {
-              total: Math.round(donationAmount),
+              total: donationAmount,
               currency: 'EUR'
             }
           }
