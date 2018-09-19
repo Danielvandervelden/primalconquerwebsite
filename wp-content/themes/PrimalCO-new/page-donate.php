@@ -60,61 +60,85 @@ $acca8 = mysqli_fetch_array(mysqli_query($mysqli, "SELECT * FROM characters WHER
 <script src="https://www.paypalobjects.com/api/checkout.js"></script>
 <script>
 
-
 var $ = jQuery;
 
 var donationAmount;
  
  $('#donation-amount').keyup(function() {
      donationAmount = Number($('#donation-amount').val());
- })
+ });
 
  $('#donation-amount').keydown(function(e) {
     var ingnore_key_codes = [188,190];
    if ($.inArray(e.keyCode, ingnore_key_codes) >= 0){
       e.preventDefault();
     }
- })
-     // Render the PayPal button
-     paypal.Button.render({
-  env: 'production', // Optional: specify 'sandbox' environment
-  client: {
-    sandbox:    'ATShcGVgsH1xyn04dH_bT0Bbe9D0gBx6fVq012aY4EBe9SCj4G_hFNJcAz-3Kzjo02NF6QCyylmJq_bb',
-    production: 'xxxxxx'
-  },
-  commit: true, // Optional: show a 'Pay Now' button in the checkout flow
-  payment: function (data, actions) {
-    return actions.payment.create({
-      payment: {
-        transactions: [
-          {
-            amount: {
-              total: donationAmount,
-              currency: 'EUR'
+ });
+
+// Render the PayPal button
+
+paypal.Button.render({
+
+    // Set your environment
+
+    env: 'sandbox', // sandbox | production
+
+    // Specify the style of the button
+
+    style: {
+        layout: 'vertical',  // horizontal | vertical
+        size:   'medium',    // medium | large | responsive
+        shape:  'rect',      // pill | rect
+        color:  'gold'       // gold | blue | silver | black
+    },
+
+    // Specify allowed and disallowed funding sources
+    //
+    // Options:
+    // - paypal.FUNDING.CARD
+    // - paypal.FUNDING.CREDIT
+    // - paypal.FUNDING.ELV
+
+    funding: {
+        allowed: [ paypal.FUNDING.CARD, paypal.FUNDING.CREDIT ],
+        disallowed: [ ]
+    },
+
+    // PayPal Client IDs - replace with your own
+    // Create a PayPal app: https://developer.paypal.com/developer/applications/create
+
+    client: {
+        sandbox:    'Aa3NKD9_wdHAOUtYD1OrYqzzk0Pq6gslNU0wPVmLJTpEvSpp6_cRmbEHMGob4Hq_caIs8shBAyfr7Kme',
+        production: '<insert production client id>'
+    },
+
+    payment: function(data, actions) {
+        return actions.payment.create({
+            payment: {
+                transactions: [
+                    {
+                        amount: { total: donationAmount, currency: 'EUR' }
+                    }
+                ]
             }
-          }
-        ]
-      }
-    });
-  },
-  onAuthorize: function (data, actions) {
-    // Get the payment details
-    return actions.payment.get()
-      .then(function (paymentDetails) {
-        var donatedAmount = paymentDetails.transactions[0].amount.total;
-        
-        $.post('/wp-content/themes/PrimalCO-new/paypal/submit-donation.php', {donation: donatedAmount}, function(response) {
-            console.log(response);
-            toSuccess();            
-        })
-      });
-  }
+        });
+    },
+
+    onAuthorize: function(data, actions) {
+        return actions.payment.execute().then(function(paymentDetails) {
+            var donatedAmount = paymentDetails.transactions[0].amount.total;
+            $.post('/wp-content/themes/PrimalCO-new/paypal/submit-donation.php', {donation: donatedAmount}, function(response) {
+                setTimeout(toSuccess(), 3000);
+            })
+        });
+    }
+
 }, '#paypal-button-container');
 
 function toSuccess() {
     $('#success-button').click();
-    console.log('clicked');
 }
+
 </script>
 
 <?php get_footer()?>
