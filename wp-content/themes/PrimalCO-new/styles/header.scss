@@ -69,6 +69,15 @@
         }
     }
 }
+
+.xtremetop100 { 
+    text-align: center;
+            
+    z-index: 100;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
 }
 
 .main-menu {
