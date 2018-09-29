@@ -24,6 +24,10 @@ $currentTime = $dt->format('Y-m-d H:i:s');
 $newVotePoints = 1000;
 $updateVotePoints = $mysqli->query("UPDATE accounts SET VotePoints = '$newVotePoints' WHERE username = '$username'");
 
+echo 'executed';
+
+var_dump($username, $user['name'], $token, $user['token']);
+
 if($user['Token'] == $token && $username === $user['Username'] && $allowedVote < $currentTime) {
     $currentVotePoints = $user['VotePoints'];
     $newVotePoints = $currentVotePoints + 1;
