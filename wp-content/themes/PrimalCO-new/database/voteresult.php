@@ -4,8 +4,8 @@
 Template Name: voteresult
 */
 
-$username = 'itsdaniel';
-$token = 0;
+$username = $_GET['user'];
+$token = $_GET['token'];
 
 require 'db.php';
 
@@ -21,18 +21,10 @@ $dt = new DateTime("now", new DateTimeZone($tz)); //first argument "must" be a s
 $dt->setTimestamp($timestamp); //adjust the object to correct timestamp
 $currentTime = $dt->format('Y-m-d H:i:s');
 
-$currentVotePoints = $user['VotePoints'];
-$newVotePoints = $currentVotePoints + 500;
-$updateVotePoints = $mysqli->query("UPDATE accounts SET VotePoints = '$newVotePoints' WHERE username = '$username'");
-
-echo 'executed';
-
 if($user['Token'] == $token && $username === $user['Username'] && $allowedVote < $currentTime) {
     $currentVotePoints = $user['VotePoints'];
     $newVotePoints = $currentVotePoints + 1;
 
-    // $updateVotePoints = $mysqli->query("UPDATE accounts SET VotePoints = '$newVotePoints' WHERE username = '$username'");
-    // $updateLastVoted = $mysqli->query("UPDATE accounts SET LastVote = '$currentTime' WHERE username = '$username'");
-
-    echo 'win';
+    $updateVotePoints = $mysqli->query("UPDATE accounts SET VotePoints = '$newVotePoints' WHERE Username = '$username'");
+    $updateLastVoted = $mysqli->query("UPDATE accounts SET LastVote = '$currentTime' WHERE Username = '$username'");
  }
