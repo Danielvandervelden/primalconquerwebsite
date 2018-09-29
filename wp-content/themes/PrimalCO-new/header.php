@@ -4,6 +4,7 @@ session_start();
 $accountLink;
 $logged_in = $_SESSION['logged-in'];
 $username = $_SESSION['username'];
+$token = $_SESSION['Token'];
 
 $result = $mysqli->query("SELECT * FROM accounts WHERE username='$username'");
 $user = $result->fetch_assoc();
