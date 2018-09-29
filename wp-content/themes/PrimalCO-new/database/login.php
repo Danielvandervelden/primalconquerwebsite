@@ -31,6 +31,7 @@ if($result->num_rows == 0) {//if user doesn't exist..
         
         $_SESSION['username'] = $user['Username'];
         $_SESSION['hash'] = $user['Hash'];
+        $_SESSION['token'] = $user['Token'];
 
         $_SESSION['logged-in'] = true;
     } else {

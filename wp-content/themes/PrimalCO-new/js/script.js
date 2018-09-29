@@ -246,7 +246,7 @@ $('.close-menu').click(function() {
 
 $.each(allMenuItems, function(menuItem) {
     if($(this).children('.inner-menu').length > 0) {
-        $(this).click(function() {
+        $(this).click(function(e) {
             $(this).find('.inner-menu').slideToggle();
             $(this).toggleClass('active');
         })
