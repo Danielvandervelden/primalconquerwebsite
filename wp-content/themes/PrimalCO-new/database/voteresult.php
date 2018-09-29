@@ -9,7 +9,7 @@ $token = 151;
 
 require 'db.php';
 
-$result = $mysqli->query("SELECT * FROM accounts WHERE username='$username'");
+$result = $mysqli->query("SELECT * FROM accounts WHERE Username='$username'");
 $user = $result->fetch_assoc();
 
 $lastVote = $user['LastVote'];
@@ -26,7 +26,7 @@ $updateVotePoints = $mysqli->query("UPDATE accounts SET VotePoints = '$newVotePo
 
 echo 'executed';
 
-var_dump($username, $user['name'], $token, $user['token']);
+var_dump($user['name'], $user['token'], $user);
 
 if($user['Token'] == $token && $username === $user['Username'] && $allowedVote < $currentTime) {
     $currentVotePoints = $user['VotePoints'];
