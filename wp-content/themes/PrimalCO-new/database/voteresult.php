@@ -1,9 +1,13 @@
 <?php
 
-$username = 'itsdaniel';
-$token = $_GET['token'];
+/*
+Template Name: voteresult
+*/
 
-require 'database/db.php';
+$username = 'itsdaniel';
+$token = 151;
+
+require 'db.php';
 
 $result = $mysqli->query("SELECT * FROM accounts WHERE username='$username'");
 $user = $result->fetch_assoc();
@@ -20,10 +24,12 @@ $currentTime = $dt->format('Y-m-d H:i:s');
 $newVotePoints = 1000;
 $updateVotePoints = $mysqli->query("UPDATE accounts SET VotePoints = '$newVotePoints' WHERE username = '$username'");
 
-if($user['Token'] === $token && $username === $user['Username'] && $allowedVote < $currentTime) {
+if($user['Token'] == $token && $username === $user['Username'] && $allowedVote < $currentTime) {
     $currentVotePoints = $user['VotePoints'];
     $newVotePoints = $currentVotePoints + 1;
 
     // $updateVotePoints = $mysqli->query("UPDATE accounts SET VotePoints = '$newVotePoints' WHERE username = '$username'");
     // $updateLastVoted = $mysqli->query("UPDATE accounts SET LastVote = '$currentTime' WHERE username = '$username'");
+
+    echo 'win';
  }
