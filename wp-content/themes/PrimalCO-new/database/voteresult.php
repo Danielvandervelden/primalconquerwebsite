@@ -5,7 +5,7 @@ Template Name: voteresult
 */
 
 $username = 'itsdaniel';
-$token = 151;
+$token = 0;
 
 require 'db.php';
 
@@ -14,6 +14,9 @@ $user = $result->fetch_assoc();
 
 $lastVote = $user['LastVote'];
 $allowedVote = date('Y-m-d H:i:s',strtotime('+12 hour',strtotime($lastVote)));
+
+var_dump($user);
+die();
 
 $tz = 'Europe/London';
 $timestamp = time();
@@ -25,8 +28,6 @@ $newVotePoints = 1000;
 $updateVotePoints = $mysqli->query("UPDATE accounts SET VotePoints = '$newVotePoints' WHERE username = '$username'");
 
 echo 'executed';
-
-var_dump($user['name'], $user['token'], $user);
 
 if($user['Token'] == $token && $username === $user['Username'] && $allowedVote < $currentTime) {
     $currentVotePoints = $user['VotePoints'];
