@@ -17,7 +17,7 @@ function primal_files()
 	wp_enqueue_style('owl-carousel-default', get_template_directory_uri() . '/styles/owl-carousel/owl.theme.default.min.css');
 
     wp_enqueue_style('custom-google-fonts', '//fonts.googleapis.com/css?family=Source+Sans+Pro');
-    wp_enqueue_style('style.css', get_stylesheet_uri());
+    wp_enqueue_style('style.css', get_stylesheet_uri(), array(), filemtime( get_stylesheet_directory() . '/style.css' ) );
     wp_enqueue_style( 'font-awesome-free', '//use.fontawesome.com/releases/v5.0.12/css/all.css');
 
     
