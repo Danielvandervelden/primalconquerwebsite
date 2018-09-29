@@ -11,13 +11,13 @@ $result = $mysqli->query("SELECT * FROM accounts WHERE username='$username'");
 $user = $result->fetch_assoc();
 
 $lastVote = $user['LastVote'];
-$allowedVote = date('Y-m-d, H:i:s',strtotime('+12 hour',strtotime($lastVote)));
+$allowedVote = date('Y-m-d H:i:s',strtotime('+12 hour',strtotime($lastVote)));
 
 $tz = 'Europe/London';
 $timestamp = time();
 $dt = new DateTime("now", new DateTimeZone($tz)); //first argument "must" be a string
 $dt->setTimestamp($timestamp); //adjust the object to correct timestamp
-$currentTime = $dt->format('Y-m-d, H:i:s');
+$currentTime = $dt->format('Y-m-d H:i:s');
 
 if($user['Token'] === $token && $username === $user['Username'] && $allowedVote < $currentTime) {
     $currentVotePoints = $user['VotePoints'];
