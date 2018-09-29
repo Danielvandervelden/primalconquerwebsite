@@ -232,7 +232,7 @@ function showWhyUsBlocks() {
 // Going to clone the complete menu inside of the mobile menu. Don't wanna remake it :)
 $('nav.menu').clone().appendTo('.mobile-menu-content');
 
-let allMenuItems = $('#mobile-menu .menu .main-menu-item');
+let parentMenuItems = $('#mobile-menu .main-menu-item.has-children > a');
 
 $('.open-menu').click(function() {
     $('.mobile-menu-content').addClass('menu-active');
@@ -244,15 +244,13 @@ $('.close-menu').click(function() {
     $('html').removeClass('no-scroll');
 })
 
-$.each(allMenuItems, function(menuItem) {
-    if($(this).children('.inner-menu').length > 0) {
-        $(this).click(function(e) {
-            $(this).find('.inner-menu').slideToggle().children().click(function(e) {
-                return false;
-              });;
-            $(this).toggleClass('active');
-        })
-    }
+$.each(parentMenuItems, function(menuItem) {
+    $(this).click(function(e) {
+        if(e.target === this) {
+        $(this).parent().toggleClass('active');
+        $(this).next().slideToggle();
+        }
+    })
 })
 
 function isEven(n) {

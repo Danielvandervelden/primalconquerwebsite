@@ -67,7 +67,7 @@ if($logged_in) {
                     <li class="flex-20 main-menu-item center">
                         <a class="account" href="<?php echo site_url('/account') ?>">Register</a>
                     </li>
-                    <li class="flex-20 main-menu-item dropdown center">
+                    <li class="flex-20 main-menu-item has-children dropdown center">
                         <a class="server" href="#">Server</a>
                         <ul class="inner-menu faded-black-bg">
                              <li class="inner-menu-item">
@@ -85,7 +85,7 @@ if($logged_in) {
                         <a class="support" href="<?php echo site_url('/support') ?>">Support</a>
                     </li>
         <?php if (!$_SESSION['logged-in']) {?>
-                    <li class="flex-20 main-menu-item dropdown center">
+                    <li class="flex-20 main-menu-item has-children dropdown center">
                         <a href="#">Login</a>
                         <ul class="inner-menu login faded-black-bg">
                             <div class="form-wrapper">
@@ -103,7 +103,7 @@ if($logged_in) {
                         </ul>
                     </li>
                     <?php } else {?>
-                    <li class="flex-20 main-menu-item dropdown center">
+                    <li class="flex-20 main-menu-item has-children dropdown center">
                         <a class="profile" href="#" ><i class="fas fa-user"></i></a>
                         <ul class="inner-menu faded-black-bg">
                             <a class="inner-menu-item" href="<?php echo site_url('/profile') ?>">My Profile</a>
