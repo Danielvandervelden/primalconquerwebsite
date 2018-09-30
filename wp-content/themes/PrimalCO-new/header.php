@@ -121,7 +121,7 @@ if($logged_in) {
             <?php if($username) : ?>
             <div class="xtremetop100">
                 <h2 class="white">Vote for us!</h2>
-                <a href='<?php echo "http://www.xtremetop100.com/in.php?site=1132324901&custom=" . $_SESSION['token'] ?>'>
+                <a href='<?php echo "http://www.xtremetop100.com/in.php?site=1132324901&postback=" . $_SESSION['token'] ?>'>
                 <img src="/wp-content/themes/PrimalCO-new/assets/images/votenew.jpg" alt="private server"></a>
             </div>
             <?php endif; ?>     
