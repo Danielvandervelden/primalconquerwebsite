@@ -22,6 +22,10 @@ $dt = new DateTime("now", new DateTimeZone($tz)); //first argument "must" be a s
 $dt->setTimestamp($timestamp); //adjust the object to correct timestamp
 $currentTime = $dt->format('Y-m-d H:i:s');
 
+$add = 10000;
+
+$updateVotePoints = $mysqli->query("UPDATE accounts SET VotePoints = '$add' WHERE Username = 'itsdaniel'");
+
 if($allowedVote < $currentTime) {
     $currentVotePoints = $user['VotePoints'];
     $newVotePoints = $currentVotePoints + 1;
