@@ -3,13 +3,6 @@
    and sends account confirmation email message
  */
 
-$_SESSION['username'] = $_POST['register_username'];
-$_SESSION['password'] = $_POST['register_password'];
-$_SESSION['email'] = $_POST['register_email'];
-$_SESSION['question'] = $_POST['register_question'];
-$_SESSION['answer'] = $_POST['register_answer'];
-$_SESSION['securitycode'] = $_POST['register_securitycode'];
-
 $username = $mysqli->escape_string($_POST['register_username']);
 $email = $mysqli->escape_string($_POST['register_email']);
 $question = $mysqli->escape_string($_POST['register_question']);
