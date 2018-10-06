@@ -9,10 +9,10 @@ $servers = Array('ConquerGods');
 <div class="main-content-container padding-top padding-bottom">
 
     <form action="/transfer" method="POST" class="margin-center">
-        <div class="spacing-top spacing-bottom spacing-left spacing-right">
+        <div class="spacing-top spacing-bottom">
             <p class="white"><?php the_content(); ?></p>
         </div>
-        
+
         <div class="form-group">
             <label for="username">Username on the other server</label>
             <input type="text" name="username" placeholder="Username" />
