@@ -37,7 +37,7 @@ $loggedIn = $_SESSION['logged-in'];
     </form>
 
     <?php } else { ?>
-        <p class="spacing-left spacing-right spacing-top spacing-bottom">Please log in in order to transfer your account from another server!</p>
+        <p class="white spacing-left spacing-right spacing-top spacing-bottom">Please log in in order to transfer your account from another server!</p>
     <?php } ?>
 </div>
 
